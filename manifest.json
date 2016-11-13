@@ -1,0 +1,39 @@
+{
+// Required
+    "manifest_version": 2,
+    "name": "Tab Saver",
+    "version": "0.1",
+    
+//Recommended
+    "description": "Simple tool to save all the tabs.",
+    "author": "Roger Pedrós Villorbina.",
+    
+// Recommended
+    "default_locale": "en",
+    //"icons": {  "16": "icon16.png",
+      //          "48": "icon48.png",
+        //        "128": "icon128.png"
+          //   } ,
+
+    "browser_action": {
+        "default_icon": "resources/icon.png",
+        "default_title": "Guardar pestañas. \n\n -Haz click con el boton izquierdo para guardar pestañas.\n -Haz click con el boton derecho para ver más opciones."
+    },
+    
+    "options_page": "Settings/home.html",
+    "background": {
+        "scripts": ["Background/managerTest.js"],
+        "persistent": false
+    },
+    
+    "incognito": "spanning",
+    "homepage_url": "http://www.google.com",
+    
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "activeTab",
+        "bookmarks"
+    ]
+}
