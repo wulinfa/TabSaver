@@ -11,7 +11,7 @@ chrome.browserAction.onClicked.addListener(() => {
 
 
 var tabsUrlData;
-function logTabsForWindows(windowInfoArray) {    
+function getTabsAndCreatebookmarks(windowInfoArray) {    
     for (windowInfo of windowInfoArray) {
         tabsUrlData = (windowInfo.tabs.map((tab) => {
             return (tab.url);
@@ -51,29 +51,25 @@ function checkTree(){
     chrome.storage.local.get('BookmarkFolderId', function(id){
         console.log(id.BookmarkFolderId);
         chrome.bookmarks.getSubTree(id.BookmarkFolderId, function(folder){
-            console.log(folder);
+            if (folder === undefined){
+                return false;
+            }else{
+                return true; 
+            }
         });
     });
-    launchTabs();
-    return true;
     //TRUE ES QUE LA CARPETA DELS BOOKSMARKS ESTA. FALSE ES QUE NO ESTA/LHAN BORRAT
 }
 
 function launchTabs(){
-    var urlFromBookmarks;
     chrome.storage.local.get('BookmarkFolderId', function(id){
         console.log(id.BookmarkFolderId);
-        chrome.bookmarks.getSubTree(id.BookmarkFolderId, function(folder){
-            console.log(folder["0"].children);
-            urlFromBookmarks = folder["0"].children;
+        chrome.bookmarks.getSubTree(id.BookmarkFolderId, function(folder){    
+            for(key in folder["0"].children){
+                console.log(folder["0"].children[key].url);
+                chrome.tabs.create({url: folder["0"].children[key].url});
+            }
         });
     });
-    
-    
-    for(key in urlFromBookmarks){
-        console.log(urlFromBookmarks[key]);
-        chrome.tabs.create({url:urlFromBookmarks[key]});
-        
-    } 
 }
 

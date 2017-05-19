@@ -1,81 +1,122 @@
 //Roger Pedrós Villorbina - Barcelona.
 
-//Extension made as part of my self-learning 
-//If you're reading this it's cause ur intereseted in my code. It's far to be perfect, but it works and it's mine. 
-
-
-chrome.browserAction.onClicked.addListener(function() => {
-    alert('Hello, World!'); 
-    if (checkTree() = true){ //TRUE ES QUE LA CARPETA ESTA
-        //SHA DE MIRAR EL TREE, AGAFAR LA CARPETA QUE YO VUI I DESPLEGARLA. 
-        
-        updateIcon(true);
-    }
-    if (checkTree() = false){ //FALSE ES QUE LA CAPERTA NO ESTA, PER TANT S'HA DE CREAR. 
-        chrome.windows.getAll({populate: true, windowTypes: ["normal"]}, logTabsForWindows);
-        updateIcon(false);
-    }
-
-    else{
-        alert("Ha surjido un problema con la extensión. Por favor, cierre el Chrome y asegurese que este actulizado, si el problema persiste resintale la extensión.");
-    }
-});
-
-chrome.windows.onCreated.addListener(function() {
-    if (checkTree() = true){
-        updateIcon(true);
-    }
-    if (checkTree() = false){
-        updateIcon(false);
-    }
-});
-
-chrome.bookmarks.onRemoved.addListener(function(){ 
-    if (checkTree() = false){
-        updateIcon(false);
-    }
-});
-
-function updateIcon(var status) {
-    if(status = true){
+onInit();
+function onInit() {
+    //getAndSetConfigData();
+    //checkAndUpdateIcon()
+}
+function checkAndUpdateIcon() {
+    getDataFromDB()
+        .then((dataFromDB) => {
+            //console.log(dataFromDB);
+            if(dataFromDB){ //true. Aixo es que hi ha informacio guardada, per tant posem l'icono com que n'hi ha
+                updateIcon(true);
+            }
+            if(!dataFromDB){ //false. Aixo es no hi ha informacio, per tant la app es marca com a disponible per a guardarne
+                updateIcon(false);
+            }
+        });
+}
+function updateIcon(status) {
+    if(status == true){
         chrome.browserAction.setIcon({path:"resources/icon2.png"});
     }
-    if (status = false){
+    if(status == false){
         chrome.browserAction.setIcon({path:"resources/icon.png"});
     }
     else{
-        alert("feinades");
+        console.log("Feinades");
     }
 }
 
-var tabsUrlData;
-function logTabsForWindows(windowInfoArray) {
-    for (windowInfo of windowInfoArray) {
-        tabsUrlData = (windowInfo.tabs.map( (tab) => {return (tab.url) }));
-    }
-    createTree();
-}
 
-function launchTabs(){
-    chrome.tabs.create({url:"http:www.google.com"});
-}
+chrome.browserAction.onClicked.addListener(() => {
+    console.log('Extension Clicked.');
+    debugger;
 
-function createBookmarks(){
-    var bookmarkBar = '';    
-    
-    chrome.bookmarks.create({'parentId': bookmarkBar.id, 'title': 'Extension'}, function(newFolder) {
-        console.log("added folder: " + newFolder.title);
-        console.log(newFolder);
+    getDataFromDB()
+        .then((dataFromDB) => {
+            console.log(dataFromDB);
 
-        chrome.bookmarks.create({'parentId': newFolder.id, 
-                                 'title': 'Extensions doc', 
-                                 'url': 'http://www.google.com'}); 
+        });
+
+    // if(dataFromDB){ //true. Aixo es que hi ha informacio guardada, per tant posem l'icono com que n'hi ha
+    //     openSavedTabs();
+    //     chrome.browserAction.setIcon({path:"resources/icon.png"});
+    // }
+    // if(!dataFromDB){ //false. Aixo es no hi ha informacio, per tant la app es marca com a disponible per a guardarne
+    //     getTabs()
+    //         .then((dataFromChromeWindow)=>{saveData(dataFromChromeWindow)});
+    //     chrome.browserAction.setIcon({path:"resources/icon2.png"});
+    //
+    // }
+
+});
+
+//GET TABS
+function getTabs() {
+    return new Promise((resolve, reject) => {
+        chrome.tabs.query({currentWindow: true}, (tabs) => {
+            resolve(tabs);
+        });
     });
-    
 }
 
-function checkTree(){
-    //if(get tree)
-        //if x caprta esta ok si no feinades
-    return true;  //TRUE ES QUE LA CARPETA DELS BOOKSMARKS ESTA. FALSE ES QUE NO ESTA/LHAN BORRAT
+//SAVE TABS ON DB or bookmarks
+function saveData(dataFromChromeWindow) {
+    let objectToSave = {
+        sessionTabs: dataFromChromeWindow
+    };
+
+    saveDatatoDB(objectToSave);
+    //saveDatatoBookmarks(objectToSave);
+
+    //aqui tanquem les finestes
+    //closeActualTabs(dataFromChromeWindow)
 }
+function saveDatatoDB(objectToSave) {
+    chrome.storage.local.set(objectToSave);
+}
+function saveDatatoBookmarks(objectToSave) {
+    var bookmarkBar = '';
+    chrome.bookmarks.create({'parentId': bookmarkBar.id, 'title': 'Saved Tabs'}, (newFolder) => {
+        for(key in objectToSave.sessionTabs){
+            chrome.bookmarks.create({'parentId': newFolder.id, 'title': objectToSave.sessionTabs[key].title ,'url': objectToSave.sessionTabs[key].url});
+        }
+
+    });
+
+}
+
+
+//GET DATA FORM DB
+function getDataFromDB() {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.get('sessionTabs',(result) =>{
+            resolve(result);
+        });
+    });
+}
+function removeDataFromDB() {
+    chrome.storage.local.remove('sessionTabs',() =>{});
+}
+
+//TANCAR O OBRE LES PESTANYES
+function closeActualTabs(dataFromChromeWindow) {
+    for(key in dataFromChromeWindow){
+        chrome.tabs.remove( dataFromChromeWindow[key].id, function() {});
+    }
+    chrome.tabs.create({ url: null });
+    onInit();
+}
+function openSavedTabs(dataFromDB) {
+    for(key in dataFromDB){
+        console.log(dataFromDB[key]);
+        // chrome.tabs.remove( dataFromDB[key].id, function() {});
+    }
+    removeDataFromDB();
+}
+
+
+
+
