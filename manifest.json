@@ -1,29 +1,28 @@
 {
 // Required
     "manifest_version": 2,
-    "name": "Tab Saver",
-    "version": "0.1",
+    "name": "Simple Tab Manager",
+    "version": "0.8.9.9",
     
 //Recommended
-    "description": "Simple tool to save all the tabs.",
+    "description": "Simple and flexible tool to save tabs and manage them.",
     "author": "Roger Pedrós Villorbina.",
     
 // Recommended
-    "default_locale": "en",
-    //"icons": {  "16": "icon16.png",
-      //          "48": "icon48.png",
-        //        "128": "icon128.png"
-          //   } ,
+    "default_locale": "es",
+    "icons": {  "48": "Resources/iconBlueL.png",
+                "128": "Resources/iconBlueL.png"
+    },
 
     "browser_action": {
-        "default_icon": "resources/icon.png",
-        "default_title": "Guardar pestañas. \n\n -Haz click con el boton izquierdo para guardar pestañas.\n -Haz click con el boton derecho para ver más opciones."
+        "default_icon": "resources/iconBlue.png",
+        "default_title": "PEDENT TITLE"
+//        "default_title": "Guardar pestañas. \n\n -Haz click con el boton izquierdo para guardar pestañas.\n -Haz click con el boton derecho Guardar pestañas. \n\n -Haz click con el boton izquierdo para guardar pestañas.\n -Haz click con el boton derecho para ver más opciones."
     },
     
-    "options_page": "Settings/home.html",
+    "options_page": "App/Settings/settings.html",
     "background": {
-        "scripts": ["Background/managerTest.js"],
-        "persistent": false
+        "scripts": ["Background/managerSettings.js", "Background/manager.js", "Background/managerListeners.js"]
     },
     
     "incognito": "spanning",
@@ -34,6 +33,16 @@
         "storage",
         "notifications",
         "activeTab",
-        "bookmarks"
-    ]
+        "bookmarks",
+        "activeTab",
+
+        "contextMenus",
+        "identity",
+        "<all_urls>"
+
+    ],
+
+    "content_security_policy": "script-src 'self' https://code.getmdl.io/ https://code.jquery.com/ https://cdnjs.cloudflare.com/ https://maxcdn.bootstrapcdn.com; object-src 'self'"
+
+
 }
