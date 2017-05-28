@@ -7,6 +7,14 @@ function saveConfigtoDB(objectToSave) {
         });
     });
 }
+//UNIVERSAL
+function saveDatatoDB(objectToSave) {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.set(objectToSave,(result) =>{
+            resolve(true);
+        });
+    });
+}
 
 function getConfigFromDB() {
     return new Promise((resolve, reject) => {
@@ -16,9 +24,15 @@ function getConfigFromDB() {
     });
 }
 
+function getDataFromDB() {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.get('sessionTabs', (result) => {
+            resolve(result);
+        });
+    });
+}
 
-
-function setFirstTimeConfig(objectToSave) {
+function setServiceList(objectToSave) {
     return new Promise((resolve, reject) => {
         chrome.storage.local.set(objectToSave,(result) =>{
             resolve(true);
@@ -26,10 +40,11 @@ function setFirstTimeConfig(objectToSave) {
     });
 }
 
-function getFirstTimeConfig() {
+function getServiceList() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get('configData',(result) =>{
+        chrome.storage.local.get('servicesList',(result) =>{
             resolve(result);
         });
     });
 }
+    

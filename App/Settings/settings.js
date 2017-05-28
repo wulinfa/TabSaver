@@ -1,6 +1,6 @@
 /*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
 
-$(document).ready(() =>{
+$(document).ready(() => {
     this.configData = {
         simple: null,
         simpleSave: null,
@@ -9,10 +9,9 @@ $(document).ready(() =>{
     };
 
     getConfigFromDB()
-        .then((configFromDB) =>{
-
-            if(configFromDB.configData){
-                let setter = () =>{
+        .then((configFromDB) => {
+            if (configFromDB.configData) {
+                let setter = () => {
                     this.configData = {
                         simple: configFromDB.configData.simple,
                         simpleSave: configFromDB.configData.simpleSave,
@@ -24,8 +23,21 @@ $(document).ready(() =>{
                 setOptionsSaved();
             }
 
-            if(!configFromDB.configData){
+            if (!configFromDB.configData) {
                 setOptionsDefault();
+            }
+        });
+
+    getServiceList()
+        .then((servicesFromDB) => {
+            for(key in servicesFromDB.servicesList) {
+                $('.table-content-generator').append(
+                    '<tr>' +
+                    '<td>'+servicesFromDB.servicesList[key].serviceName+'</td>' +
+                    '<td>'+servicesFromDB.servicesList[key].serviceUrl+'</td>' +
+                    '<td><i class="material-icons">delete</i></td>' +
+                    '</tr>'
+                );
             }
         });
 
@@ -37,7 +49,7 @@ $(document).ready(() =>{
         let checkboxOnlySave = $("#checkboxOnlySave");
 
         //RADIOBUTTON SIMPLE
-        if(this.configData.simple === true){
+        if (this.configData.simple === true) {
             optionSimple.prop('disabled', false);
             optionSimple.prop('checked', true);
 
@@ -45,23 +57,23 @@ $(document).ready(() =>{
             checkboxSimple.prop('disabled', false);
         }
 
-        if(this.configData.simple === false){
+        if (this.configData.simple === false) {
             optionSimple.prop('disabled', false);
             optionSimple.prop('checked', false);
         }
 
         //CHECKBOX DE SIMPLE
-        if(this.configData.simpleSave === true){
+        if (this.configData.simpleSave === true) {
             checkboxSimple.prop('disabled', false);
             checkboxSimple.prop('checked', true);
         }
 
-        if(this.configData.simpleSave === false){
+        if (this.configData.simpleSave === false) {
             checkboxSimple.prop('checked', false);
         }
 
         //RADIOBUTTON DE ONLY SAVE
-        if(this.configData.onlySave === true){
+        if (this.configData.onlySave === true) {
             optionOnlySave.prop('disabled', false);
             optionOnlySave.prop('checked', true);
 
@@ -69,21 +81,22 @@ $(document).ready(() =>{
             checkboxSimple.prop('disabled', true);
         }
 
-        if(this.configData.onlySave === false){
+        if (this.configData.onlySave === false) {
             optionOnlySave.prop('disabled', false);
             optionOnlySave.prop('checked', false);
         }
 
         //CHECKBOX DE ONLY SAVE
-        if(this.configData.onlySaveCloseTabs === true){
+        if (this.configData.onlySaveCloseTabs === true) {
             checkboxOnlySave.prop('disabled', false);
             checkboxOnlySave.prop('checked', true);
         }
 
-        if(this.configData.onlySaveCloseTabs === false){
+        if (this.configData.onlySaveCloseTabs === false) {
             checkboxOnlySave.prop('checked', false);
         }
     }
+
     function setOptionsDefault() {
         this.configData.simple = true;
         this.configData.simpleSave = true;
@@ -109,9 +122,11 @@ $(document).ready(() =>{
     }
 
     //SIMPLE
-    $("#optionSimple").click(( event )=> {
-        let checkboxSimple = $( "#checkboxSimple");
-        let checkboxOnlySave = $( "#checkboxOnlySave");
+    $("#optionSimple").click((event) => {
+        ga('send', 'event', 'options', 'simple', 'RadioButton');
+
+        let checkboxSimple = $("#checkboxSimple");
+        let checkboxOnlySave = $("#checkboxOnlySave");
 
         checkboxSimple.prop('disabled', false);
         checkboxOnlySave.prop('disabled', true);
@@ -127,14 +142,18 @@ $(document).ready(() =>{
         };
 
         saveConfigtoDB(objectToSave)
-             .then(() =>{ launchSnackBar();});
+            .then(() => {
+                launchSnackBar();
+            });
     });
 
-    $("#checkboxSimple").click(( event )=> {
-        let checkboxSimple = $( "#checkboxSimple");
-        if(checkboxSimple[0].checked === true){
+    $("#checkboxSimple").click((event) => {
+        ga('send', 'event', 'options', 'simple', 'Checkbox');
+
+        let checkboxSimple = $("#checkboxSimple");
+        if (checkboxSimple[0].checked === true) {
             var objectToSave = {
-                configData : {
+                configData: {
                     simple: true,
                     simpleSave: true,
                     onlySave: false,
@@ -142,9 +161,9 @@ $(document).ready(() =>{
                 }
             };
         }
-        if(checkboxSimple[0].checked === false){
+        if (checkboxSimple[0].checked === false) {
             var objectToSave = {
-                configData : {
+                configData: {
                     simple: true,
                     simpleSave: false,
                     onlySave: false,
@@ -154,19 +173,23 @@ $(document).ready(() =>{
         }
 
         saveConfigtoDB(objectToSave)
-            .then(() =>{ launchSnackBar();})
+            .then(() => {
+                launchSnackBar();
+            })
     });
 
     //ONLY-SAVE
-    $("#optionOnlySave").click(( event )=> {
+    $("#optionOnlySave").click((event) => {
+        ga('send', 'event', 'options', 'onlySave', 'RadioButton');
+
         let checkboxSimple = $("#checkboxSimple");
-        let checkboxOnlySave = $( "#checkboxOnlySave");
+        let checkboxOnlySave = $("#checkboxOnlySave");
 
         checkboxSimple.prop('disabled', true);
         checkboxOnlySave.prop('disabled', false);
 
         let objectToSave = {
-            configData : {
+            configData: {
                 simple: false,
                 simpleSave: false,
                 onlySave: true,
@@ -175,15 +198,18 @@ $(document).ready(() =>{
         };
 
         saveConfigtoDB(objectToSave)
-            .then(() =>{ launchSnackBar();});
+            .then(() => {
+                launchSnackBar();
+            });
     });
 
-    $("#checkboxOnlySave").click(( event )=> {
-        let checkboxOnlySave = $( "#checkboxOnlySave");
+    $("#checkboxOnlySave").click((event) => {
+        ga('send', 'event', 'options', 'onlySave', 'Checkbox');
 
-        if(checkboxOnlySave[0].checked === true){
+        let checkboxOnlySave = $("#checkboxOnlySave");
+        if (checkboxOnlySave[0].checked === true) {
             var objectToSave = {
-                configData : {
+                configData: {
                     simple: false,
                     simpleSave: false,
                     onlySave: true,
@@ -191,9 +217,9 @@ $(document).ready(() =>{
                 }
             };
         }
-        if(checkboxOnlySave[0].checked === false){
+        if (checkboxOnlySave[0].checked === false) {
             var objectToSave = {
-                configData : {
+                configData: {
                     simple: false,
                     simpleSave: false,
                     onlySave: true,
@@ -203,16 +229,64 @@ $(document).ready(() =>{
         }
 
         saveConfigtoDB(objectToSave)
-            .then(() =>{ launchSnackBar();});
+            .then(() => {
+                launchSnackBar();
+            });
     });
 
     //SNACKBAR
     let snackbarContainer = document.querySelector('#demo-toast-example');
     function launchSnackBar() {
-            let data =
-                {message: 'configuración actualizada',
-                timeout: 1750};
-            snackbarContainer.MaterialSnackbar.showSnackbar(data);
+        let data =
+            {
+                message: 'configuración actualizada',
+                timeout: 1750
+            };
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
     };
+
+    //Boto per guardar serveis
+    $("#saveButton").click((event) => {
+        let serviceName = $("#inputServiceName");
+        let serviceUrl = $("#inputUrl");
+        let serviceID =  s4() + s4() + s4() + s4() + s4() + s4() + s4() + s4();
+
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+
+        this.serviceArray = [];
+        getServiceList()
+            .then((servicesFromDB) => {
+                this.serviceArray = servicesFromDB.servicesList.slice();
+
+                let objecteToPush = {
+                    serviceName: serviceName.val(),
+                    serviceUrl: serviceUrl.val(),
+                    serviceId: serviceID
+                };
+
+                this.serviceArray.push(objecteToPush);
+
+                let objectToSave = {
+                    servicesList: this.serviceArray
+                };
+
+                setServiceList(objectToSave);
+
+                $('.table-content-generator').append(
+                    '<tr>' +
+                    '<td>'+ serviceName.val() +'</td>' +
+                    '<td>'+ serviceUrl.val() +'</td>' +
+                    '<td><i class="material-icons">delete</i></td>' +
+                    '</tr>'
+                );
+
+                serviceName.val('');
+                serviceUrl.val('');
+            });
+    });
 
 });

@@ -8,17 +8,14 @@ main {
     /*font-family: Arial, Helvetica, sans-serif;*/
     text-align: center;
     margin-top: 50px;
-    /*display: block;*/
+    display: block;
 }
 
 #navbar-brand{
     -moz-user-select: none;
+    -khtml-user-select: none;
     -webkit-user-select: none;
+
     -ms-user-select: none;
-
     user-select: none;
-}
-
-.material-icons {
-    font-size: 20px;
 }

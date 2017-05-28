@@ -1,11 +1,12 @@
 /*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
 
-this.configData  = {
+this.configData = {
     simple: null,
     simpleSave: null,
     onlySave: null,
     onlySaveCloseTabs: null
 };
+//on init:
 onInit();
 function onInit() {
     //get and set config data
@@ -21,25 +22,19 @@ function onInit() {
             }
 
             if (!configFromDB.configData) {
-                let objectToSave = {
-                    configData: {
-                        simple: true,
-                        simpleSave: true,
-                        onlySave: false,
-                        onlySaveCloseTabs: false
-                    }
-                };
-                saveConfigtoDB(objectToSave)
-                    .then(() => {
-                        onInit();
-                    });
+                alert('Sin configuración del modo de trabajo. Asigna uno en "configuración".')
             }
         });
 
     getDataFromDB()
         .then((dataFromDB) => {
             if (dataFromDB.sessionTabs) {//true. Aixo es que hi ha informacio guardada, per tant posem l'icono com que n'hi ha
-                updateIcon(true);
+                if (this.configData.onlySaveCloseTabs === true) {
+                    updateIcon(false);
+                }
+                if (this.configData.simple === true) {
+                    updateIcon(true);
+                }
             }
             if (!dataFromDB.sessionTabs) { //false. Aixo es no hi ha informacio, per tant la app es marca com a disponible per a guardarne
                 updateIcon(false);
@@ -47,13 +42,12 @@ function onInit() {
         });
 
 }
-
 function updateIcon(status) {
     if (status === true) {
-        chrome.browserAction.setIcon({path: "resources/iconbarRollReversed.png"});
+        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarRollReversed.png"});
     }
     if (status === false) {
-        chrome.browserAction.setIcon({path: "resources/iconbarPlusReversed.png"});
+        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarPlusReversed.png"});
     }
     else {
         console.log("Feinades");
@@ -61,38 +55,89 @@ function updateIcon(status) {
 }
 
 chrome.browserAction.onClicked.addListener(() => {
+    onInit();
+
     getDataFromDB()
         .then((dataFromDB) => {
-            if (dataFromDB.sessionTabs) {//true. Aixo es que hi ha informacio guardada.
+            if (dataFromDB.sessionTabs) {//true. Aixo es que HI HA informacio guardada.
                 if (this.configData.simple === true) {
                     openSavedTabs(dataFromDB.sessionTabs);
                     removeDataFromDB();
-                    if(this.configData.simpleSave === true){
-                        //TODO EN EL FUTUR POTSE TAMBE S'HAN D'ESBORRAR DELS MARCADORS.
+                    if (this.configData.simpleSave === true) {
+                        getBookmarkFolderId()
+                            .then((bookmarkFolderId)=>{
+                                removeBookmarks(bookmarkFolderId);
+                            });
                     }
-                updateIcon(false);
+                    updateIcon(false);
                 }
 
-                if (this.configData.onlySave === true){
+                if (this.configData.onlySave === true) {
+                    getTabs()
+                        .then((dataFromChromeWindow) => {
+                            let objectToSave = {
+                                sessionTabs:  dataFromChromeWindow
+                            };
+                            //saveDatatoDB(objectToSave); INTERESA QUE ES GUARDI LA INFORMACIÓ? SI L'USUARI CANVIA A SIMPLE ES POT PERDRE LA SESSIO.
+                            saveDatatoBookmarks(dataFromChromeWindow)
+                                .then((folderId) => {
+                                    let objectToSave = {
+                                        bookmarkFolderCreated: folderId
+                                    };
+                                    saveDatatoDB(objectToSave);
+                                });
 
+                            if (this.configData.onlySaveCloseTabs === true) {
+                                closeActualTabs(dataFromChromeWindow);
+                            }
+                            launchNotification();
+                        });
                 }
             }
 
-            if (!dataFromDB.sessionTabs) { //false. Aixo es no hi ha informacio, per tant la app es marca com a disponible per a guardarne
+            if (!dataFromDB.sessionTabs) { //false. Aixo es no hi ha informacio
                 if (this.configData.simple === true) {
                     getTabs()
-                        .then((dataFromChromeWindow)=>{
+                        .then((dataFromChromeWindow) => {
                             let objectToSave = {
                                 sessionTabs: dataFromChromeWindow
                             };
                             saveDatatoDB(objectToSave);
 
-                            if(this.configData.simpleSave === true){
-                                saveDatatoBookmarks(objectToSave);
+                            if (this.configData.simpleSave === true) {
+                                saveDatatoBookmarks(dataFromChromeWindow)
+                                    .then((folderId) => {
+                                        let objectToSave = {
+                                            bookmarkFolderCreated: folderId
+                                        };
+                                        saveDatatoDB(objectToSave);
+                                    });
                             }
                             closeActualTabs(dataFromChromeWindow);
                         });
                     updateIcon(true);
+                }
+
+                if (this.configData.onlySave === true) {
+                    getTabs()
+                        .then((dataFromChromeWindow) => {
+                            let objectToSave = {
+                                sessionTabs: dataFromChromeWindow
+                            };
+                            //saveDatatoDB(objectToSave);
+                            saveDatatoBookmarks(dataFromChromeWindow)
+                                .then((folderId) => {
+                                    let objectToSave = {
+                                        bookmarkFolderCreated: folderId
+                                    };
+                                    saveDatatoDB(objectToSave);
+                                });
+
+                            if (this.configData.onlySaveCloseTabs === true) {
+                                closeActualTabs(dataFromChromeWindow);
+                            }
+                            launchNotification();
+                        });
                 }
 
             }
@@ -100,7 +145,7 @@ chrome.browserAction.onClicked.addListener(() => {
 
 });
 
-//GET TABS
+//Captura pestanyes
 function getTabs() {
     return new Promise((resolve, reject) => {
         chrome.tabs.query({currentWindow: true}, (tabs) => {
@@ -109,26 +154,28 @@ function getTabs() {
     });
 }
 
-//SAVE TABS ON DB or bookmarks
+//Guardar informacio a la BD o als marcadors
 function saveDatatoDB(objectToSave) {
     chrome.storage.local.set(objectToSave);
 }
-function saveDatatoBookmarks(objectToSave) {
-    var bookmarkBar = '';
-    chrome.bookmarks.create({'parentId': bookmarkBar.id, 'title': 'Saved Tabs'}, (newFolder) => {
-        for (key in objectToSave.sessionTabs) {
-            chrome.bookmarks.create({
-                'parentId': newFolder.id,
-                'title': objectToSave.sessionTabs[key].title,
-                'url': objectToSave.sessionTabs[key].url
-            });
-        }
-
+function saveDatatoBookmarks(dataFromChromeWindowToBookmark) {
+    return new Promise((resolve, reject) => {
+        let bookmarkBar = '';
+        chrome.bookmarks.create({'parentId': bookmarkBar.id, 'title': 'Saved Tabs'}, (newFolder) => {
+            for (key in dataFromChromeWindowToBookmark) {
+                chrome.bookmarks.create({
+                    'parentId': newFolder.id,
+                    'title': dataFromChromeWindowToBookmark[key].title,
+                    'url': dataFromChromeWindowToBookmark[key].url
+                });
+            }
+            resolve(newFolder);
+        });
     });
 
 }
 
-//GET DATA FORM DB
+//Agafa informaci de la BD
 function getDataFromDB() {
     return new Promise((resolve, reject) => {
         chrome.storage.local.get('sessionTabs', (result) => {
@@ -136,18 +183,25 @@ function getDataFromDB() {
         });
     });
 }
+function getBookmarkFolderId() {
+    return new Promise((resolve, reject) => {
+        chrome.storage.local.get('bookmarkFolderCreated', (result) => {
+            resolve(result);
+        });
+    });
+}
 
-//remove bd or boomarks
+//Esborrar BD o marcadors
 function removeDataFromDB() {
     chrome.storage.local.remove('sessionTabs', () => {
 
     });
 }
-function removeBookmarks() {
-    
+function removeBookmarks(bookmarkIdFolder) {
+    chrome.bookmarks.removeTree(bookmarkIdFolder.bookmarkFolderCreated.id);
 }
 
-//TANCAR O OBRE LES PESTANYES
+//Tancar i obrir pestanyes
 function closeActualTabs(dataFromChromeWindow) {
     chrome.tabs.create({url: null});
 
@@ -164,7 +218,22 @@ function openSavedTabs(sessionTabs) {
     }
 }
 
+//Notification
+function launchNotification() {
+    let options = {
+        type: 'basic',
+        iconUrl: 'Resources/iconBlueL.png',
+        title: 'Guardado.',
+        message: 'Pestañas guardadas en los marcadores.'
+    };
 
+    chrome.notifications.create('Simple Tab Manager', options);
+}
+
+//Screenshots
+function doScrenshots() {
+
+}
 
 
 

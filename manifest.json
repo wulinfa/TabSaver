@@ -1,48 +1,39 @@
 {
-// Required
     "manifest_version": 2,
     "name": "Simple Tab Manager",
-    "version": "0.8.9.9",
-    
-//Recommended
+    "short_name": "Tab Saver",
+    "version": "1.4.1",
     "description": "Simple and flexible tool to save tabs and manage them.",
     "author": "Roger Pedrós Villorbina.",
-    
-// Recommended
     "default_locale": "es",
-    "icons": {  "48": "Resources/iconBlueL.png",
-                "128": "Resources/iconBlueL.png"
+    "icons": { "48": "Resources/Icons/iconBlueL.png",
+                "128": "Resources/Icons/iconBlueL.png"
     },
-
     "browser_action": {
-        "default_icon": "resources/iconBlue.png",
-        "default_title": "PEDENT TITLE"
-//        "default_title": "Guardar pestañas. \n\n -Haz click con el boton izquierdo para guardar pestañas.\n -Haz click con el boton derecho Guardar pestañas. \n\n -Haz click con el boton izquierdo para guardar pestañas.\n -Haz click con el boton derecho para ver más opciones."
+        "default_icon": "Resources/Icons/iconBlue.png",
+        "default_title": "Simple Tab Manager"
     },
-    
     "options_page": "App/Settings/settings.html",
     "background": {
-        "scripts": ["Background/managerSettings.js", "Background/manager.js", "Background/managerListeners.js"]
+        "scripts": ["Background/managerProvider.js", "Background/manager.js", "Background/managerListeners.js"]
     },
-    
     "incognito": "spanning",
-    "homepage_url": "http://www.google.com",
-    
     "permissions": [
         "tabs",
         "storage",
         "notifications",
         "activeTab",
         "bookmarks",
-        "activeTab",
-
         "contextMenus",
-        "identity",
-        "<all_urls>"
-
+        "<all_urls>",
+        "identity"
     ],
-
-    "content_security_policy": "script-src 'self' https://code.getmdl.io/ https://code.jquery.com/ https://cdnjs.cloudflare.com/ https://maxcdn.bootstrapcdn.com; object-src 'self'"
-
-
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/ https://*.firebaseio.com; object-src 'self'",
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Q"
+            }
+        }
+    }
 }

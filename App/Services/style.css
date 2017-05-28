@@ -1,0 +1,49 @@
+#right-content{
+    font-size: 15px;
+    /*margin-top: 40px;*/
+}
+
+main {
+    padding: 1em;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+#navbar-brand{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.row-fluid{
+    white-space: nowrap;
+}
+.row-fluid .col-lg-3{
+    display: inline-block;
+}
+
+.demo-card-image.mdl-card {
+     width: 128px;
+     height: 128px;
+ }
+
+.demo-card-image > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: #f4f4f4;
+}
+.demo-card-image__filename {
+    color: #45444f;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.material-icons {
+    font-size: 72px;
+    color: #444444;
+}
