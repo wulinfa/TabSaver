@@ -36,7 +36,8 @@
     <script src="../../Resources/js/firebase-init-config.js"></script>
 
     <!--Google login-->
-    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="502964144834-d2n782bn9hdgf1lhcf767oa2ghoj8p7t.apps.googleusercontent.com">
 
     <!--Shortcuts-->
     <script src="../../Resources/js/shortcuts.js"></script>
@@ -69,9 +70,7 @@
         <ul class="nav nav-pills nav-stacked">
             <li class=""><a href="../Home/home.html">Inicio</a></li>
             <li class=""><a href="../Services/services.html">Servicios</a></li>
-            <li class=""><a href="../Settings/settings.html">Configuración</a></li>
             <li class="active"><a href="../User/user.html">Usuario</a></li>
-            <li class=""><a href="../Donate/donate.html">Donaciones</a></li>
         </ul>
     </section>
 
@@ -132,8 +131,10 @@
                                 </fieldset>
                             </form>
                             <a id="createAccountButton" class="btn btn-default">Registrarme.</a>
+                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
                         </div>
                     </div>
+
             </div>
 
             <p id='errorMessage' style="font-size: 14px; margin-top: 5px" class="text-primary"></p>

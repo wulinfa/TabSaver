@@ -1,46 +1,57 @@
 /*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
-
 $(document).ready(() => {
-    this.configData = {
-        simple: null,
-        simpleSave: null,
-        onlySave: null,
-        onlySaveCloseTabs: null
+    /*Declaracio inicial dels objectes de configuració i serveis*/
+    this.configData = {};
+    this.servicesList = {};
+
+    /*Objecte html des de on es llança el snackbar*/
+    let snackbarContainer = document.querySelector('#demo-toast-example');
+
+    /*Declaració de les crides per carregar de la BD als objectes configData i serviceList*/
+    let step1 = () => {
+        let wait = $.Deferred();
+        getConfigFromDB()
+            .then((configFromDB) => {
+                this.configData = {
+                    simple: configFromDB.configData.simple,
+                    simpleSave: configFromDB.configData.simpleSave,
+                    onlySave: configFromDB.configData.onlySave,
+                    onlySaveCloseTabs: configFromDB.configData.onlySaveCloseTabs
+                };
+                wait.resolve();
+            });
+
+        return wait.promise();
+    };
+    let step2 = () => {
+        let wait = $.Deferred();
+        getServiceList()
+            .then((servicesFromDB) => {
+                this.servicesList = $.extend(true, {}, servicesFromDB.servicesList);
+                wait.resolve();
+            });
+        return wait.promise();
     };
 
-    getConfigFromDB()
-        .then((configFromDB) => {
-            if (configFromDB.configData) {
-                let setter = () => {
-                    this.configData = {
-                        simple: configFromDB.configData.simple,
-                        simpleSave: configFromDB.configData.simpleSave,
-                        onlySave: configFromDB.configData.onlySave,
-                        onlySaveCloseTabs: configFromDB.configData.onlySaveCloseTabs
-                    }
-                };
-                setter();
+    /*Execució de es declaracions i crides*/
+    /*Step1 seteja la informacio de la DB a la vista, si no hi ha informacío posa la que hi ha per defecte*/
+    step1()
+        .then(() => {
+            if (this.configData.simple.length && this.configData.onlySave.length) {
                 setOptionsSaved();
             }
-
-            if (!configFromDB.configData) {
+            if (!this.configData.simple.length && !this.configData.onlySave.length) {
                 setOptionsDefault();
             }
         });
 
-    getServiceList()
-        .then((servicesFromDB) => {
-            for(key in servicesFromDB.servicesList) {
-                $('.table-content-generator').append(
-                    '<tr>' +
-                    '<td>'+servicesFromDB.servicesList[key].serviceName+'</td>' +
-                    '<td>'+servicesFromDB.servicesList[key].serviceUrl+'</td>' +
-                    '<td><i class="material-icons">delete</i></td>' +
-                    '</tr>'
-                );
-            }
+    /*Step2 genera la llista dels serveis*/
+    step2()
+        .then(() => {
+            serviceTableGenerator();
         });
 
+    /*Posen la informació de la BD a la vista*/
     function setOptionsSaved() {
         let optionSimple = $("#optionSimple");
         let checkboxSimple = $("#checkboxSimple");
@@ -96,7 +107,6 @@ $(document).ready(() => {
             checkboxOnlySave.prop('checked', false);
         }
     }
-
     function setOptionsDefault() {
         this.configData.simple = true;
         this.configData.simpleSave = true;
@@ -121,7 +131,29 @@ $(document).ready(() => {
 
     }
 
-    //SIMPLE
+    /*Generador de la llista*/
+    function serviceTableGenerator(){
+        _.map(this.servicesList, (dataService) => {
+            $('.table-content-generator').append(
+                '<tr>' +
+                '<td>' + dataService.serviceName + '</td>' +
+                '<td>' + dataService.serviceUrl + '</td>' +
+                '<td><i class="material-icons">delete</i></td>' +
+                '</tr>'
+            );
+        });
+    }
+
+    /*Snackbar launch function*/
+    function launchSnackBar() {
+        let data = {
+            message: 'configuración actualizada',
+            timeout: 1750
+        };
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+    }
+
+    /*Listeners dels RadioButtons i els CheckBox*/
     $("#optionSimple").click((event) => {
         ga('send', 'event', 'options', 'simple', 'RadioButton');
 
@@ -141,7 +173,7 @@ $(document).ready(() => {
             }
         };
 
-        saveConfigtoDB(objectToSave)
+        saveDatatoDB(objectToSave)
             .then(() => {
                 launchSnackBar();
             });
@@ -152,7 +184,7 @@ $(document).ready(() => {
 
         let checkboxSimple = $("#checkboxSimple");
         if (checkboxSimple[0].checked === true) {
-            var objectToSave = {
+            let objectToSave = {
                 configData: {
                     simple: true,
                     simpleSave: true,
@@ -162,7 +194,7 @@ $(document).ready(() => {
             };
         }
         if (checkboxSimple[0].checked === false) {
-            var objectToSave = {
+            let objectToSave = {
                 configData: {
                     simple: true,
                     simpleSave: false,
@@ -171,14 +203,10 @@ $(document).ready(() => {
                 }
             };
         }
-
-        saveConfigtoDB(objectToSave)
-            .then(() => {
-                launchSnackBar();
-            })
+        saveDatatoDB(objectToSave)
+            .then(launchSnackBar);
     });
 
-    //ONLY-SAVE
     $("#optionOnlySave").click((event) => {
         ga('send', 'event', 'options', 'onlySave', 'RadioButton');
 
@@ -197,7 +225,7 @@ $(document).ready(() => {
             }
         };
 
-        saveConfigtoDB(objectToSave)
+        saveDatatoDB(objectToSave)
             .then(() => {
                 launchSnackBar();
             });
@@ -228,62 +256,51 @@ $(document).ready(() => {
             };
         }
 
-        saveConfigtoDB(objectToSave)
+        saveDatatoDB(objectToSave)
             .then(() => {
                 launchSnackBar();
             });
     });
 
-    //SNACKBAR
-    let snackbarContainer = document.querySelector('#demo-toast-example');
-    function launchSnackBar() {
-        let data =
-            {
-                message: 'configuración actualizada',
-                timeout: 1750
-            };
-        snackbarContainer.MaterialSnackbar.showSnackbar(data);
-    };
-
-    //Boto per guardar serveis
+    /*Listener del boto per a guardar serveis*/
     $("#saveButton").click((event) => {
+        ga('send', 'event', 'options', 'Save Service', 'Button');
+
         let serviceName = $("#inputServiceName");
         let serviceUrl = $("#inputUrl");
-        let serviceID =  s4() + s4() + s4() + s4() + s4() + s4() + s4() + s4();
-
-        function s4() {
-            return Math.floor((1 + Math.random()) * 0x10000)
-                .toString(16)
-                .substring(1);
-        }
+        let serviceID = generateId();
 
         this.serviceArray = [];
+        /*Agafafem de nou la taula que hi ha ara a la bd*/
         getServiceList()
             .then((servicesFromDB) => {
+                /*En fem una copia local*/
                 this.serviceArray = servicesFromDB.servicesList.slice();
 
+                /*Afegim el nou servei als altres localment*/
                 let objecteToPush = {
                     serviceName: serviceName.val(),
                     serviceUrl: serviceUrl.val(),
                     serviceId: serviceID
                 };
-
                 this.serviceArray.push(objecteToPush);
 
+                /*El guardem de nou a la BD, de local a BD*/
                 let objectToSave = {
                     servicesList: this.serviceArray
                 };
+                saveDatatoDB(objectToSave);
 
-                setServiceList(objectToSave);
-
+                /*Mostrem al usuari (vista) el nou servei*/
                 $('.table-content-generator').append(
                     '<tr>' +
-                    '<td>'+ serviceName.val() +'</td>' +
-                    '<td>'+ serviceUrl.val() +'</td>' +
+                    '<td>' + serviceName.val() + '</td>' +
+                    '<td>' + serviceUrl.val() + '</td>' +
                     '<td><i class="material-icons">delete</i></td>' +
                     '</tr>'
                 );
 
+                /*Netejem els caps de la vista*/
                 serviceName.val('');
                 serviceUrl.val('');
             });

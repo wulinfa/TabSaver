@@ -1,6 +1,10 @@
 {
-  "prompt_for_name": {
-    "message": "What's your name?",
-    "description": "Ask for the user's name"
+  "appName": {
+    "message": "Simple Tab Manager",
+    "description": "Nom de l'extencio."
+  },
+  "appDesc": {
+    "message": "Simple and flexible tool to save tabs and manage them.",
+    "description":"Descripción de l'extensión a nivel de manifiest."
   }
 }

@@ -33,6 +33,10 @@ $(window).keypress((event) => {
             case 85:
                 window.location.replace("../../App/User/user.html");
                 break;
+            default:
+                console.log('Shortcut not detected');
         }
+
+
     }
 });

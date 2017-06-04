@@ -99,7 +99,7 @@ $(document).ready(() => {
     };
     let step3 = () => {
         let wait = $.Deferred();
-        getDataFromDB()
+        getSessionFromDB()
             .then((dataFromDB) => {
                 if (dataFromDB.sessionTabs) {
                     this.sessionTabs = $.extend(true, {}, dataFromDB.sessionTabs);

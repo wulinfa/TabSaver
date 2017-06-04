@@ -1,17 +1,17 @@
 {
     "manifest_version": 2,
-    "name": "Simple Tab Manager",
+    "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.4.1",
-    "description": "Simple and flexible tool to save tabs and manage them.",
+    "version": "1.5.3",
+    "description": "__MSG_appDesc__",
     "author": "Roger Pedrós Villorbina.",
     "default_locale": "es",
-    "icons": { "48": "Resources/Icons/iconBlueL.png",
-                "128": "Resources/Icons/iconBlueL.png"
+    "icons": { "48": "Resources/Icons/iconBlue.png",
+                "128": "Resources/Icons/iconBlue.png"
     },
     "browser_action": {
         "default_icon": "Resources/Icons/iconBlue.png",
-        "default_title": "Simple Tab Manager"
+        "default_title": "__MSG_appName__"
     },
     "options_page": "App/Settings/settings.html",
     "background": {

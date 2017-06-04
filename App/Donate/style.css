@@ -10,7 +10,7 @@ main {
     margin-top: 50px;
     display: block;
 }
-
+/*Fa que la navbar no sigui seleccionable*/
 #navbar-brand{
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -19,4 +19,23 @@ main {
     -ms-user-select: none;
     user-select: none;
 }
+/*Tamany dels icons*/
+.material-icons {
+    font-size: 20px;
+}
+/*Icons sense padding inferior, ja que fa fer la navbar mes gran*/
+.navbar-nav > li > a{
+    padding-bottom: 0;
+}
 
+/*Centrar el header i gestionar elements de dreta i esquerra*/
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+}

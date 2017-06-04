@@ -31,42 +31,57 @@
 
     <!--Dragula-->
     <script src="../../Resources/js/dragula.min.js"></script>
+    <link rel="stylesheet" href="../../Style/dragula.min.css">
+
+    <!--Lodash-->
+    <script src="../../Resources/js/lodash.js"></script>
 
     <!--Custom Script-->
     <script src="home.js"></script>
+    <script src="../../Background/managerProvider.js"></script>
+
+    <!--ID Generator-->
+    <script src="../../Resources/js/IdGenerator.js"></script>
+
 
 </head>
 
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand">Simple Tab Manager </a>
+            <a class="navbar-brand">Simple Tab Manager</a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"></a></li>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="../Home/home.html"> </a></li>
             </ul>
-
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../Settings/settings.html"><i class="material-icons settings-icon">settings</i></a></li>
+            </ul>
         </div>
     </div>
 </div>
-
 <main class="container">
 
     <section class="col-sm-3 col-md-2 col-lg-2 text-left " id="left-content">
         <ul class="nav nav-pills nav-stacked">
             <li class="active"><a href="../Home/home.html">Inicio</a></li>
             <li class=""><a href="../Services/services.html">Servicios</a></li>
-            <li class=""><a href="../Settings/settings.html">Configuración</a></li>
             <li class=""><a href="../User/user.html">Usuario</a></li>
-            <li class=""><a href="../Donate/donate.html">Donaciones</a></li>
         </ul>
     </section>
 
     <section class="col-sm-9 col-md-10 col-lg-10" id="right-content">
         <div class="jumbotron text-left">
+
+            <div style="margin-top:-20px;" class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4>Warning!</h4>
+                <p>Esta pàgina està en desarrollo.</p>
+            </div>
+
 
             <h2 style="margin-top: -15px">Inicio: </h2>
             <h4>
@@ -74,31 +89,32 @@
                     administrarlas facilmente.
                 </small>
             </h4>
-            <div class="row">
-                <div class="col-md-9 right">
-                    <div id="panelEsquerra">
-                        <div class="well well-lg ">
+            <div id="tablonParent">
+                <div class="row">
+                    <div class="col-md-9 right">
+                        <div id="panelEsquerra">
+                            <div class="well well-lg" style="padding: 10px;" id="boards">
+                                <b>Tablón:</b>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading">TO-DO Things</div>
-                                <div class="panel-body">
-                                    
-                                </div>
                             </div>
 
                         </div>
-
                     </div>
-                </div>
 
-                <div class="col-md-3 left">
-                    <div class="well well-lg">
-                        Well dreta
+                    <div class="col-md-3 left">
+                        <div class="well well-lg" style="padding: 10px">
+                            <b>Sessión guardada:</b>
+                            <div style="padding-top: 20px" class="panel-empty text-center">
+                                <i class="material-icons not-found-icon">wifi_tethering</i>
+                                <p style="font-size: 13px" class="text-danger">No se ha encontrado ninguna sessión guardada.</p>
+                            </div>
+                            <ul class="list-group drag-container" id="savedTabs">
+                               <!--Contigut auto-generat aqui-->
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 

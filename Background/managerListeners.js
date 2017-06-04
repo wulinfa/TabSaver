@@ -33,11 +33,40 @@ let objectToSaveServices = {
 };
 
 
+let boards =[
+    {
+        title: 'TO-DO',
+        boardId: '',
+        tabs: []
+    },
+    {
+        title: 'Favorites',
+        boardId: '',
+        tabs: []
+    },
+    {
+        title: 'StackOverFlow',
+        boardId: '',
+        tabs: []
+    },
+    {
+        title: 'GitHub',
+        boardId: '',
+        tabs: []
+    }
+];
+
+let objectToSaveBoard = {
+    boards: boards
+};
+
+
 chrome.runtime.onInstalled.addListener((details) => {
     if (details.reason == "install") {
-        saveConfigtoDB(objectToSaveConfig)
+        saveDatatoDB(objectToSaveConfig)
             .then((configFromDB) => {
-                setServiceList(objectToSaveServices);
+                saveDatatoDB(objectToSaveServices);
+                saveDatatoDB(objectToSaveBoard);
                 setTimeout(()=>{
                     chrome.runtime.openOptionsPage();
                 }, 2000);
@@ -52,7 +81,7 @@ chrome.runtime.onInstalled.addListener((details) => {
                 }
 
                 if (!configFromDB.configData) {
-                    saveConfigtoDB(objectToSave);
+                    saveDatatoDB(objectToSaveConfig);
                 }
             });
     }
