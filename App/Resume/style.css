@@ -20,29 +20,11 @@ main {
     user-select: none;
 }
 
-.row-fluid{
-    white-space: nowrap;
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
 }
-.row-fluid .col-lg-3{
-    display: inline-block;
-}
-
-.demo-card-image.mdl-card {
-     width: 128px;
-     height: 128px;
- }
-
-.demo-card-image > .mdl-card__actions {
-    height: 52px;
-    padding: 16px;
-    background: #f4f4f4;
-}
-.demo-card-image__filename {
-    color: #45444f;
-    font-size: 14px;
-    font-weight: 500;
-}
-
 .not-found-icon {
     font-size: 24px;
     color: #444444;
@@ -50,6 +32,9 @@ main {
 .settings-icon {
     font-size: 20px;
     color: #777777;
+}
+.navbar-nav > li > a{
+    padding-bottom: 0;
 }
 
 /*Icons sense padding inferior, ja que fa fer la navbar mes gran*/

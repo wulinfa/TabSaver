@@ -20,6 +20,7 @@ function closeActualTabs(sessionData) {
         }
         resolve();
     });
+
 }
 
 /*Obra les pestanyes de la sessio guardada a la BD, normalment aquesta funció s'enadena despres de getSessionFromDB()*/
@@ -37,7 +38,7 @@ function openSavedTabs(sessionTabs) {
 /*Guarda l'obecjte que l'hi pasis a la BD interna*/
 function saveDatatoDB(objectToSave) {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.set(objectToSave, (result) => {
+        chrome.storage.sync.set(objectToSave, (result) => {
             resolve();
         });
     });
@@ -46,7 +47,7 @@ function saveDatatoDB(objectToSave) {
 /*Recupera de la BD la configuració del usuari*/
 function getConfigFromDB() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get('configData', (result) => {
+        chrome.storage.sync.get('configData', (result) => {
             resolve(result);
         });
     });
@@ -55,7 +56,7 @@ function getConfigFromDB() {
 /*Recupera de la BD la carpeta dels marcadors on s'haguardat la informació*/
 function getBookmarkFolderId() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get('bookmarkFolderCreated', (result) => {
+        chrome.storage.sync.get('bookmarkFolderCreated', (result) => {
             resolve(result);
         });
     });
@@ -64,7 +65,7 @@ function getBookmarkFolderId() {
 /*Recupera de la BD la sessio guardada*/
 function getSessionFromDB() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get('sessionTabs', (result) => {
+        chrome.storage.sync.get('sessionTabs', (result) => {
             resolve(result);
         });
     });
@@ -73,7 +74,7 @@ function getSessionFromDB() {
 /*Recupera de la BD els serveis*/
 function getServiceList() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get('servicesList', (result) => {
+        chrome.storage.sync.get('servicesList', (result) => {
             resolve(result);
         });
     });
@@ -82,7 +83,16 @@ function getServiceList() {
 /*Recupera de la BD els boards*/
 function getBoards() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.get('boards', (result) => {
+        chrome.storage.sync.get('boards', (result) => {
+            resolve(result);
+        });
+    });
+}
+
+/*Recupera de la BD la sessio preguarda*/
+function getPreSavedSession() {
+    return new Promise((resolve, reject) => {
+        chrome.storage.sync.get('preSavedSession', (result) => {
             resolve(result);
         });
     });
@@ -91,7 +101,7 @@ function getBoards() {
 /*Esborra de la BD la sessio guardada*/
 function removeSessionFromDB() {
     return new Promise((resolve, reject) => {
-        chrome.storage.local.remove('sessionTabs', () => {
+        chrome.storage.sync.remove('sessionTabs', () => {
             resolve();
         });
     });
@@ -126,15 +136,9 @@ function removeBookmarks(bookmarkFolderId) {
 }
 
 
-/*REFERENT ALS SCREENSHOTS*/
-/*Creació dels screenshots*/
-function doScrenshots() {
-}
-
-
 /*REFERENT A NOTIFICACIONS*/
 /*Llençador de notificació, creada per OnlySave*/
-//TODO Fer-la dinamica: launchNotification(type, title, message
+//TODO Fer-la dinamica: launchNotification(title, message)
 function launchNotification() {
     let options = {
         type: 'basic',
@@ -149,3 +153,68 @@ function launchNotification() {
         });
     });
 }
+
+
+/*REFERENT A L'ICONO*/
+/*Actualitza l'icono segons l'estat que se l'hi envii*/
+function updateIcon(status) {
+    if (status === true) {
+        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarRollReversed.png"});
+    }
+    if (status === false) {
+        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarPlusReversed.png"});
+    }
+
+    else {
+        console.log("Feinades");
+    }
+}
+
+/*Setejar el badge del icon */
+function setIconBadge(number) {
+    return new Promise((resolve, reject) => {
+        let numberToString = number.toString();
+        chrome.browserAction.setBadgeBackgroundColor({color: "#616161"});
+        chrome.browserAction.setBadgeText({text: numberToString});
+        resolve();
+    });
+}
+
+
+/*REFEENT ALS MENUS*/
+/*Creacio de menus*/
+function setContextMenu() {
+
+        // chrome.contextMenus.create({
+        //     'title': 'Cambiar a "Solo guardado"',
+        //     'contexts': ['all'],
+        //     /*'onclick': ,*/
+        // });
+
+        chrome.contextMenus.create({
+            'title': 'Abrir sessión pre-guardada',
+            'contexts': ['all'],
+            'onclick': getAndOpenPreSavedSession
+        });
+
+        // chrome.contextMenus.create({
+        //     'title': 'Suspender pestañas',
+        //     'contexts': ['all'],
+        //     /*'onclick': ,*/
+        // });
+
+        // chrome.contextMenus.create({
+        //     'title': 'Unir ventanas en una',
+        //     'contexts': ['all'],
+        //     /*'onclick': ,*/
+        // });
+}
+
+
+
+/*REFERENT ALS SCREENSHOTS*/
+/*Creació dels screenshots*/
+function doScrenshots() {
+
+}
+

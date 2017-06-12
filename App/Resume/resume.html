@@ -29,15 +29,11 @@
     <!--Shortcuts-->
     <script src="../../Resources/js/shortcuts.js"></script>
 
-    <!--Dragula-->
-    <script src="../../Resources/js/dragula.min.js"></script>
-    <link rel="stylesheet" href="../../Style/dragula.min.css">
-
     <!--Lodash-->
     <script src="../../Resources/js/lodash.js"></script>
 
     <!--Custom Script-->
-    <script src="home.js"></script>
+    <script src="resume.js"></script>
     <script src="../../Background/Provider.js"></script>
 
     <!--ID Generator-->
@@ -67,8 +63,8 @@
 
     <section class="col-sm-3 col-md-2 col-lg-2 text-left " id="left-content">
         <ul class="nav nav-pills nav-stacked">
-            <li class=""><a href="../Resume/resume.html">Resumen</a></li>
-            <li class="active"><a href="../Home/home.html">Inicio</a></li>
+            <li class="active"><a href="resume.html">Resumen</a></li>
+            <li class=""><a href="../Home/home.html">Inicio</a></li>
             <li class=""><a href="../Services/services.html">Destacado</a></li>
             <li class=""><a href="../User/user.html">Usuario</a></li>
         </ul>
@@ -77,45 +73,18 @@
     <section class="col-sm-9 col-md-10 col-lg-10" id="right-content">
         <div class="jumbotron text-left">
 
-            <div style="margin-top:-20px;" class="alert alert-dismissible alert-warning">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <h4>Warning!</h4>
-                <p>Esta pàgina està en desarrollo.</p>
-            </div>
-
-
-            <h2 style="margin-top: -15px">Inicio: </h2>
+            <h2 style="margin-top: -15px">Resumen: </h2>
             <h4>
-                <small class="text-info"> La ultima sessión que guardaste contiene estas pestañas. Aqui puedes
-                    administrarlas facilmente.
-                </small>
+                <small class="text-info">Acceso resumido de la session guardada.</small>
             </h4>
-            <div id="tablonParent">
-                <div class="row">
-                    <div class="col-md-9 right">
-                        <div id="panelEsquerra">
-                            <div class="well well-lg" style="padding: 10px;" id="boards">
-                                <b>Tablón:</b>
 
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 left">
-                        <div class="well well-lg" style="padding: 10px">
-                            <b>Sessión guardada:</b>
-                            <div style="padding-top: 20px" class="panel-empty text-center">
-                                <i class="material-icons not-found-icon">wifi_tethering</i>
-                                <p style="font-size: 13px" class="text-danger">No se ha encontrado ninguna sessión guardada.</p>
-                            </div>
-                            <ul class="list-group drag-container" id="savedTabs">
-                               <!--Contigut auto-generat aqui-->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div style="padding-top: 20px" class="panel-empty text-center">
+                <i class="material-icons not-found-icon">wifi_tethering</i>
+                <p style="font-size: 13px" class="text-danger">No se ha encontrado ninguna sessión guardada.</p>
             </div>
+            <ul class="list-group drag-container" id="savedTabs">
+                <!--Contigut auto-generat aqui-->
+            </ul>
         </div>
     </section>
 

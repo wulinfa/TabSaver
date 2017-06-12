@@ -60,3 +60,8 @@ main {
 .navbar-toggle {
     z-index:3;
 }
+
+.pageIcon{
+    width: 12px;
+    height: 12px;
+}

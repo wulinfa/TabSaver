@@ -136,6 +136,7 @@ $(document).ready(() => {
     }
 
     $('#saveDataToFirebase').click((event) => {
+        console.log(this.sessionTabs);
         let userId = firebase.auth().currentUser.uid;
 
         step1().then(() => {

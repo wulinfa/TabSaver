@@ -55,9 +55,8 @@ $(document).ready(() => {
 
     /* Generador de taules i elements de dins la taula*/
     function generator(dataTabs, dataService) {
-        let currentService = $("#" + dataService.serviceId);
 
-        if (!currentService.length) {
+        if (!$("#" + dataService.serviceId).length) {
             $('.panel-generator').append(
                 '<div class="panel panel-default">' +
                 '<div class="panel-heading">' + dataService.serviceName + '</span></div>' +
@@ -67,6 +66,7 @@ $(document).ready(() => {
                 '</div>'
             );
         }
+        let currentService = $("#" + dataService.serviceId);
         if (currentService.length) {
             currentService.append(
                 '<div class="col-lg-3" style="float: none">' +
@@ -75,7 +75,7 @@ $(document).ready(() => {
                 '<div class="mdl-card__title mdl-card--expand"></div>' +
                 '<div class="mdl-card__actions">' +
                 '<span class="demo-card-image__filename">' +
-                '<img style="margin: 3px" src="' + dataTabs.favIconUrl + '">' + dataTabs.title +
+                '<img id="pageIcon" style="margin: 3px" src="' + dataTabs.favIconUrl + '">' + dataTabs.title +
                 '</span>' +
                 '</div>' +
                 '</div>' +

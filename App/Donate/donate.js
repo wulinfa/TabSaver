@@ -3,4 +3,5 @@
  */
 $(document).ready(() => {
     console.log( generateId() );
+
 });

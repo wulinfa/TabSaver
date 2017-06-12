@@ -35,8 +35,8 @@ $(document).ready(() => {
         _.map(this.sessionTabs, (tabData) => {
             $('#savedTabs').append(
                 '<li class="list-group-item">' +
-                '<img style="width: 20px; height: 20px" src="' + tabData.favIconUrl + '">' +
-                '<a  target="_blank" href="' + tabData.url + '">' + tabData.title + '</a>' +
+                '<img id="pageIcon" style="width: 20px; height: 20px" src="' + tabData.favIconUrl + '">' +
+                '<a  target="_blank" href="' + tabData.url + '"> ' + tabData.title + '</a>' +
                 '</li>'
             );
         });
@@ -44,7 +44,7 @@ $(document).ready(() => {
     });
     step2().then(() => {
         _.map(this.boards, (boardData) => {
-            ;
+
             $('#boards').append(
                 '<div class="panel panel-default container">' +
                 '<div class="panel-heading "><b>' + boardData.title + '</b></div>' +
@@ -56,7 +56,7 @@ $(document).ready(() => {
                 $('#' + boardData.boardId + '').append(
                     '<li class="list-group-item">' +
                     '<img style="width: 20px; height: 20px" src="' + boardTabs.favIconUrl + '">' +
-                    '<a  target="_blank" href="' + boardTabs.url + '">' + boardTabs.title + '</a>' +
+                    '<a  target="_blank" href="' + boardTabs.url + '"> ' + boardTabs.title + '</a>' +
                     '</li>'
                 );
             });
