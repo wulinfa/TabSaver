@@ -31,8 +31,6 @@
 
     <!--Custom Scripts-->
     <script src="settings-workflow.js"></script>
-    <script src="settings-services.js"></script>
-    <script src="settings-presaved.js"></script>
     <script src="../../Background/Provider.js"></script>
 
     <!--idGenerator-->
@@ -52,7 +50,7 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="../Home/home.html"><i class="material-icons">home</i></a></li>
+                <!--<li><a href="../Home/home.html"><i class="material-icons">home</i></a></li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="../Settings/settings.html"><i class="material-icons settings-icon">settings</i></a></li>
@@ -133,61 +131,6 @@
             <!--con el boton derecho.-->
             <!--</small>-->
             <!--</h4>-->
-
-        </div>
-
-
-
-
-            <table class="table table-striped table-hover">
-                <thead>
-                <tr>
-                    <th>URL</th>
-                </tr>
-                </thead>
-                <tbody class="presaved-table-content-generator">
-                </tbody>
-            </table>
-
-        </div>
-
-        <!--Servicios destacados-->
-        <div class="jumbotron text-left">
-            <h2 style="margin-top: -15px">Destacados:</h2>
-            <h4>
-                <small class="text-info"> Añade o elimina servicios que quieras destacar.</small>
-            </h4>
-
-            <form class="form-horizontal">
-                <fieldset>
-                    <div class="form-group">
-                        <div class="col-lg-10">
-                            <label for="inputServiceName" class="control-label">Introduce un nuevo servicio.</label>
-                        </div>
-                        <div class="col-lg-12">
-                            <input type="text" class="form-control" id="inputServiceName" placeholder="Nombre">
-                        </div>
-                        <div class="col-lg-12">
-                            <input type="text" class="form-control" id="inputUrl" placeholder="URL">
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-
-            <a class="btn btn-default" id="saveButton">Guardar</a>
-
-
-            <table class="table table-striped table-hover">
-                <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>URL</th>
-                    <th><i class="material-icons">delete</i></th>
-                </tr>
-                </thead>
-                <tbody class="service-table-content-generator">
-                </tbody>
-            </table>
 
         </div>
 

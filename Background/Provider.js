@@ -71,24 +71,6 @@ function getSessionFromDB() {
     });
 }
 
-/*Recupera de la BD els serveis*/
-function getServiceList() {
-    return new Promise((resolve, reject) => {
-        chrome.storage.sync.get('servicesList', (result) => {
-            resolve(result);
-        });
-    });
-}
-
-/*Recupera de la BD els boards*/
-function getBoards() {
-    return new Promise((resolve, reject) => {
-        chrome.storage.sync.get('boards', (result) => {
-            resolve(result);
-        });
-    });
-}
-
 /*Recupera de la BD la sessio preguarda*/
 function getPreSavedSession() {
     return new Promise((resolve, reject) => {
@@ -191,11 +173,11 @@ function setContextMenu() {
         //     /*'onclick': ,*/
         // });
 
-        chrome.contextMenus.create({
-            'title': 'Abrir sessión pre-guardada',
-            'contexts': ['all'],
-            'onclick': getAndOpenPreSavedSession
-        });
+        // chrome.contextMenus.create({
+        //     'title': 'Abrir sessión pre-guardada',
+        //     'contexts': ['all'],
+        //     'onclick': getAndOpenPreSavedSession
+        // });
 
         // chrome.contextMenus.create({
         //     'title': 'Suspender pestañas',
@@ -208,13 +190,5 @@ function setContextMenu() {
         //     'contexts': ['all'],
         //     /*'onclick': ,*/
         // });
-}
-
-
-
-/*REFERENT ALS SCREENSHOTS*/
-/*Creació dels screenshots*/
-function doScrenshots() {
-
 }
 

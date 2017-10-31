@@ -1,4 +1,6 @@
 /*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
+/*Clase que controla el workflow del interruptors de la configuració*/
+
 $(document).ready(() => {
     /*Declaracio inicial dels objectes de configuració i serveis*/
     this.configData = {};
