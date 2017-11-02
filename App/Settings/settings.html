@@ -32,12 +32,15 @@
     <!--Custom Scripts-->
     <script src="settings-workflow.js"></script>
     <script src="../../Background/Provider.js"></script>
+    <script src="../../global-translation.js"></script>
+    <script src="translation.js"></script>
 
     <!--idGenerator-->
     <script src="../../Resources/js/IdGenerator.js"></script>
 
     <!--Lodash-->
     <script src="../../Resources/js/lodash.js"></script>
+
 
 </head>
 
@@ -72,9 +75,9 @@
     <section class="col-sm-9 col-md-10 col-lg-10" id="right-content">
         <!--Modo de trabajo-->
         <div class="jumbotron text-left">
-            <h2 style="margin-top: -15px"> Modo de trabajo:</h2>
+            <h2 id="configTitol" style="margin-top: -15px"> Modo de trabajo:</h2>
             <h4>
-                <small class="text-info">Elija la forma de trabajar que le resulte más comoda.</small>
+                <small id="configSubtitol" class="text-info">Elija la forma de trabajar que le resulte más comoda.</small>
             </h4>
             <ul class="nav nav-stacked">
                 <li>
@@ -83,8 +86,8 @@
                             <div class="col-sm-12">
                                 <label class="" for="optionSimple">
                                     <input type="radio" id="optionSimple" class="" name="options" value="1">
-                                    <span class="" style="font-size: 15px"><b>Simple</b>
-                                        <small> - Guarda y recupera las pestañas al hacer click.</small>
+                                    <span class="" style="font-size: 15px"><b id="configSimple">Simple</b>
+                                        <small> - <l id="configSimplemsg">Guarda y recupera las pestañas al hacer click.</l></small>
                                     </span>
                                 </label>
                             </div>
@@ -94,7 +97,7 @@
                             <div class="col-sm-12">
                                 <label style="margin-left: 23px" class="" for="checkboxSimple">
                                     <input type="checkbox" id="checkboxSimple" class="">
-                                    <span class=""><small id="checkboxSimpleText">Guardar las pestañas en la barra de marcadores</small></span>
+                                    <span class=""><small id="checkboxSimpleText"><l id="configSubsimple">Guardar las pestañas en la barra de marcadores </l></small></span>
                                 </label>
                             </div>
                         </div>
@@ -107,8 +110,8 @@
                             <div class="col-sm-12">
                                 <label class="" for="optionOnlySave">
                                     <input type="radio" id="optionOnlySave" class="" name="options" value="2">
-                                    <span class="" style="font-size: 15px"><b>Solo guardar</b>
-                                        <small class="text-muted"> - Las pestañas se guardan en los marcadores al hacer click.</small>
+                                    <span class="" style="font-size: 15px"><b id="configOnlysave">Solo guardar</b>
+                                        <small class="text-muted"> - <l id="configOnlysavemsg">Las pestañas se guardan en los marcadores al hacer click.</l></small>
                                     </span>
                                 </label>
                             </div>
@@ -118,7 +121,7 @@
                             <div class="col-sm-12">
                                 <label style="margin-left: 23px" class="" for="checkboxOnlySave">
                                     <input type="checkbox" id="checkboxOnlySave" class="">
-                                    <span class=""><small>Cerrar pestañas al guardar.</small></span>
+                                    <span class=""><small> <l id="configSubOnlysave">Cerrar pestañas al guardar. </l></small></span>
                                 </label>
                             </div>
                         </div>
