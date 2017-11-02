@@ -21,5 +21,60 @@
   "menu_donaciones": {
     "message": "Paypal",
     "description": "Paraula del menu lateral"
+  },
+  "atajos_titol": {
+    "message": "Dreceres de teclat:",
+    "description": "Titol de la entrada atajos"
+  },
+  "atajos_subtitol": {
+    "message": "Utilitza les dreceres del teclat per a ser més ràpid treballant.",
+    "description": "Subtitol de la entrada atajos"
+  },
+  "atajos_entrada1": {
+    "message": "Externs:"
+  },
+  "atajos_subentrada1_1": {
+    "message": "Guardar o recuperar:"
+  },
+  "atajos_entrada2": {
+    "message": "Interns:"
+  },
+  "atajos_subentrada2_1": {
+    "message": "Configuració"
+  },
+  "atajos_subentrada2_2": {
+    "message": "Dreceres"
+  },
+  "atajos_subentrada2_3": {
+    "message": "Paypal"
+  },
+
+  "config_titol": {
+    "message": "Mode de treball:",
+    "description": "Titol de la entrada configuracio"
+  },
+  "config_subtitol": {
+    "message": "Tria la forma de treballar que l'hi resulti més còmoda.",
+    "description": "Subtitol de la entrada config"
+  },
+  "config_simple": {
+    "message": "Simple "
+  },
+  "config_simplemsg": {
+    "message": "Guarda i recupera les pestanyes al fer click. "
+  },
+  "config_subsimple": {
+    "message": "Guardar les pestanyes a la barra de marcadors"
+  },
+  "config_onlysave": {
+    "message": "Només guardar "
+  },
+  "config_onlysavemsg": {
+    "message": "Les pestanyes es guarden en els marcadors al fer click."
+  },
+  "config_subonlysave": {
+    "message": "Tancar pestanyes al guardar."
   }
+
 }
+
