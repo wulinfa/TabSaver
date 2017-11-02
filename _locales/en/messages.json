@@ -20,5 +20,61 @@
   "menu_donaciones": {
     "message": "Paypal",
     "description": "Paraula del menu lateral"
+  },
+
+  "atajos_titol": {
+    "message": "Keyboard shortcuts:",
+    "description": "Titol de la entrada atajos"
+  },
+  "atajos_subtitol": {
+    "message": "Use the keyboard shortcuts to be faster working.",
+    "description": "Subtitol de la entrada atajos"
+  },
+  "atajos_entrada1": {
+    "message": "External:"
+  },
+  "atajos_subentrada1_1": {
+    "message": "Save or recover:"
+  },
+  "atajos_entrada2": {
+    "message": "Internal:"
+  },
+  "atajos_subentrada2_1": {
+    "message": "Configuration"
+  },
+  "atajos_subentrada2_2": {
+    "message": "Shortcuts"
+  },
+  "atajos_subentrada2_3": {
+    "message": "Paypal"
+  },
+
+  "config_titol": {
+    "message": "WorkFlow:",
+    "description": "Titol de la entrada configuracio"
+  },
+  "config_subtitol": {
+    "message": "Choose your perferfect workflow for you.",
+    "description": "Subtitol de la entrada config"
+  },
+  "config_simple": {
+    "message": "Simple"
+  },
+  "config_simplemsg": {
+    "message": "Save and recover the tabs when clicking."
+  },
+  "config_subsimple": {
+    "message": "Save the tabs on the bookmarks bar."
+  },
+  "config_onlysave": {
+    "message": "Only Save"
+  },
+  "config_onlysavemsg": {
+    "message": "The tabs are saved in the markers when you click."
+  },
+  "config_subonlysave": {
+    "message": "Close tabs when saving."
   }
+
 }
+

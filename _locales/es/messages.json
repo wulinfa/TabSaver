@@ -24,7 +24,7 @@
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Utiliza los atajos de teclado para ser más rápido trabajando.",
+    "message": "Utilice los atajos de teclado para ser más rápido trabajando.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
@@ -59,13 +59,13 @@
     "message": "Simple "
   },
   "config_simplemsg": {
-    "message": "Guarda y recupera las pestañas al hacer click. "
+    "message": "Guardar y recupera las pestañas al hacer click. "
   },
   "config_subsimple": {
     "message": "Guardar las pestañas en la barra de marcadores"
   },
   "config_onlysave": {
-    "message": "Solo guardar:"
+    "message": "Solo guardar "
   },
   "config_onlysavemsg": {
     "message": "Las pestañas se guardan en los marcadores al hacer click."
