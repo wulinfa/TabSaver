@@ -6,13 +6,13 @@ $(document).ready(() => {
     $("#configTitol").text(chrome.i18n.getMessage("atajos_titol"));
     $("#configSubtitol").text(chrome.i18n.getMessage("atajos_subtitol"));
 
-    $("#atajosEntrada1").text(chrome.i18n.getMessage("atajos_entrada1"));
-    $("#atajosSubentrada1_1").text( chrome.i18n.getMessage("atajos_subentrada1_1"));
+    $("#configSimple").text(chrome.i18n.getMessage("config_simple"));
+    $("#configSimplemsg").text( chrome.i18n.getMessage("config_simplemsg"));
+    $("#configSubsimple").text(chrome.i18n.getMessage("config_subsimple"));
 
-    $("#atajosEntrada2").text(chrome.i18n.getMessage("atajos_entrada2"));
-    $("#atajosSubentrada2_1").text(chrome.i18n.getMessage("atajos_subentrada2_1"));
-    $("#atajosSubentrada2_2").text(chrome.i18n.getMessage("atajos_subentrada2_2"));
-    $("#atajosSubentrada2_3").text(chrome.i18n.getMessage("atajos_subentrada2_3"));
+    $("#configOnlysave").text(chrome.i18n.getMessage("config_onlysave"));
+    $("#configOnlysavemsg").text(chrome.i18n.getMessage("config_onlysavemsg"));
+    $("#configSubOnlysave").text(chrome.i18n.getMessage("config_subonlysave"));
 });
 
 

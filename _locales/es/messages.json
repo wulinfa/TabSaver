@@ -44,6 +44,34 @@
   },
   "atajos_subentrada2_3": {
     "message": "Paypal"
+  },
+
+
+  "config_titol": {
+    "message": "Modo de trabajo:",
+    "description": "Titol de la entrada configuracio"
+  },
+  "config_subtitol": {
+    "message": "Elija la forma de trabajar que le resulte más comoda.",
+    "description": "Subtitol de la entrada config"
+  },
+  "config_simple": {
+    "message": "Simple "
+  },
+  "config_simplemsg": {
+    "message": "Guarda y recupera las pestañas al hacer click. "
+  },
+  "config_subsimple": {
+    "message": "Guardar las pestañas en la barra de marcadores"
+  },
+  "config_onlysave": {
+    "message": "Solo guardar:"
+  },
+  "config_onlysavemsg": {
+    "message": "Las pestañas se guardan en los marcadores al hacer click."
+  },
+  "config_subonlysave": {
+    "message": "Cerrar pestañas al guardar."
   }
 
 }
