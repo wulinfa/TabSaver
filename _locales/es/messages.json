@@ -1,10 +1,49 @@
 {
   "appName": {
-    "message": "Simple Tab Manager",
-    "description":"Nom de l'extencio."
+    "message": "Simple Tab Saver",
+    "description":""
   },
   "appDesc": {
-    "message": "Simple and flexible tool to save tabs and manage them.",
-    "description":"Descripción de l'extensión a nivel de manifiest."
+    "message": "",
+    "description":""
+  },
+  "menu_config": {
+    "message":"Configuración",
+    "description": "Paraula del menu lateral"
+  },
+  "menu_atajos": {
+    "message": "Atajos",
+    "description": "Paraula del menu lateral"
+  },
+  "menu_donaciones": {
+    "message": "Paypal",
+    "description": "Paraula del menu lateral"
+  },
+  "atajos_titol": {
+    "message": "Atajos de teclado:",
+    "description": "Titol de la entrada atajos"
+  },
+  "atajos_subtitol": {
+    "message": "Utiliza los atajos de teclado para ser más rápido trabajando.",
+    "description": "Subtitol de la entrada atajos"
+  },
+  "atajos_entrada1": {
+    "message": "Externos:"
+  },
+  "atajos_subentrada1_1": {
+    "message": "Activar guardado:"
+  },
+  "atajos_entrada2": {
+    "message": "Internos:"
+  },
+  "atajos_subentrada2_1": {
+    "message": "Configuración"
+  },
+  "atajos_subentrada2_2": {
+    "message": "Atajos"
+  },
+  "atajos_subentrada2_3": {
+    "message": "Paypal"
   }
+
 }

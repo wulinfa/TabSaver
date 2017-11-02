@@ -29,11 +29,9 @@
     <!--Google Analytics-->
     <script src="../../Resources/js/analytics.js"></script>
 
-    <!--ID Generator-->
-    <script src="../../Resources/js/IdGenerator.js"></script>
-
     <!--Custom Scritp-->
     <script src="donate.js"></script>
+    <script src="../../global-translation.js"></script>
 
 </head>
 
@@ -42,7 +40,7 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand">Simple Tab Manager</a>
+            <a class="navbar-brand">Simple Tab Saver</a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav navbar-left">
@@ -59,9 +57,9 @@
 
     <section class="col-sm-3 col-md-2 col-lg-2 text-left " id="left-content">
         <ul class="nav nav-pills nav-stacked">
-            <li class=""><a href="../Settings/settings.html">Configuración</a></li>
-            <li class=""><a href="../Shortcuts/shortcuts.html">Atajos</a></li>
-            <li class="active"><a href="../Donate/donate.html">PayPal</a></li>
+            <li class=""><a id="menuConfig" href="../Settings/settings.html">Configuración</a></li>
+            <li class=""><a  id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a></li>
+            <li class="active"><a id="menuDonate" href="../Donate/donate.html">PayPal</a></li>
         </ul>
     </section>
 

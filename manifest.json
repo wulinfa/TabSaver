@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.7.1",
+    "version": "1.7.2",
     "description": "__MSG_appDesc__",
     "author": "Roger Pedrós Villorbina.",
     "default_locale": "es",
@@ -24,9 +24,6 @@
         "notifications",
         "activeTab",
         "bookmarks",
-        "contextMenus",
-        "<all_urls>",
-        "identity",
         "contextMenus"
     ],
     "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/ https://*.firebaseio.com; object-src 'self'",

@@ -5,23 +5,6 @@ $(window).keypress((event) => {
     } else{
         console.log(event.keyCode)
         switch (event.keyCode) {
-            /*Inicio*/
-            case 105:
-            case 73:
-                window.location.replace("../../App/Home/home.html");
-                break;
-
-            /*Destacados*/
-            case 100:
-            case 68:
-                window.location.replace("../../App/Services/services.html");
-                break;
-
-            /*Resumen*/
-            case 108:
-            case 76:
-                window.location.replace("../../App/Resume/resume.html");
-                break;
 
             /*Configuracion*/
             case 115:

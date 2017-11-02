@@ -6,5 +6,20 @@
   "appDesc": {
     "message": "Simple and flexible tool to save tabs and manage them.",
     "description":"Descripción de l'extensión a nivel de manifiest."
+  },
+
+  "menu_config": {
+    "message":"Configuració",
+    "description": "Paraula del menu lateral"
+  },
+
+  "menu_atajos": {
+    "message": "Dreceres",
+    "description": "Paraula del menu lateral"
+  },
+
+  "menu_donaciones": {
+    "message": "Paypal",
+    "description": "Paraula del menu lateral"
   }
 }
