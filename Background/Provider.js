@@ -141,10 +141,10 @@ function launchNotification() {
 /*Actualitza l'icono segons l'estat que se l'hi envii*/
 function updateIcon(status) {
     if (status === true) {
-        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarRollReversed.png"});
+        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarRoll.png"});
     }
     if (status === false) {
-        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarPlusReversed.png"});
+        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarPlus.png"});
     }
 
     else {
