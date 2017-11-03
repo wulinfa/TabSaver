@@ -2,10 +2,10 @@
     "manifest_version": 2,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.8",
+    "version": "1.8.1",
     "description": "__MSG_appDesc__",
     "author": "Roger Pedrós Villorbina.",
-    "default_locale": "es",
+    "default_locale": "en",
     "icons": { "48": "Resources/Icons/iconBlue.png",
                 "128": "Resources/Icons/iconBlue.png"
     },
