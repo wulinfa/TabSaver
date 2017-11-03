@@ -3,6 +3,7 @@
 
 
 $(document).ready(() => {
+
     $("#atajosTitol").text(chrome.i18n.getMessage("atajos_titol"));
     $("#atajosSubtitol").text(chrome.i18n.getMessage("atajos_subtitol"));
 
