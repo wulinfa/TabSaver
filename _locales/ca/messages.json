@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Simple Tab Manager",
+    "message": "Simple Tab Saver",
     "description": "Nom de l'extencio."
   },
   "appDesc": {
-    "message": "Simple and flexible tool to save tabs and manage them.",
+    "message": "Guarda y recupera les teves pestanyes sempre que vulguis.",
     "description":"Descripción de l'extensión a nivel de manifiest."
   },
 
@@ -74,6 +74,9 @@
   },
   "config_subonlysave": {
     "message": "Tancar pestanyes al guardar."
+  },
+  "config_snackbar_message": {
+    "message": "configuració actualitzada"
   }
 
 }

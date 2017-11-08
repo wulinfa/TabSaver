@@ -4,8 +4,8 @@
     "description":""
   },
   "appDesc": {
-    "message": "",
-    "description":""
+    "message": "Guarda y recupera les teves pestanyes sempre que vulguis.",
+    "description":"Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
     "message":"Configuración",
@@ -72,6 +72,9 @@
   },
   "config_subonlysave": {
     "message": "Cerrar pestañas al guardar."
+  },
+  "config_snackbar_message": {
+    "message": "configuración actualizada"
   }
 
 }

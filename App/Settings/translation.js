@@ -14,6 +14,14 @@ $(document).ready(() => {
     $("#configOnlysave").text(chrome.i18n.getMessage("config_onlysave"));
     $("#configOnlysavemsg").text(chrome.i18n.getMessage("config_onlysavemsg"));
     $("#configSubOnlysave").text(chrome.i18n.getMessage("config_subonlysave"));
+
 });
 
+
+function getSnackBarTranslation(){
+    return new Promise((resolve, reject) => {
+        let respose = chrome.i18n.getMessage("config_snackbar_message");
+        resolve(respose);
+    });
+}
 
