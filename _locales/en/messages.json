@@ -50,11 +50,11 @@
   },
 
   "config_titol": {
-    "message": "WorkFlow:",
+    "message": "Work Mode:",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
-    "message": "Choose your perferfect workflow for you.",
+    "message": "Choose your perfect work mode for you.",
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {

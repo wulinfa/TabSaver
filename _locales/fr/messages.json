@@ -4,15 +4,15 @@
     "description":""
   },
   "appDesc": {
-    "message": "Simple y facil de utilizar. Guarda y recupera tus pestañas siempre que quieras, en un solo click, y sin ventanas emergentes.",
+    "message": "Simple et facile à utiliser. Sauvegarde et restaure vos onglets chaque fois que vous voulez, en un seul clic, sans fenêtres pop-up.",
     "description":"Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message":"Configuración",
+    "message":"Configuration",
     "description": "Paraula del menu lateral"
   },
   "menu_atajos": {
-    "message": "Atajos",
+    "message": "Raccourcis",
     "description": "Paraula del menu lateral"
   },
   "menu_donaciones": {
@@ -20,27 +20,27 @@
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
-    "message": "Atajos de teclado:",
+    "message": "Raccourcis clavier:",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Utilice los atajos de teclado para ser más rápido trabajando.",
+    "message": "Utilisez les raccourcis clavier pour travailler plus rapidement.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "Externos:"
+    "message": "Externe:"
   },
   "atajos_subentrada1_1": {
-    "message": "Activar guardado:"
+    "message": "Activer enregistré:"
   },
   "atajos_entrada2": {
-    "message": "Internos:"
+    "message": "Interne:"
   },
   "atajos_subentrada2_1": {
-    "message": "Configuración"
+    "message": "Configuration"
   },
   "atajos_subentrada2_2": {
-    "message": "Atajos"
+    "message": "Raccourcis"
   },
   "atajos_subentrada2_3": {
     "message": "Paypal"
@@ -48,33 +48,33 @@
 
 
   "config_titol": {
-    "message": "Modo de trabajo:",
+    "message": "Mode de travail:",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
-    "message": "Elija la forma de trabajar que le resulte más comoda.",
+    "message": "Choisissez la façon de travailler qui vous convient le mieux.",
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
     "message": "Simple "
   },
   "config_simplemsg": {
-    "message": "Guardar y recupera las pestañas al hacer click. "
+    "message": "Enregistrez et récupérez les onglets lorsque vous cliquez."
   },
   "config_subsimple": {
-    "message": "Guardar las pestañas en la barra de marcadores"
+    "message": "Enregistrer les onglets dans la barre de favoris."
   },
   "config_onlysave": {
-    "message": "Solo guardar "
+    "message": "Just save "
   },
   "config_onlysavemsg": {
-    "message": "Las pestañas se guardan en los marcadores al hacer click."
+    "message": "Les onglets sont enregistrés dans les marqueurs lorsque vous cliquez."
   },
   "config_subonlysave": {
-    "message": "Cerrar pestañas al guardar."
+    "message": "Fermez les onglets lors de la sauvegarde."
   },
   "config_snackbar_message": {
-    "message": "configuración actualizada"
+    "message": "Configuration mise à jour."
   }
 
 }
