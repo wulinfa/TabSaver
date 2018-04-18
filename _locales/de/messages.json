@@ -4,16 +4,16 @@
     "description": "Nom de l'extencio."
   },
   "appDesc": {
-    "message": "Simple and easy to use. Save and recover the tabs whenever you want, in just one click, and without pop-ups.",
+    "message": "Einfach und leicht zu bedienen. Speichern und wiederherstellen Sie die Registerkarten, wann immer Sie wollen, mit nur einem Klick und ohne Pop-ups.",
     "description":"Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message":"Configuration",
+    "message":"Konfiguration",
     "description": "Paraula del menu lateral"
   },
 
   "menu_atajos": {
-    "message": "Shortcuts",
+    "message": "Abkürzungen",
     "description": "Paraula del menu lateral"
   },
 
@@ -23,60 +23,60 @@
   },
 
   "atajos_titol": {
-    "message": "Keyboard shortcuts:",
+    "message": "Tastatürkürzel:",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Use the keyboard shortcuts to be faster working.",
+    "message": "Verwenden Sie die Tastaturkürzel, um schneller zu arbeiten.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "External:"
+    "message": "äußerlich:"
   },
   "atajos_subentrada1_1": {
-    "message": "Save or recover:"
+    "message": "Speichern oder wiederherstellen:"
   },
   "atajos_entrada2": {
-    "message": "Internal:"
+    "message": "Intern:"
   },
   "atajos_subentrada2_1": {
-    "message": "Configuration"
+    "message": "Konfiguration"
   },
   "atajos_subentrada2_2": {
-    "message": "Shortcuts"
+    "message": "Abkürzungen"
   },
   "atajos_subentrada2_3": {
     "message": "Paypal"
   },
 
   "config_titol": {
-    "message": "Work Mode:",
+    "message": "Arbeitsmodus:",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
-    "message": "Choose your perfect work mode for you.",
+    "message": "Wählen Sie Ihren perfekten Arbeitsmodus für Sie aus.",
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
-    "message": "Simple"
+    "message": "Einfach"
   },
   "config_simplemsg": {
-    "message": "Save and recover the tabs when clicking."
+    "message": "Speichern und wiederherstellen der Registerkarten beim Klicken."
   },
   "config_subsimple": {
     "message": "Save the tabs on the bookmarks bar."
   },
   "config_onlysave": {
-    "message": "Only Save"
+    "message": "Nur speichern"
   },
   "config_onlysavemsg": {
-    "message": "The tabs are saved in the markers when you click."
+    "message": "Speichern Sie die Registerkarten in der Lesezeichenleiste."
   },
   "config_subonlysave": {
-    "message": "Close tabs when saving."
+    "message": "Schließen Sie die Tabs beim Speichern."
   },
   "config_snackbar_message": {
-    "message": "updated configuration"
+    "message": "Aktualisierte Konfiguration."
   }
 
 }

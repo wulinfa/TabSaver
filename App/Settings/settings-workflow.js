@@ -2,13 +2,14 @@
 /*Clase que controla el workflow del interruptors de la configuració*/
 
 $(document).ready(() => {
-    /*Declaracio inicial dels objectes de configuració i serveis*/
+    /*DECLARACIONS inicial dels objectes de configuració i serveis*/
     this.configData = {};
+    this.snackBarTranslationResonse = "updated";
 
     /*Objecte html des de on es llança el snackbar*/
     let snackbarContainer = document.querySelector('#demo-toast-example');
 
-    /*Declaració de les crides per carregar de la BD als objectes configData i serviceList*/
+    /*Declaració de les crides per carregar de la BD als objectes configData i la traducció d'snackbar*/
     let step1 = () => {
         let wait = $.Deferred();
         getConfigFromDB()
@@ -24,8 +25,14 @@ $(document).ready(() => {
 
         return wait.promise();
     };
+    let step2 = () => {
+        getSnackBarTranslation()
+            .then( (response) =>{
+                this.snackBarTranslationResonse = response;
+            });
+    };
 
-    /*Execució de es declaracions i crides*/
+    /*EXECUSIONS de es declaracions i crides*/
     /*Step1 seteja la informacio de la DB a la vista, si no hi ha informacío posa la que hi ha per defecte*/
     step1()
         .then(() => {
@@ -36,6 +43,9 @@ $(document).ready(() => {
                 setOptionsDefault();
             }
         });
+
+    /*Step2 agafa i seteja la traducció del snackbar corresponen al idioma que l'hi toca*/
+    step2();
 
     /*Posen la informació de la BD a la vista*/
     function setOptionsSaved() {
@@ -120,9 +130,10 @@ $(document).ready(() => {
     /*Snackbar launch function*/
     function launchSnackBar() {
         let data = {
-            message: 'configuración actualizada',
+            message: this.snackBarTranslationResonse,
             timeout: 1750
         };
+        debugger;
         snackbarContainer.MaterialSnackbar.showSnackbar(data);
     }
 

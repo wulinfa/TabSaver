@@ -4,8 +4,8 @@
     "description":""
   },
   "appDesc": {
-    "message": "",
-    "description":""
+    "message": "Simple y facil de utilizar. Guarda y recupera tus pestañas siempre que quieras, en un solo click, y sin ventanas emergentes.",
+    "description":"Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
     "message":"Configuración",
@@ -59,7 +59,8 @@
     "message": "Simple "
   },
   "config_simplemsg": {
-    "message": "Guardar y recupera las pestañas al hacer click. "
+   "message": "Guardar y recuperar las pestañas al hacer click. "
+
   },
   "config_subsimple": {
     "message": "Guardar las pestañas en la barra de marcadores"
@@ -72,6 +73,10 @@
   },
   "config_subonlysave": {
     "message": "Cerrar pestañas al guardar."
+  },
+  "config_snackbar_message": {
+    "message": "Configuración actualizada."
+
   }
 
 }

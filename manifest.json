@@ -2,10 +2,11 @@
     "manifest_version": 2,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.8",
+    "version": "1.8.7",
+
     "description": "__MSG_appDesc__",
     "author": "Roger Pedrós Villorbina.",
-    "default_locale": "es",
+    "default_locale": "en",
     "icons": { "48": "Resources/Icons/iconBlue.png",
                 "128": "Resources/Icons/iconBlue.png"
     },
@@ -26,12 +27,13 @@
         "bookmarks",
         "contextMenus"
     ],
-    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/ https://*.firebaseio.com; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/; object-src 'self' ",
     "commands": {
         "_execute_browser_action": {
             "suggested_key": {
                 "default": "Ctrl+Q"
-            }
+            },
+            "global": true
         }
     }
 }
