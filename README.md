@@ -1,5 +1,4 @@
-# TabSaver
-Simple Tab Saver for Chrome.
+# Simple Tab Saver for Chrome.
 
 Projecte inciat com a treball final de curs, derivat a ús real. 
 
