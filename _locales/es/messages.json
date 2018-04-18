@@ -59,7 +59,8 @@
     "message": "Simple "
   },
   "config_simplemsg": {
-    "message": "Guardar y recuperar las pestañas al hacer click. "
+   "message": "Guardar y recuperar las pestañas al hacer click. "
+
   },
   "config_subsimple": {
     "message": "Guardar las pestañas en la barra de marcadores"
@@ -75,6 +76,7 @@
   },
   "config_snackbar_message": {
     "message": "Configuración actualizada."
+
   }
 
 }
