@@ -4,15 +4,15 @@
     "description": "Nom de l'extencio."
   },
   "appDesc": {
-    "message": "Simple et facile à utiliser. Sauvegardez et récupérez vos onglets quand vous voulez, en un seul clic, et sans pop-ups.",
+    "message": "Simples e fácil de usar. Salve e recupere suas guias sempre que quiser, com um único clique e sem pop-ups.",
     "description": "Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message": "Configuration",
+    "message": "Configuração\n",
     "description": "Paraula del menu lateral"
   },
   "menu_atajos": {
-    "message": "Raccourcis",
+    "message": "Atalhos",
     "description": "Paraula del menu lateral"
   },
   "menu_donaciones": {
@@ -20,62 +20,62 @@
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
-    "message": "Raccourcis clavier",
+    "message": "Atalhos de teclado",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Utilisez les raccourcis clavier pour travailler plus rapidement.",
+    "message": "Use atalhos de teclado para trabalhar mais rápido.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "Externe:"
+    "message": "Externo"
   },
   "atajos_subentrada1_1": {
-    "message": "Activer enregistré"
+    "message": "Ativar salvo"
   },
   "atajos_entrada2": {
-    "message": "Interne"
+    "message": "Interno"
   },
   "atajos_subentrada2_1": {
-    "message": "Configuration"
+    "message": "Configuração\n"
   },
   "atajos_subentrada2_2": {
-    "message": "Raccourcis"
+    "message": "Atalhos"
   },
   "atajos_subentrada2_3": {
     "message": "Paypal"
   },
   "config_titol": {
-    "message": "Mode de travail",
+    "message": "Modo de trabalho",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
-    "message": "Choisissez la façon de travailler qui vous convient le mieux.",
+    "message": "Escolha a forma de trabalhar mais confortável para você.\n",
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
-    "message": "Simple"
+    "message": "Simples"
   },
   "config_simplemsg": {
-    "message": "Enregistrez et récupérez les onglets lorsque vous cliquez."
+    "message": "Salvar e recuperar guias ao clicar."
   },
   "config_subsimple": {
-    "message": "Enregistrer les onglets dans la barre de favoris."
+    "message": "Salve as guias na barra de favoritos."
   },
   "config_onlysave": {
-    "message": "Il suffit d'économiser"
+    "message": "Apenas salvar"
   },
   "config_onlysavemsg": {
-    "message": "Les onglets sont enregistrés dans les marqueurs lorsque vous cliquez."
+    "message": "As guias são salvas nos marcadores quando você clica."
   },
   "config_subonlysave": {
-    "message": "Fermez les onglets lors de l'enregistrement."
+    "message": "Feche as abas ao salvar.\n"
   },
   "config_snackbar_message": {
-    "message": "Configuration mise à jour."
+    "message": "Configuração atualizada.\n"
   },
   "config_error": {
-    "message": "Problème avec la configuration sauvegardée.\n",
+    "message": "Problema com a configuração salva.\n",
     "description": "Mensaje de error cuando hay problemas con la configuración"
   }
 }

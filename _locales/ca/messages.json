@@ -4,26 +4,23 @@
     "description": "Nom de l'extencio."
   },
   "appDesc": {
-    "message": "Simple i fàcil d'utilitzar. Guarda y recupera les teves pestanyes sempre que vulguis, en un sol click, i sense finestres emergents.",
-    "description":"Descripción de l'extensión a nivel de manifiest."
+    "message": "Simple i fàcil d'utilitzar. Guarda i recupera les teves pestanyes sempre que vulguis, en un sol clic, i sense finestres emergents.",
+    "description": "Descripción de l'extensión a nivel de manifiest."
   },
-
   "menu_config": {
-    "message":"Configuració",
+    "message": "Configuració",
     "description": "Paraula del menu lateral"
   },
-
   "menu_atajos": {
     "message": "Dreceres",
     "description": "Paraula del menu lateral"
   },
-
   "menu_donaciones": {
     "message": "Paypal",
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
-    "message": "Dreceres de teclat:",
+    "message": "Dreceres de teclat",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
@@ -31,13 +28,13 @@
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "Externs:"
+    "message": "Externs"
   },
   "atajos_subentrada1_1": {
-    "message": "Guardar o recuperar:"
+    "message": "Guardar o recuperar"
   },
   "atajos_entrada2": {
-    "message": "Interns:"
+    "message": "Interns"
   },
   "atajos_subentrada2_1": {
     "message": "Configuració"
@@ -48,9 +45,8 @@
   "atajos_subentrada2_3": {
     "message": "Paypal"
   },
-
   "config_titol": {
-    "message": "Mode de treball:",
+    "message": "Mode de treball",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
@@ -58,16 +54,16 @@
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
-    "message": "Simple "
+    "message": "Simple"
   },
   "config_simplemsg": {
-    "message": "Guarda i recupera les pestanyes al fer click. "
+    "message": "Guarda i recupera les pestanyes al fer click."
   },
   "config_subsimple": {
-    "message": "Guardar les pestanyes a la barra de marcadors"
+    "message": "Guardar les pestanyes a la barra de marcadors."
   },
   "config_onlysave": {
-    "message": "Només guardar "
+    "message": "Només guardar"
   },
   "config_onlysavemsg": {
     "message": "Les pestanyes es guarden en els marcadors al fer click."
@@ -77,8 +73,9 @@
   },
   "config_snackbar_message": {
     "message": "Configuració actualitzada."
-
+  },
+  "config_error": {
+    "message": "Problema amb la configuració desada.",
+    "description": "Mensaje de error cuando hay problemas con la configuración"
   }
-
 }
-

@@ -1,18 +1,18 @@
 {
   "appName": {
-    "message": "Simple Tab Saver",
+    "message": "Simple Tab Saver\n",
     "description": "Nom de l'extencio."
   },
   "appDesc": {
-    "message": "Simple et facile à utiliser. Sauvegardez et récupérez vos onglets quand vous voulez, en un seul clic, et sans pop-ups.",
+    "message": "Prosty i łatwy w użyciu. Zapisz i odzyskaj swoje karty w dowolnym momencie, jednym kliknięciem i bez wyskakujących okienek.\n",
     "description": "Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message": "Configuration",
+    "message": "Konfiguracja\n\n",
     "description": "Paraula del menu lateral"
   },
   "menu_atajos": {
-    "message": "Raccourcis",
+    "message": "Skróty",
     "description": "Paraula del menu lateral"
   },
   "menu_donaciones": {
@@ -20,62 +20,62 @@
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
-    "message": "Raccourcis clavier",
+    "message": "Skróty klawiaturowe",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Utilisez les raccourcis clavier pour travailler plus rapidement.",
+    "message": "Używaj skrótów klawiaturowych, aby działać szybciej.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "Externe:"
+    "message": "Zewnętrzne"
   },
   "atajos_subentrada1_1": {
-    "message": "Activer enregistré"
+    "message": "Aktywuj zapisane"
   },
   "atajos_entrada2": {
-    "message": "Interne"
+    "message": "Wewnętrzny"
   },
   "atajos_subentrada2_1": {
-    "message": "Configuration"
+    "message": "Konfiguracja\n\n"
   },
   "atajos_subentrada2_2": {
-    "message": "Raccourcis"
+    "message": "Skróty"
   },
   "atajos_subentrada2_3": {
     "message": "Paypal"
   },
   "config_titol": {
-    "message": "Mode de travail",
+    "message": "Tryb pracy",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
-    "message": "Choisissez la façon de travailler qui vous convient le mieux.",
+    "message": "Wybierz najbardziej komfortowy dla siebie sposób pracy.",
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
-    "message": "Simple"
+    "message": "Proste"
   },
   "config_simplemsg": {
-    "message": "Enregistrez et récupérez les onglets lorsque vous cliquez."
+    "message": "Zapisywanie i pobieranie kart po kliknięciu.\n"
   },
   "config_subsimple": {
-    "message": "Enregistrer les onglets dans la barre de favoris."
+    "message": "Zapisz zakładki na pasku zakładek."
   },
   "config_onlysave": {
-    "message": "Il suffit d'économiser"
+    "message": "Po prostu uratuj\n"
   },
   "config_onlysavemsg": {
-    "message": "Les onglets sont enregistrés dans les marqueurs lorsque vous cliquez."
+    "message": "Karty są zapisywane w zakładkach po kliknięciu.\n"
   },
   "config_subonlysave": {
-    "message": "Fermez les onglets lors de l'enregistrement."
+    "message": "Zamknij karty podczas zapisywania.\n"
   },
   "config_snackbar_message": {
-    "message": "Configuration mise à jour."
+    "message": "Zaktualizowana konfiguracja"
   },
   "config_error": {
-    "message": "Problème avec la configuration sauvegardée.\n",
+    "message": "Problem z zapisaną konfiguracją",
     "description": "Mensaje de error cuando hay problemas con la configuración"
   }
 }

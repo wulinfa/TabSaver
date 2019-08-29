@@ -1,0 +1,81 @@
+{
+  "appName": {
+    "message": "Simple Tab Saver",
+    "description": "Nom de l'extencio."
+  },
+  "appDesc": {
+    "message": "Прост и удобен в использовании. Сохраняйте и восстанавливайте вкладки в любое время, одним щелчком мыши и без всплывающих окон.",
+    "description": "Descripción de l'extensión a nivel de manifiest."
+  },
+  "menu_config": {
+    "message": "Kонфигурация",
+    "description": "Paraula del menu lateral"
+  },
+  "menu_atajos": {
+    "message": "Ярлыки",
+    "description": "Paraula del menu lateral"
+  },
+  "menu_donaciones": {
+    "message": "PayPal",
+    "description": "Paraula del menu lateral"
+  },
+  "atajos_titol": {
+    "message": "Сочетания клавиш",
+    "description": "Titol de la entrada atajos"
+  },
+  "atajos_subtitol": {
+    "message": "Используйте сочетания клавиш, чтобы работать быстрее.",
+    "description": "Subtitol de la entrada atajos"
+  },
+  "atajos_entrada1": {
+    "message": "Внешний:\n"
+  },
+  "atajos_subentrada1_1": {
+    "message": "Активировать сохранено"
+  },
+  "atajos_entrada2": {
+    "message": "Внутренний:\n"
+  },
+  "atajos_subentrada2_1": {
+    "message": "Kонфигурация"
+  },
+  "atajos_subentrada2_2": {
+    "message": "Ярлыки"
+  },
+  "atajos_subentrada2_3": {
+    "message": "PayPal"
+  },
+  "config_titol": {
+    "message": "Режим работы",
+    "description": "Titol de la entrada configuracio"
+  },
+  "config_subtitol": {
+    "message": "Выберите наиболее удобный для вас способ работы.",
+    "description": "Subtitol de la entrada config"
+  },
+  "config_simple": {
+    "message": "Простой"
+  },
+  "config_simplemsg": {
+    "message": "Сохранить и получить вкладки при нажатии."
+  },
+  "config_subsimple": {
+    "message": "Сохранение вкладок в строке закладок.\n"
+  },
+  "config_onlysave": {
+    "message": "Просто сохранить"
+  },
+  "config_onlysavemsg": {
+    "message": "Вкладки сохраняются в закладках при нажатии."
+  },
+  "config_subonlysave": {
+    "message": "Закрывайте вкладки при сохранении."
+  },
+  "config_snackbar_message": {
+    "message": "Обновленная конфигурация."
+  },
+  "config_error": {
+    "message": "Проблема с сохраненными настройками.",
+    "description": "Mensaje de error cuando hay problemas con la configuración"
+  }
+}

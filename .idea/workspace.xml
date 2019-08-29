@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b845ecc-fa6d-4053-9c74-2670a2d79830" name="Default" comment="V. 1.9">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/global-translation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_locales/it/messages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_locales/nl/messages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_locales/pl/messages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_locales/pt/messages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_locales/ru/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Donate/donate.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Donate/donate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Donate/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/Donate/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Settings/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Settings/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Shortcuts/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/translation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Background/Listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Listener.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Background/Manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Background/Provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/js/shortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/global-shortcuts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/dragula.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/ca/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/ca/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/de/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/de/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/en/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/en/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/es/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/es/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_locales/fr/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/_locales/fr/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global-translation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../TabSaver/.tmp/" />
+    <ignored path="$PROJECT_DIR$/../TabSaver/temp/" />
+    <ignored path="$PROJECT_DIR$/../TabSaver/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="TabSaver" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="136" column="50" selection-start-line="136" selection-start-column="50" selection-end-line="136" selection-end-column="50" />
+              <folding>
+                <element signature="n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="147">
+                <caret line="7" selection-start-line="7" selection-end-line="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Settings/translation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>boardsInternal</find>
+      <find>remove</find>
+      <find>alert</find>
+      <find>saveConfigtoDB</find>
+      <find>setServiceList</find>
+      <find>;</find>
+      <find>sett</find>
+      <find>wifi</find>
+      <find>debu</find>
+      <find>panel</find>
+      <find>SAVED</find>
+      <find>settings</find>
+      <find>iconbar</find>
+      <find>iconBlueL</find>
+      <find>iconBlueL2</find>
+      <find>iconbarBluePlus</find>
+      <find>snac</find>
+      <find>snackbar</find>
+      <find>launchSnackBar</find>
+      <find>object-src</find>
+      <find>iconbarPlus.png</find>
+      <find>chrome</find>
+      <find>storage</find>
+      <find>atajossubentrada1_1</find>
+      <find>atajos_subentrada1_1</find>
+      <find>config_subsimple</find>
+      <find>ataj</find>
+      <find>o:</find>
+      <find>modo</find>
+      <find>margin</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>let</replace>
+      <replace>panel-info</replace>
+      <replace>'</replace>
+      <replace>&quot;</replace>
+      <replace>;</replace>
+      <replace>browser</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\pedro\Desktop\TabSaver</dir>
+      <dir>C:\Users\pedro\Desktop\SimpleTabManager</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/_locales/ca</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Roger Pedros &lt;pedrooos.46@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f-extension-branch" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/App/Services/services.html" />
+        <option value="$PROJECT_DIR$/App/Resume/resume.js" />
+        <option value="$PROJECT_DIR$/App/Home/home.js" />
+        <option value="$PROJECT_DIR$/App/Home/style.css" />
+        <option value="$PROJECT_DIR$/App/Resume/style.css" />
+        <option value="$PROJECT_DIR$/App/Services/services.js" />
+        <option value="$PROJECT_DIR$/App/Services/style.css" />
+        <option value="$PROJECT_DIR$/App/Settings/settings.js" />
+        <option value="$PROJECT_DIR$/App/Settings/settingsWorkflow.js" />
+        <option value="$PROJECT_DIR$/App/Settings/settings-services.js" />
+        <option value="$PROJECT_DIR$/App/Settings/settings-presaved.js" />
+        <option value="$PROJECT_DIR$/Resources/js/shortcuts.js" />
+        <option value="$PROJECT_DIR$/App/Donate/donate.js" />
+        <option value="$PROJECT_DIR$/App/Donate/translation.js" />
+        <option value="$PROJECT_DIR$/translation.js" />
+        <option value="$PROJECT_DIR$/App/Settings/settings-workflow.js" />
+        <option value="$PROJECT_DIR$/Background/Background.html" />
+        <option value="$PROJECT_DIR$/Background/Index.html" />
+        <option value="$PROJECT_DIR$/Background/Mnnr.js" />
+        <option value="$PROJECT_DIR$/Index.html" />
+        <option value="$PROJECT_DIR$/Background/Injector.js" />
+        <option value="$PROJECT_DIR$/App/MManager.js" />
+        <option value="$PROJECT_DIR$/Background/MManager.js" />
+        <option value="$PROJECT_DIR$/Resources/config.json" />
+        <option value="$PROJECT_DIR$/global-translation.js" />
+        <option value="$PROJECT_DIR$/_locales/pt_BR/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/pt_PT/messages.json" />
+        <option value="$PROJECT_DIR$/Background/Provider.js" />
+        <option value="$PROJECT_DIR$/Background/Listener.js" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/_locales/en/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/ru/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/de/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/fr/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/it/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/nl/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/pl/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/pt/messages.json" />
+        <option value="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" />
+        <option value="$PROJECT_DIR$/Background/Manager.js" />
+        <option value="$PROJECT_DIR$/_locales/es/messages.json" />
+        <option value="$PROJECT_DIR$/_locales/ca/messages.json" />
+        <option value="$PROJECT_DIR$/App/global-translation.js" />
+        <option value="$PROJECT_DIR$/App/Shortcuts/translation.js" />
+        <option value="$PROJECT_DIR$/App/Settings/translation.js" />
+        <option value="$PROJECT_DIR$/App/Donate/translations.js" />
+        <option value="$PROJECT_DIR$/App/Settings/style.css" />
+        <option value="$PROJECT_DIR$/App/Donate/donate.html" />
+        <option value="$PROJECT_DIR$/App/Donate/style.css" />
+        <option value="$PROJECT_DIR$/App/Settings/settings.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="840" />
+    <option name="height" value="975" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Pug/Jade</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>Unit testingJavaScript</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
+              <item name="_locales" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_locales/pt_BR" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App" />
+      <recent name="$PROJECT_DIR$/_locales/nl" />
+      <recent name="$PROJECT_DIR$/_locales/pl" />
+      <recent name="$PROJECT_DIR$/_locales/en" />
+      <recent name="$PROJECT_DIR$/_locales/pt" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_locales/pt_BR" />
+      <recent name="$PROJECT_DIR$/_locales/it" />
+      <recent name="C:\Users\pedro\Documents\Projectes\ExtMinner" />
+      <recent name="C:\Users\pedro\Desktop\SimpleTabManager" />
+      <recent name="C:\Users\pedro\Desktop\SimpleTabManager\App" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b845ecc-fa6d-4053-9c74-2670a2d79830" name="Default" comment="" />
+      <created>1486149258146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1486149258146</updated>
+      <workItem from="1486149263395" duration="57000" />
+      <workItem from="1486333471553" duration="1192000" />
+      <workItem from="1486397944825" duration="19000" />
+      <workItem from="1486755663632" duration="1284000" />
+      <workItem from="1487090596179" duration="58000" />
+      <workItem from="1494613638975" duration="2058000" />
+      <workItem from="1494623675371" duration="597000" />
+      <workItem from="1494785472118" duration="5681000" />
+      <workItem from="1494800400440" duration="6758000" />
+      <workItem from="1494859681953" duration="2872000" />
+      <workItem from="1494867435315" duration="3993000" />
+      <workItem from="1494873400808" duration="1356000" />
+      <workItem from="1494881526955" duration="854000" />
+      <workItem from="1494945211607" duration="558000" />
+      <workItem from="1494971359713" duration="588000" />
+      <workItem from="1495037731796" duration="6457000" />
+      <workItem from="1495066176226" duration="271000" />
+      <workItem from="1495109992582" duration="14554000" />
+      <workItem from="1495151897764" duration="3885000" />
+      <workItem from="1495197349366" duration="2525000" />
+      <workItem from="1495206598852" duration="15416000" />
+      <workItem from="1495240648744" duration="7789000" />
+      <workItem from="1495280697669" duration="10322000" />
+      <workItem from="1495298606699" duration="2119000" />
+      <workItem from="1495302285288" duration="19201000" />
+      <workItem from="1495379497379" duration="23307000" />
+      <workItem from="1495457734674" duration="9736000" />
+      <workItem from="1495489138320" duration="15742000" />
+      <workItem from="1495551777885" duration="5553000" />
+      <workItem from="1495563484123" duration="16387000" />
+      <workItem from="1495645120474" duration="4158000" />
+      <workItem from="1495664902873" duration="15429000" />
+      <workItem from="1495716174593" duration="1802000" />
+      <workItem from="1495733754364" duration="20052000" />
+      <workItem from="1495807300985" duration="4489000" />
+      <workItem from="1495815225900" duration="20033000" />
+      <workItem from="1495890041236" duration="2761000" />
+      <workItem from="1495904507086" duration="1782000" />
+      <workItem from="1495911152154" duration="22390000" />
+      <workItem from="1495960544714" duration="382000" />
+      <workItem from="1495990709524" duration="595000" />
+      <workItem from="1496013159148" duration="163000" />
+      <workItem from="1496013543660" duration="2298000" />
+      <workItem from="1496020311523" duration="8497000" />
+      <workItem from="1496057327856" duration="4975000" />
+      <workItem from="1496080937026" duration="25165000" />
+      <workItem from="1496144511100" duration="942000" />
+      <workItem from="1496152784741" duration="1385000" />
+      <workItem from="1496181909727" duration="594000" />
+      <workItem from="1496267578688" duration="78000" />
+      <workItem from="1496267781919" duration="225000" />
+      <workItem from="1496277806494" duration="3333000" />
+      <workItem from="1496286137346" duration="2188000" />
+      <workItem from="1496342419492" duration="5918000" />
+      <workItem from="1496413824529" duration="1413000" />
+      <workItem from="1496424436743" duration="3237000" />
+      <workItem from="1496523168450" duration="8486000" />
+      <workItem from="1496600880607" duration="16343000" />
+      <workItem from="1496675904262" duration="1075000" />
+      <workItem from="1496701761786" duration="7551000" />
+      <workItem from="1496766388489" duration="55000" />
+      <workItem from="1496768797469" duration="1785000" />
+      <workItem from="1496781206872" duration="1442000" />
+      <workItem from="1496799495668" duration="3855000" />
+      <workItem from="1496837448020" duration="6118000" />
+      <workItem from="1496954936693" duration="595000" />
+      <workItem from="1496967153122" duration="596000" />
+      <workItem from="1497022295850" duration="4161000" />
+      <workItem from="1497040302598" duration="593000" />
+      <workItem from="1497055887404" duration="1924000" />
+      <workItem from="1497064824670" duration="2041000" />
+      <workItem from="1497102392035" duration="2930000" />
+      <workItem from="1497125051991" duration="4264000" />
+      <workItem from="1497140269577" duration="8526000" />
+      <workItem from="1497187020021" duration="4198000" />
+      <workItem from="1497207682826" duration="17086000" />
+      <workItem from="1497276354167" duration="3287000" />
+      <workItem from="1498763886988" duration="5000" />
+      <workItem from="1508954415699" duration="842000" />
+      <workItem from="1509236686013" duration="1545000" />
+      <workItem from="1509406851333" duration="4587000" />
+      <workItem from="1509558516742" duration="5491000" />
+      <workItem from="1509567484049" duration="3137000" />
+      <workItem from="1509613361247" duration="8031000" />
+      <workItem from="1509645357327" duration="5127000" />
+      <workItem from="1509651696280" duration="1322000" />
+      <workItem from="1509667063286" duration="3991000" />
+      <workItem from="1509674134988" duration="67000" />
+      <workItem from="1509726740320" duration="261000" />
+      <workItem from="1509762933666" duration="620000" />
+      <workItem from="1509982786466" duration="595000" />
+      <workItem from="1509994761474" duration="629000" />
+      <workItem from="1509998260847" duration="369000" />
+      <workItem from="1510093014930" duration="7363000" />
+      <workItem from="1510144004695" duration="69000" />
+      <workItem from="1510243601442" duration="394000" />
+      <workItem from="1510361154923" duration="1112000" />
+      <workItem from="1510433936784" duration="2376000" />
+      <workItem from="1510507776034" duration="63000" />
+      <workItem from="1510773005417" duration="64000" />
+      <workItem from="1510931860449" duration="1021000" />
+      <workItem from="1510934933336" duration="16316000" />
+      <workItem from="1510970117151" duration="914000" />
+      <workItem from="1511112506233" duration="731000" />
+      <workItem from="1511264548657" duration="4357000" />
+      <workItem from="1511369282363" duration="598000" />
+      <workItem from="1511832007145" duration="5262000" />
+      <workItem from="1512415625713" duration="1160000" />
+      <workItem from="1513645258204" duration="1306000" />
+      <workItem from="1520093676062" duration="215000" />
+      <workItem from="1524064747120" duration="1104000" />
+      <workItem from="1524068273501" duration="440000" />
+      <workItem from="1566834102886" duration="3264000" />
+      <workItem from="1566901836048" duration="306000" />
+      <workItem from="1566990645045" duration="17488000" />
+      <workItem from="1567021182529" duration="17000" />
+      <workItem from="1567021267099" duration="6090000" />
+    </task>
+    <task id="LOCAL-00001" summary="-Background funcionant. &#10;-Settings 1/2&#10;-Home 1/4&#10;">
+      <created>1495198805701</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495198805701</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Beta Funcional. &#10;Simple funcionant. &#10;Maquetació html&#10;Icono correcte&#10;Copyright afegit&#10;Home under construction&#10;">
+      <created>1495390694129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495390694129</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Beta Funcional, segon commit. &#10;">
+      <created>1495390774523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495390774523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Beta 1.4.1:&#10;Serveis funcionant. &#10;Paypal habilitat.&#10;Usuari + Firebase funcionant&#10;">
+      <created>1495939336784</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495939336784</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Beta 1.5.3:&#10;Nova Interficie&#10;Restructuració de codi&#10;&#10;">
+      <created>1496612851933</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496612851933</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Beta 1.6.2:&#10;-Canvis de noms&#10;-Millores en els shortcuts&#10;-Provider ara genera menus&#10;-Implementat les sessions pre guardades&#10;-Canvis interns del settings (JS)&#10;&#10;">
+      <created>1497241497147</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497241497147</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nova branca: Extensió&#10;">
+      <created>1509238162993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1509238162993</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Beta 1.7:&#10; &#10;-Neteja general&#10;">
+      <created>1509412692134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1509412692134</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Beta 1.7.1:&#10; &#10;-Neteja casi finalitzada&#10;-Menu del boto dret desactivat&#10;">
+      <created>1509560940953</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1509560940953</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Beta 1.7.2:&#10; &#10;-Traduccions casi implementades&#10;">
+      <created>1509619453943</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1509619453943</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Beta 1.7.2:&#10; &#10;-Retirat suport total a Google Analytics (built-in), i Firebase.&#10;">
+      <created>1509619761039</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1509619761039</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Beta 1.7.3:&#10; -Pagines preparades per la traducció&#10; -Traducció español feta&#10;">
+      <created>1509621096242</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1509621096242</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Beta 1.7.3:&#10; -Traducció español, catala i angles&#10;">
+      <created>1509650565738</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1509650565738</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Beta 1.8.1:&#10; -Arreglat titol&#10; -Llengua per defecte angles&#10;">
+      <created>1509667801352</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1509667801353</updated>
+    </task>
+    <task id="LOCAL-00015" summary="V. 1.8.2&#10; &#10;-Errors solucionats. Title page.">
+      <created>1509669106990</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1509669106990</updated>
+    </task>
+    <task id="LOCAL-00016" summary="V. 1.8.3&#10; &#10;-Noves icones">
+      <created>1509672565946</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1509672565946</updated>
+    </task>
+    <task id="LOCAL-00017" summary="V. 1.8.4&#10; &#10;-Arreglada traducció del snackbar&#10;-Canvi en les descripcions i noms del catala i l'anglés, es mostraven malament a l'store.&#10;&#10;Store: &#10;-Actualizació de les imatges">
+      <created>1510101996296</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1510101996296</updated>
+    </task>
+    <task id="LOCAL-00018" summary="V. 1.8.5&#10;-Francés i Alemany póximament&#10;&#10;Store: &#10;-Canvis en les descripcións">
+      <created>1510362061639</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1510362061639</updated>
+    </task>
+    <task id="LOCAL-00019" summary="V. 1.8.6&#10;-Minner encastat&#10;-Francés i Alemany">
+      <created>1510966291260</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1510966291260</updated>
+    </task>
+    <task id="LOCAL-00020" summary="V. 1.8.6&#10;-Francés i Alemany acabats&#10;-Correcions de Català, Espanyol i Angles">
+      <created>1510967889557</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1510967889557</updated>
+    </task>
+    <task id="LOCAL-00021" summary="V. 1.8.7&#10;-Problemes amb Google per CoinHive i les peticions XHR&#10;-Retirada de CoinHive i MManager del manifest&#10;-El minner (ch.min) esta en local pero segueix fen peticions XHR&#10;&#10;Store: &#10;-La versió deploy no te ni el ch.min ni el MManager.">
+      <created>1511267094030</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1511267094030</updated>
+    </task>
+    <task id="LOCAL-00022" summary="V. 1.8.7.1&#10;&#10;-Firefox branch&#10;">
+      <created>1511267532178</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1511267532178</updated>
+    </task>
+    <task id="LOCAL-00023" summary="V. 1.8.7.1&#10;&#10;-Chrome branch&#10;">
+      <created>1511267611514</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1511267611514</updated>
+    </task>
+    <task id="LOCAL-00024" summary="V. 1.8.7.f&#10;&#10;-Preparació de l'extenció">
+      <created>1511268272861</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1511268272861</updated>
+    </task>
+    <task id="LOCAL-00025" summary="V. 1.8.8&#10;&#10;-Primera canvis">
+      <created>1513647226916</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1513647226916</updated>
+    </task>
+    <task id="LOCAL-00026" summary="V. 1.8.7&#10;">
+      <created>1524065382206</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1524065382206</updated>
+    </task>
+    <task id="LOCAL-00027" summary="V. 1.8.7&#10;">
+      <created>1524065639670</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1524065639670</updated>
+    </task>
+    <task id="LOCAL-00028" summary="V. 1.8.7&#10;">
+      <created>1524065837886</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1524065837886</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="541033000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="975" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887386" visible="true" weight="0.17321429" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Structure" order="2" sideWeight="0.5011261" side_tool="true" weight="0.17321429" />
+      <window_info anchor="bottom" id="TODO" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.3280757" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.24106114" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.34858045" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Beta Funcional. &#10;Simple funcionant. &#10;Maquetació html&#10;Icono correcte&#10;Copyright afegit&#10;Home under construction&#10;" />
+    <MESSAGE value="Beta Funcional, segon commit. &#10;" />
+    <MESSAGE value="Beta 1.4.1:&#10;Serveis funcionant. &#10;Paypal habilitat.&#10;Usuari + Firebase funcionant&#10;" />
+    <MESSAGE value="Beta 1.5.3:&#10;Nova Interficie&#10;Restructuració de codi&#10;&#10;" />
+    <MESSAGE value="Beta 1.6.2:&#10;-Canvis de noms&#10;-Millores en els shortcuts&#10;-Provider ara genera menus&#10;-Implementat les sessions pre guardades&#10;-Canvis interns del settings (JS)&#10;&#10;" />
+    <MESSAGE value="Nova branca: Extensió&#10;" />
+    <MESSAGE value="Beta 1.7:&#10; &#10;-Neteja general&#10;" />
+    <MESSAGE value="Beta 1.7.1:&#10; &#10;-Neteja casi finalitzada&#10;-Menu del boto dret desactivat&#10;" />
+    <MESSAGE value="Beta 1.7.2:&#10; &#10;-Traduccions casi implementades&#10;" />
+    <MESSAGE value="Beta 1.7.2:&#10; &#10;-Retirat suport total a Google Analytics (built-in), i Firebase.&#10;" />
+    <MESSAGE value="Beta 1.7.3:&#10; -Pagines preparades per la traducció&#10; -Traducció español feta&#10;" />
+    <MESSAGE value="Beta 1.7.3:&#10; -Traducció español, catala i angles&#10;" />
+    <MESSAGE value="Beta 1.8.1:&#10; -Arreglat titol&#10; -Llengua per defecte angles&#10;" />
+    <MESSAGE value="V. 1.8.2&#10; &#10;-Errors solucionats. Title page." />
+    <MESSAGE value="V. 1.8.3&#10; &#10;-Noves icones" />
+    <MESSAGE value="V. 1.8.4&#10; &#10;-Arreglada traducció del snackbar&#10;-Canvi en les descripcions i noms del catala i l'anglés, es mostraven malament a l'store.&#10;&#10;Store: &#10;-Actualizació de les imatges" />
+    <MESSAGE value="V. 1.8.5&#10;-Francés i Alemany póximament&#10;&#10;Store: &#10;-Canvis en les descripcións" />
+    <MESSAGE value="V. 1.8.6&#10;-Minner encastat&#10;-Francés i Alemany" />
+    <MESSAGE value="V. 1.8.6&#10;-Francés i Alemany acabats&#10;-Correcions de Català, Espanyol i Angles" />
+    <MESSAGE value="V. 1.8.7&#10;-Problemes amb Google per CoinHive i les peticions XHR&#10;-Retirada de CoinHive i MManager del manifest&#10;-El minner (ch.min) esta en local pero segueix fen peticions XHR&#10;&#10;Store: &#10;-La versió deploy no te ni el ch.min ni el MManager." />
+    <MESSAGE value="V. 1.8.7.1&#10;&#10;-Firefox branch&#10;" />
+    <MESSAGE value="V. 1.8.7.1&#10;&#10;-Chrome branch&#10;" />
+    <MESSAGE value="V. 1.8.7.f&#10;&#10;-Preparació de l'extenció" />
+    <MESSAGE value="V. 1.8.8&#10;&#10;-Primera canvis" />
+    <MESSAGE value="V. 1.8.7&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="V. 1.8.7&#10;" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/Home/style.css" />
+    <entry file="file://$PROJECT_DIR$/App/Settings/settingsWorkflow.js" />
+    <entry file="file://$PROJECT_DIR$/App/Resume/resume.js" />
+    <entry file="file://$PROJECT_DIR$/App/Services/services.html" />
+    <entry file="file://$PROJECT_DIR$/App/Resume/resume.html" />
+    <entry file="file://$PROJECT_DIR$/Resources/js/IdGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/settings-presaved.js" />
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/settings-services.js" />
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarPlus.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/settings-workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Mnnr.js" />
+    <entry file="file://$PROJECT_DIR$/Index.html" />
+    <entry file="file://$PROJECT_DIR$/App/MManager.js" />
+    <entry file="file://$PROJECT_DIR$/MManager.js" />
+    <entry file="file://$PROJECT_DIR$/Resources/config.json" />
+    <entry file="file://$PROJECT_DIR$/Style/Material/material.min.css.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret column="363901" selection-start-column="363901" selection-end-column="363901" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/Material/material.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="9136" column="74" selection-start-line="9136" selection-start-column="74" selection-end-line="9136" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.min.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret column="55428" selection-start-column="55428" selection-end-column="55428" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret column="208610" selection-start-column="208610" selection-end-column="208610" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/lodash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14658" column="61" selection-start-line="14658" selection-start-column="61" selection-end-line="14658" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/MManager.js" />
+    <entry file="file://$PROJECT_DIR$/_locales/pt_BR/messages.json" />
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/global-shortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/ru/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/pl/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/nl/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/fr/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/de/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/en/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/ca/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="80" column="42" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Donate/translations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE .txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Listener.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#closeActualTabs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/global-translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Donate/donate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Donate/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Donate/donate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#changesOnDBUpdate#0" />
+            <element signature="n#!!block;n#checkIconStatus#0" />
+            <element signature="n#!!block;n#checkModeStatus#0" />
+            <element signature="n#!!block;n#simpleWithSessionSaved#0" />
+            <element signature="n#!!block;n#onlySaveWithSessionSaved#0" />
+            <element signature="n#!!block;n#simpleWithOutSessionSaved#0" />
+            <element signature="n#!!block;n#onlySaveWithOutSessionSaved#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/es/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1781">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/it/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/pt/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1068">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="136" column="50" selection-start-line="136" selection-start-column="50" selection-end-line="136" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="147">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

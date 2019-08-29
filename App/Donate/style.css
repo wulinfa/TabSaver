@@ -2,7 +2,6 @@
     font-size: 15px;
     /*margin-top: 40px;*/
 }
-
 main {
     padding: 1em;
     /*font-family: Arial, Helvetica, sans-serif;*/
@@ -10,6 +9,13 @@ main {
     margin-top: 50px;
     display: block;
 }
+
+.alineado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /*Fa que la navbar no sigui seleccionable*/
 #navbar-brand{
     -moz-user-select: none;
@@ -39,3 +45,4 @@ main {
 .navbar-toggle {
     z-index:3;
 }
+
