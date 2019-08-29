@@ -26,12 +26,12 @@
     <script src="../../Resources/js/analytics.js"></script>
 
     <!--Shortcuts-->
-    <script src="../../Resources/js/shortcuts.js"></script>
+    <script src="../../Resources/js/global-shortcuts.js"></script>
 
     <!--Custom Scripts-->
     <script src="settings-workflow.js"></script>
     <script src="../../Background/Provider.js"></script>
-    <script src="../../global-translation.js"></script>
+    <script src="../global-translation.js"></script>
     <script src="translation.js"></script>
 
     <!--idGenerator-->
@@ -126,12 +126,34 @@
                 </li>
 
             </ul>
-            <!--<h4>-->
-            <!--<small class="text-danger"> Recuerda que siempre puedes cambiar el modo de forma rapida haciendo click-->
-            <!--con el boton derecho.-->
-            <!--</small>-->
-            <!--</h4>-->
+<!--            <h4>-->
+<!--            <small class="text-danger"> Recuerda que siempre puedes cambiar el modo de forma rapida haciendo click-->
+<!--            con el boton derecho.-->
+<!--            </small>-->
+<!--            </h4>-->
+        </div>
 
+        <!--IDIOMA-->
+        <div class="jumbotron text-left invisible">
+            <h2 id="configTitol-Language" style="margin-top: -15px"> Idioma</h2>
+            <h4>
+                <small id="configSubtitol-Language" class="text-info">Elija el idioma que quieras</small>
+            </h4>
+            <ul class="nav nav-stacked">
+                <li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                🔜🌍
+                                <script>
+                                    console.log(navigator.browserLanguage);
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <br>
+            </ul>
         </div>
 
     </section>

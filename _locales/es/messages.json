@@ -1,7 +1,7 @@
 {
   "appName": {
     "message": "Simple Tab Saver",
-    "description":""
+    "description":"Nom de l'extencio."
   },
   "appDesc": {
     "message": "Simple y facil de utilizar. Guarda y recupera tus pestañas siempre que quieras, en un solo click, y sin ventanas emergentes.",
@@ -19,8 +19,9 @@
     "message": "Paypal",
     "description": "Paraula del menu lateral"
   },
+
   "atajos_titol": {
-    "message": "Atajos de teclado:",
+    "message": "Atajos de teclado",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
@@ -28,13 +29,13 @@
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "Externos:"
+    "message": "Externos"
   },
   "atajos_subentrada1_1": {
-    "message": "Activar guardado:"
+    "message": "Activar guardado"
   },
   "atajos_entrada2": {
-    "message": "Internos:"
+    "message": "Internos"
   },
   "atajos_subentrada2_1": {
     "message": "Configuración"
@@ -48,7 +49,7 @@
 
 
   "config_titol": {
-    "message": "Modo de trabajo:",
+    "message": "Modo de trabajo",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
@@ -56,16 +57,16 @@
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
-    "message": "Simple "
+    "message": "Simple"
   },
   "config_simplemsg": {
-    "message": "Guardar y recuperar las pestañas al hacer click. "
+    "message": "Guardar y recuperar las pestañas al hacer click."
   },
   "config_subsimple": {
-    "message": "Guardar las pestañas en la barra de marcadores"
+    "message": "Guardar las pestañas en la barra de marcadores."
   },
   "config_onlysave": {
-    "message": "Solo guardar "
+    "message": "Solo guardar"
   },
   "config_onlysavemsg": {
     "message": "Las pestañas se guardan en los marcadores al hacer click."
@@ -75,6 +76,11 @@
   },
   "config_snackbar_message": {
     "message": "Configuración actualizada."
-  }
+  },
 
+
+  "config_error": {
+    "message": "Problema con la configuración guardada.",
+    "description": "Mensaje de error cuando hay problemas con la configuración"
+  }
 }
