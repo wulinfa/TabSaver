@@ -1,15 +1,19 @@
 /*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
-this.configData = {};
+/*Manager s'encarrega de portar la logica de la extencio*/
 
+this.configData = {};
 (() => {
     /*Comprovacions inicials*/
     checkModeStatus();
     checkIconStatus();
 })();
 
-chrome.browserAction.onClicked.addListener(() => {
+//browserActionTrigged es la funció que es crida desde el Listener.js un s'ha capturat l'event de Chrome.
+//Aquesta funció posa en marxa el procés de guardar o recuperar les pestanyes. Es es la funció principal.
+//Els events son caputurats al Listener i poden ser per comandos o per un click al boto.
+function browserActionTrigged(){
     if (this.configData.simple === undefined || this.configData.onlySave === undefined) {
-        alert('Problema con la configuración guardada');
+        alert(chrome.i18n.getMessage("config_error"));
         chrome.runtime.openOptionsPage();
     }
 
@@ -35,15 +39,22 @@ chrome.browserAction.onClicked.addListener(() => {
                 }
             }
         });
-});
+}
 
-/*Listener a la DB interna. Si hi ha un canvi a configS'actualitza automaticament la configuració local i l'icona*/
-chrome.storage.onChanged.addListener((changes, namespace) => {
+/*changesOnDB es la funció que es crida desde el Listener.js un s'ha capturat l'event de Chrome.
+* Aquesta funció actualitza la configuració local de this.configdata i actualiza també l'icona si fa falta. */
+function changesOnDBUpdate(changes){
     if (changes.configData) {
-        checkModeStatus();
+        this.configData = {
+            simple: changes.configData.newValue.simple,
+            simpleSave: changes.configData.newValue.simpleSave,
+            onlySave: changes.configData.newValue.onlySave,
+            onlySaveCloseTabs: changes.configData.newValue.onlySaveCloseTabs
+        }
+        //checkModeStatus();
         checkIconStatus();
     }
-});
+}
 
 /*Comproba l'icona que hauria d'anar i la actualiza*/
 function checkIconStatus() {
@@ -91,6 +102,9 @@ function checkModeStatus() {
         });
 }
 
+
+/*LOGICA*/
+//Amb informació guardada i per tant per a recuperar
 function simpleWithSessionSaved(dataFromDB) {
     //TODO? FER LA CRIDA AQUI DINS?
     openSavedTabs(dataFromDB.sessionTabs)
@@ -138,6 +152,7 @@ function onlySaveWithSessionSaved() {
         .then(updateIcon(false));
 }
 
+//Sense informació guardada i per tant per guardar
 function simpleWithOutSessionSaved() {
     getTabs()
         .then((dataFromChromeWindow) => {

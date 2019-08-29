@@ -11,9 +11,10 @@ $(document).ready(() => {
     $("#atajosSubentrada1_1").text( chrome.i18n.getMessage("atajos_subentrada1_1"));
 
     $("#atajosEntrada2").text(chrome.i18n.getMessage("atajos_entrada2"));
-    $("#atajosSubentrada2_1").text(chrome.i18n.getMessage("atajos_subentrada2_1"));
-    $("#atajosSubentrada2_2").text(chrome.i18n.getMessage("atajos_subentrada2_2"));
-    $("#atajosSubentrada2_3").text(chrome.i18n.getMessage("atajos_subentrada2_3"));
+    $("#atajosSubentrada2_1").text(chrome.i18n.getMessage("atajos_subentrada2_1")); //configuració
+    $("#atajosSubentrada2_2").text(chrome.i18n.getMessage("atajos_subentrada2_2")); //Atajos
+    $("#atajosSubentrada2_3").text(chrome.i18n.getMessage("atajos_subentrada2_3")); //Paypal
+
 });
 
 

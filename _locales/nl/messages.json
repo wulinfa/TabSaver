@@ -4,78 +4,78 @@
     "description": "Nom de l'extencio."
   },
   "appDesc": {
-    "message": "Simple et facile à utiliser. Sauvegardez et récupérez vos onglets quand vous voulez, en un seul clic, et sans pop-ups.",
+    "message": "Eenvoudig en gemakkelijk te gebruiken. Bewaar en herstel uw tabbladen wanneer u maar wilt, met één klik en zonder pop-ups.",
     "description": "Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message": "Configuration",
+    "message": "Configuratie",
     "description": "Paraula del menu lateral"
   },
   "menu_atajos": {
-    "message": "Raccourcis",
+    "message": "Snelkoppelingen\n",
     "description": "Paraula del menu lateral"
   },
   "menu_donaciones": {
-    "message": "Paypal",
+    "message": "PayPal",
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
-    "message": "Raccourcis clavier",
+    "message": "Sneltoetsen op het toetsenbord\n",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Utilisez les raccourcis clavier pour travailler plus rapidement.",
+    "message": "Gebruik sneltoetsen om sneller te werken.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "Externe:"
+    "message": "Extern"
   },
   "atajos_subentrada1_1": {
-    "message": "Activer enregistré"
+    "message": "Activeer opgeslagen"
   },
   "atajos_entrada2": {
-    "message": "Interne"
+    "message": "Intern"
   },
   "atajos_subentrada2_1": {
-    "message": "Configuration"
+    "message": "Configuratie"
   },
   "atajos_subentrada2_2": {
-    "message": "Raccourcis"
+    "message": "Snelkoppelingen\n"
   },
   "atajos_subentrada2_3": {
-    "message": "Paypal"
+    "message": "PayPal"
   },
   "config_titol": {
-    "message": "Mode de travail",
+    "message": "Werk modus",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
-    "message": "Choisissez la façon de travailler qui vous convient le mieux.",
+    "message": "Kies de manier van werken die voor u het meest comfortabel is.",
     "description": "Subtitol de la entrada config"
   },
   "config_simple": {
-    "message": "Simple"
+    "message": "Eenvoudig"
   },
   "config_simplemsg": {
-    "message": "Enregistrez et récupérez les onglets lorsque vous cliquez."
+    "message": "Sla tabbladen op en haal ze op wanneer u klikt."
   },
   "config_subsimple": {
-    "message": "Enregistrer les onglets dans la barre de favoris."
+    "message": "Sla tabbladen op in de bladwijzerbalk."
   },
   "config_onlysave": {
-    "message": "Il suffit d'économiser"
+    "message": "Bespaar gewoon\n"
   },
   "config_onlysavemsg": {
-    "message": "Les onglets sont enregistrés dans les marqueurs lorsque vous cliquez."
+    "message": "De tabbladen worden opgeslagen in de bladwijzers wanneer u klikt."
   },
   "config_subonlysave": {
-    "message": "Fermez les onglets lors de l'enregistrement."
+    "message": "Sluit de tabbladen bij het opslaan.\n"
   },
   "config_snackbar_message": {
-    "message": "Configuration mise à jour."
+    "message": "Bijgewerkte configuratie."
   },
   "config_error": {
-    "message": "Problème avec la configuration sauvegardée.\n",
+    "message": "Probleem met opgeslagen instellingen.",
     "description": "Mensaje de error cuando hay problemas con la configuración"
   }
 }

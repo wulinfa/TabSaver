@@ -5,39 +5,36 @@
   },
   "appDesc": {
     "message": "Simple and easy to use. Save and recover the tabs whenever you want, in just one click, and without pop-ups.",
-    "description":"Descripción de l'extensión a nivel de manifiest."
+    "description": "Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message":"Configuration",
+    "message": "Configuration",
     "description": "Paraula del menu lateral"
   },
-
   "menu_atajos": {
     "message": "Shortcuts",
     "description": "Paraula del menu lateral"
   },
-
   "menu_donaciones": {
     "message": "Paypal",
     "description": "Paraula del menu lateral"
   },
-
   "atajos_titol": {
-    "message": "Keyboard shortcuts:",
+    "message": "Keyboard shortcuts",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
-    "message": "Use the keyboard shortcuts to be faster working.",
+    "message": "Use keyboard shortcuts to be faster working.",
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "External:"
+    "message": "External"
   },
   "atajos_subentrada1_1": {
-    "message": "Save or recover:"
+    "message": "Save or recover"
   },
   "atajos_entrada2": {
-    "message": "Internal:"
+    "message": "Interns"
   },
   "atajos_subentrada2_1": {
     "message": "Configuration"
@@ -48,9 +45,8 @@
   "atajos_subentrada2_3": {
     "message": "Paypal"
   },
-
   "config_titol": {
-    "message": "Work Mode:",
+    "message": "Working mode",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
@@ -76,8 +72,10 @@
     "message": "Close tabs when saving."
   },
   "config_snackbar_message": {
-    "message": "updated configuration"
+    "message": "Updated configuration."
+  },
+  "config_error": {
+    "message": "Problem with saved settings.",
+    "description": "Mensaje de error cuando hay problemas con la configuración"
   }
-
 }
-

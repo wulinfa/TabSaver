@@ -5,25 +5,22 @@
   },
   "appDesc": {
     "message": "Einfach und leicht zu bedienen. Speichern und wiederherstellen Sie die Registerkarten, wann immer Sie wollen, mit nur einem Klick und ohne Pop-ups.",
-    "description":"Descripción de l'extensión a nivel de manifiest."
+    "description": "Descripción de l'extensión a nivel de manifiest."
   },
   "menu_config": {
-    "message":"Konfiguration",
+    "message": "Konfiguration",
     "description": "Paraula del menu lateral"
   },
-
   "menu_atajos": {
-    "message": "Abkürzungen",
+    "message": "Tastenkombinationen",
     "description": "Paraula del menu lateral"
   },
-
   "menu_donaciones": {
     "message": "Paypal",
     "description": "Paraula del menu lateral"
   },
-
   "atajos_titol": {
-    "message": "Tastatürkürzel:",
+    "message": "Tastaturkürzel",
     "description": "Titol de la entrada atajos"
   },
   "atajos_subtitol": {
@@ -31,26 +28,25 @@
     "description": "Subtitol de la entrada atajos"
   },
   "atajos_entrada1": {
-    "message": "äußerlich:"
+    "message": "Extern"
   },
   "atajos_subentrada1_1": {
-    "message": "Speichern oder wiederherstellen:"
+    "message": "Gespeicherte aktivieren"
   },
   "atajos_entrada2": {
-    "message": "Intern:"
+    "message": "Intern"
   },
   "atajos_subentrada2_1": {
     "message": "Konfiguration"
   },
   "atajos_subentrada2_2": {
-    "message": "Abkürzungen"
+    "message": "Tastenkombinationen"
   },
   "atajos_subentrada2_3": {
     "message": "Paypal"
   },
-
   "config_titol": {
-    "message": "Arbeitsmodus:",
+    "message": "Arbeitsmodus",
     "description": "Titol de la entrada configuracio"
   },
   "config_subtitol": {
@@ -61,23 +57,25 @@
     "message": "Einfach"
   },
   "config_simplemsg": {
-    "message": "Speichern und wiederherstellen der Registerkarten beim Klicken."
+    "message": "Speichern und Abrufen von Registerkarten beim Klicken."
   },
   "config_subsimple": {
-    "message": "Save the tabs on the bookmarks bar."
+    "message": "Registerkarten in der Lesezeichenleiste speichern."
   },
   "config_onlysave": {
     "message": "Nur speichern"
   },
   "config_onlysavemsg": {
-    "message": "Speichern Sie die Registerkarten in der Lesezeichenleiste."
+    "message": "Die Registerkarten werden beim Klicken in den Lesezeichen gespeichert"
   },
   "config_subonlysave": {
     "message": "Schließen Sie die Tabs beim Speichern."
   },
   "config_snackbar_message": {
     "message": "Aktualisierte Konfiguration."
+  },
+  "config_error": {
+    "message": "Problem mit gespeicherter Konfiguration.\n",
+    "description": "Mensaje de error cuando hay problemas con la configuración"
   }
-
 }
-

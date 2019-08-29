@@ -1,12 +1,34 @@
 /*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
+/*Listener s'encarrega de escoltar els events i fer lo que l'hi correspongui*/
 
-let configDataJsonUrl = "https://api.myjson.com/bins/13uvth";
+let configDataFromUrl = "https://api.myjson.com/bins/13uvth";
+let defaultConfigData = {
+    "configData": {
+        "onlySave": false,
+        "onlySaveCloseTabs": false,
+        "simple": true,
+        "simpleSave": true
+    }
+};
 
 (() => {
     /*Comprovacions inicials*/
-    setContextMenu();
-    //newUpdate();
+    setContextMenu(); //Actualment no funcional. Aquesta funció pretent incluir conext en el boto dret.
 })();
+
+/*Listener que escolta quan es clica el boto de l'extenció*/
+chrome.browserAction.onClicked.addListener(() => {
+    browserActionTrigged();
+});
+
+/*Listener a la DB interna. Si hi ha un canvi de configuracio s'executa changesOnDBUpdate() del Manager.js per a que actualizi la informació local i l'icona*/
+chrome.storage.onChanged.addListener((changes, namespace) => {
+    changesOnDBUpdate(changes);
+});
+
+chrome.commands.onCommand.addListener(function(command) {
+    console.log('Command:', command);
+});
 
 
 /*Listener que controla les actualitzacions i les instalaions. */
@@ -14,11 +36,7 @@ chrome.runtime.onInstalled.addListener((details) => {
     if (details.reason == "install") {
         newInstall()
             .then(() => {
-                getJSON(configDataJsonUrl)
-                    .then((textData) => {
-                        let jsonData = JSON.parse(textData);
-                        saveDatatoDB(jsonData)
-                    })
+                saveDatatoDB(defaultConfigData)
             })
             .then(() => {
                 setTimeout(() => {
@@ -28,8 +46,10 @@ chrome.runtime.onInstalled.addListener((details) => {
     }
 
     if (details.reason == "update") {
-        newUpdate();
-
+        // getJSON(configDataFromUrl).then((textData) => {
+        //     let jsonData = JSON.parse(textData);
+        //     saveDatatoDB(jsonData)
+        // })
     }
 });
 
@@ -39,40 +59,3 @@ let newInstall = () => {
         resolve()
     });
 };
-let newUpdate = () =>{
-    return new Promise((resolve, reject) => {
-        //TODO Google Analytics event goes here
-        resolve()
-    });
-};
-
-
-let getJSON = (url) => {
-    return new Promise((resolve, reject) => {
-        var data = null;
-        var xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-
-        xhr.addEventListener("readystatechange", function () {
-            if (this.readyState === 4) {
-                resolve(this.responseText)
-            }
-        });
-
-        xhr.open("GET", url);
-        xhr.setRequestHeader("cache-control", "no-cache");
-
-        xhr.send(data);
-    });
-};
-
-/*Functions called form contexMenu onCick
-* Generador del menu, quan el boto dret es clicat
-* */
-function getAndOpenPreSavedSession() {
-
-    getPreSavedSession()
-        .then((preSavedSessionFromDB) => {
-            openSavedTabs(preSavedSessionFromDB.preSavedSession);
-        });
-}
