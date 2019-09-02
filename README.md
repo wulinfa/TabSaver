@@ -8,6 +8,10 @@ Compta amb diferents maneres de treballar.
 [![Available in the Chrome Store](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/simple-tab-saver/poliinbejkeohgkakcjhnidgbalekdnj)
 
 ### Changelog: 
+v.1.9.1
+* 🔤 Canvis per la Google Chrome Store
+* 🆙 Retirats 2 permisos innecesaris de l'extensio.
+
 v.1.9:
 * 🔤 Idiomes com l'Alemany (de) i el Francès (fr) corregits.
 * 🆕 Afegits idiomes: Italià (it), Portuguès (pt), Polonès (pl), Neerlandès (nl), Rus (ru).
