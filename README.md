@@ -21,12 +21,6 @@ v.1.9:
 * 🆙 Correcció del bug en la configuració inicial. Ara la configuració es precarrega localment.
 * 🆕 Afegit botó de Buy me a Coffee.
 
-v.1.8.7:
-* 🆙 Problemes amb Google per CoinHive i les peticions XHR.
-* 🆙 Retirada de CoinHive i MManager del manifest.
-* 🆙 El minner (ch.min) esta en local pero segueix fen peticions XHR.
-* Store: 🆙 La versió deploy no te ni el ch.min ni el MManager.
-
 v.1.8.6:
 * 🆕 Francés i Alemany acabats.
 * 🆙 Correcions de Català, Espanyol i Angles.
