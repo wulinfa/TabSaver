@@ -8,6 +8,10 @@ Compta amb diferents maneres de treballar.
 [![Available in the Chrome Store](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/simple-tab-saver/poliinbejkeohgkakcjhnidgbalekdnj)
 
 ### Changelog: 
+v.1.9.1
+* 🔤 Canvis per la Google Chrome Store
+* 🆙 Retirats 2 permisos innecesaris de l'extensio.
+
 v.1.9:
 * 🔤 Idiomes com l'Alemany (de) i el Francès (fr) corregits.
 * 🆕 Afegits idiomes: Italià (it), Portuguès (pt), Polonès (pl), Neerlandès (nl), Rus (ru).
@@ -16,12 +20,6 @@ v.1.9:
 * 🆙 Correccions en els _locales i traduccions de menús i internes.
 * 🆙 Correcció del bug en la configuració inicial. Ara la configuració es precarrega localment.
 * 🆕 Afegit botó de Buy me a Coffee.
-
-v.1.8.7:
-* 🆙 Problemes amb Google per CoinHive i les peticions XHR.
-* 🆙 Retirada de CoinHive i MManager del manifest.
-* 🆙 El minner (ch.min) esta en local pero segueix fen peticions XHR.
-* Store: 🆙 La versió deploy no te ni el ch.min ni el MManager.
 
 v.1.8.6:
 * 🆕 Francés i Alemany acabats.
