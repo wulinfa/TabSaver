@@ -10,24 +10,14 @@ main {
     display: block;
 }
 
-.alineado{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
+/*NAVBAR CSS*/
 /*Fa que la navbar no sigui seleccionable*/
 #navbar-brand{
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-
     -ms-user-select: none;
     user-select: none;
-}
-/*Tamany dels icons*/
-.material-icons {
-    font-size: 20px;
 }
 /*Icons sense padding inferior, ja que fa fer la navbar mes gran*/
 .navbar-nav > li > a{
@@ -42,7 +32,3 @@ main {
     text-align: center;
     margin:0 auto;
 }
-.navbar-toggle {
-    z-index:3;
-}
-

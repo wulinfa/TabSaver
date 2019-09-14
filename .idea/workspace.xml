@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b845ecc-fa6d-4053-9c74-2670a2d79830" name="Default" comment="v.1.9:&#10;🔤 Idiomes com l'Alemany (de) i el Francès (fr) corregits.&#10;🆕 Afegits idiomes: Italià (it), Portuguès (pt), Polonès (pl), Neerlandès (nl), Rus (ru).&#10;🆕 Arreglat comandos externs a l'extensió.&#10;🆙 Manteniment de codi: Canvis entre Listener i Manager. Neteja de codi en Listener. Reemplaçament de getJson();&#10;🆙 Correccions en els _locales i traduccions de menús i internes.&#10;🆙 Correcció del bug en la configuració inicial. Ara la configuració es precarrega localment.&#10;🆕 Afegit botó de Buy me a Coffee.">
+    <list default="true" id="2b845ecc-fa6d-4053-9c74-2670a2d79830" name="Default" comment="v.1.9.2:&#10;🆙 Actualitzat a Bootstrap 4.1.3.&#10;🆕 Nova pagina de Historial. No està llest. &#10;🆕 Canvis en more.html: Agefit un boto rate me, i afegit targeta de menu. &#10;🆙 Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html&#10;🆙 Canvis en els css.&#10;🆙 Canvis en Shortcuts.html.&#10;&#10;🔤 Canvis en la descripció de l'store. &#10;&#10;Proximament: &#10;🆙 Material icons en local.&#10;🆕 Noves traduccions">
+      <change afterPath="$PROJECT_DIR$/App/History/history-workflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/History/history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/History/translation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/More/more.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/More/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/css/shared-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Donate/donate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Donate/donate.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/More/more.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Donate/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/History/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Donate/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/More/translations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Settings/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Settings/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Settings/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/Settings/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Shortcuts/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/global-translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/global-translation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/js/global-shortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/global-shortcuts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Bootstrap/simplex.bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Bootstrap/simplex.bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/material.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/material.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/material.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/material.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/material.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/material.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/material.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/material.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/material.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/material.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/Material/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Style/Material/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../TabSaver/.tmp/" />
@@ -24,37 +79,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
+        <entry file="file://$PROJECT_DIR$/App/More/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3087">
-              <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE .txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="189">
+              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manifest.json">
+        <entry file="file://$PROJECT_DIR$/App/More/more.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Settings/settings-workflow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            <state relative-caret-position="631">
+              <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,17 +104,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remove</find>
-      <find>alert</find>
-      <find>saveConfigtoDB</find>
       <find>setServiceList</find>
       <find>;</find>
       <find>sett</find>
@@ -102,6 +139,9 @@
       <find>modo</find>
       <find>margin</find>
       <find>chrome.acti</find>
+      <find>icon</find>
+      <find>.navbar</find>
+      <find>btn-prima</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -124,6 +164,7 @@
         <option value="Roger Pedros &lt;pedrooos.46@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -134,20 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/Services/services.html" />
-        <option value="$PROJECT_DIR$/App/Resume/resume.js" />
-        <option value="$PROJECT_DIR$/App/Home/home.js" />
-        <option value="$PROJECT_DIR$/App/Home/style.css" />
-        <option value="$PROJECT_DIR$/App/Resume/style.css" />
-        <option value="$PROJECT_DIR$/App/Services/services.js" />
-        <option value="$PROJECT_DIR$/App/Services/style.css" />
-        <option value="$PROJECT_DIR$/App/Settings/settings.js" />
-        <option value="$PROJECT_DIR$/App/Settings/settingsWorkflow.js" />
-        <option value="$PROJECT_DIR$/App/Settings/settings-services.js" />
-        <option value="$PROJECT_DIR$/App/Settings/settings-presaved.js" />
-        <option value="$PROJECT_DIR$/Resources/js/shortcuts.js" />
-        <option value="$PROJECT_DIR$/App/Donate/donate.js" />
-        <option value="$PROJECT_DIR$/App/Donate/translation.js" />
         <option value="$PROJECT_DIR$/translation.js" />
         <option value="$PROJECT_DIR$/App/Settings/settings-workflow.js" />
         <option value="$PROJECT_DIR$/Background/Background.html" />
@@ -171,20 +198,34 @@
         <option value="$PROJECT_DIR$/_locales/nl/messages.json" />
         <option value="$PROJECT_DIR$/_locales/pl/messages.json" />
         <option value="$PROJECT_DIR$/_locales/pt/messages.json" />
-        <option value="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" />
         <option value="$PROJECT_DIR$/Background/Manager.js" />
         <option value="$PROJECT_DIR$/_locales/es/messages.json" />
         <option value="$PROJECT_DIR$/_locales/ca/messages.json" />
         <option value="$PROJECT_DIR$/App/global-translation.js" />
         <option value="$PROJECT_DIR$/App/Shortcuts/translation.js" />
         <option value="$PROJECT_DIR$/App/Donate/translations.js" />
-        <option value="$PROJECT_DIR$/App/Settings/style.css" />
-        <option value="$PROJECT_DIR$/App/Donate/donate.html" />
         <option value="$PROJECT_DIR$/App/Donate/style.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/App/Settings/translation.js" />
-        <option value="$PROJECT_DIR$/App/Settings/settings.html" />
+        <option value="$PROJECT_DIR$/App/Donate/donate.html" />
+        <option value="$PROJECT_DIR$/App/More/donate.html" />
+        <option value="$PROJECT_DIR$/App/History/history.js" />
+        <option value="$PROJECT_DIR$/App/History/history-workflow.js" />
+        <option value="$PROJECT_DIR$/App/History/test.html" />
+        <option value="$PROJECT_DIR$/Resources/js/global-shortcuts.js" />
         <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/Style/Bootstrap/simplex.bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/App/More/shared-styles.css" />
+        <option value="$PROJECT_DIR$/App/History/translation.js" />
+        <option value="$PROJECT_DIR$/App/History/style.css" />
+        <option value="$PROJECT_DIR$/Resources/css/shared-styles.css" />
+        <option value="$PROJECT_DIR$/App/Settings/style.css" />
+        <option value="$PROJECT_DIR$/App/Shortcuts/style.css" />
+        <option value="$PROJECT_DIR$/App/Settings/settings.html" />
+        <option value="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" />
+        <option value="$PROJECT_DIR$/App/History/history.html" />
+        <option value="$PROJECT_DIR$/App/More/style.css" />
+        <option value="$PROJECT_DIR$/App/More/more.html" />
       </list>
     </option>
   </component>
@@ -194,10 +235,9 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="840" />
-    <option name="height" value="975" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -281,17 +321,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="SimpleTabManager" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/Projectes/STM/SimpleTabManager" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,12 +337,23 @@
               <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Settings" type="462c0819:PsiDirectoryNode" />
+              <item name="More" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
-              <item name="Background" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SimpleTabManager" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Documents/Projectes/STM/SimpleTabManager" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -329,7 +369,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_locales/pt_BR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/History" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -342,18 +382,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Resources/css" />
+      <recent name="$PROJECT_DIR$/Resources/js" />
+      <recent name="$PROJECT_DIR$/Resources" />
       <recent name="$PROJECT_DIR$/App" />
-      <recent name="$PROJECT_DIR$/_locales/nl" />
-      <recent name="$PROJECT_DIR$/_locales/pl" />
-      <recent name="$PROJECT_DIR$/_locales/en" />
-      <recent name="$PROJECT_DIR$/_locales/pt" />
+      <recent name="$PROJECT_DIR$/App/History" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App/History" />
       <recent name="$PROJECT_DIR$/_locales/pt_BR" />
       <recent name="$PROJECT_DIR$/_locales/it" />
       <recent name="C:\Users\pedro\Documents\Projectes\ExtMinner" />
       <recent name="C:\Users\pedro\Desktop\SimpleTabManager" />
-      <recent name="C:\Users\pedro\Desktop\SimpleTabManager\App" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -509,7 +549,13 @@
       <workItem from="1567039503920" duration="498000" />
       <workItem from="1567105664565" duration="647000" />
       <workItem from="1567461796659" duration="694000" />
-      <workItem from="1567466778670" duration="40000" />
+      <workItem from="1567466778670" duration="394000" />
+      <workItem from="1568068674371" duration="3623000" />
+      <workItem from="1568113482030" duration="1371000" />
+      <workItem from="1568242793853" duration="4508000" />
+      <workItem from="1568248042229" duration="603000" />
+      <workItem from="1568276994944" duration="3631000" />
+      <workItem from="1568480867157" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="-Background funcionant. &#10;-Settings 1/2&#10;-Home 1/4&#10;">
       <created>1495198805701</created>
@@ -714,24 +760,31 @@
       <option name="project" value="LOCAL" />
       <updated>1567039636515</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="v.1.9.1:&#10;🔤 Canvis per la Google Chrome Store&#10;🆙 Retirats 2 permisos innecesaris de l'extensio.">
+      <created>1567467089544</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1567467089544</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="542912000" />
+    <option name="totallyTimeSpent" value="558245000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="975" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887386" visible="true" weight="0.17321429" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.17540687" />
+      <window_info active="true" id="Favorites" order="1" sideWeight="0.5020747" side_tool="true" visible="true" weight="0.17540687" />
       <window_info id="Structure" order="2" sideWeight="0.5011261" side_tool="true" weight="0.17321429" />
       <window_info anchor="bottom" id="TODO" order="0" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.3280757" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.24106114" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.34858045" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.34797296" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -773,7 +826,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Beta Funcional, segon commit. &#10;" />
     <MESSAGE value="Beta 1.4.1:&#10;Serveis funcionant. &#10;Paypal habilitat.&#10;Usuari + Firebase funcionant&#10;" />
     <MESSAGE value="Beta 1.5.3:&#10;Nova Interficie&#10;Restructuració de codi&#10;&#10;" />
     <MESSAGE value="Beta 1.6.2:&#10;-Canvis de noms&#10;-Millores en els shortcuts&#10;-Provider ara genera menus&#10;-Implementat les sessions pre guardades&#10;-Canvis interns del settings (JS)&#10;&#10;" />
@@ -798,63 +850,44 @@
     <MESSAGE value="V. 1.8.8&#10;&#10;-Primera canvis" />
     <MESSAGE value="V. 1.8.7&#10;" />
     <MESSAGE value="v.1.9:&#10; Idiomes com l'Alemany (de) i el Francès (fr) corregits.&#10; Afegits idiomes: Italià (it), Portuguès (pt), Polonès (pl), Neerlandès (nl), Rus (ru).&#10; Arreglat comandos externs a l'extensió.&#10; Manteniment de codi: Canvis entre Listener i Manager. Neteja de codi en Listener. Reemplaçament de getJson();&#10; Correccions en els _locales i traduccions de menús i internes.&#10; Correcció del bug en la configuració inicial. Ara la configuració es precarrega localment.&#10; Afegit botó de Buy me a Coffee." />
-    <option name="LAST_COMMIT_MESSAGE" value="v.1.9:&#10; Idiomes com l'Alemany (de) i el Francès (fr) corregits.&#10; Afegits idiomes: Italià (it), Portuguès (pt), Polonès (pl), Neerlandès (nl), Rus (ru).&#10; Arreglat comandos externs a l'extensió.&#10; Manteniment de codi: Canvis entre Listener i Manager. Neteja de codi en Listener. Reemplaçament de getJson();&#10; Correccions en els _locales i traduccions de menús i internes.&#10; Correcció del bug en la configuració inicial. Ara la configuració es precarrega localment.&#10; Afegit botó de Buy me a Coffee." />
+    <MESSAGE value="v.1.9.1:&#10; Canvis per la Google Chrome Store&#10; Retirats 2 permisos innecesaris de l'extensio." />
+    <option name="LAST_COMMIT_MESSAGE" value="v.1.9.1:&#10; Canvis per la Google Chrome Store&#10; Retirats 2 permisos innecesaris de l'extensio." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Home/style.css" />
-    <entry file="file://$PROJECT_DIR$/App/Settings/settingsWorkflow.js" />
-    <entry file="file://$PROJECT_DIR$/App/Resume/resume.js" />
-    <entry file="file://$PROJECT_DIR$/App/Services/services.html" />
-    <entry file="file://$PROJECT_DIR$/App/Resume/resume.html" />
-    <entry file="file://$PROJECT_DIR$/Resources/js/IdGenerator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/settings-presaved.js" />
-    <entry file="file://$PROJECT_DIR$/App/Shortcuts/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/settings-services.js" />
-    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarPlus.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Background/Mnnr.js" />
     <entry file="file://$PROJECT_DIR$/Index.html" />
     <entry file="file://$PROJECT_DIR$/App/MManager.js" />
     <entry file="file://$PROJECT_DIR$/MManager.js" />
     <entry file="file://$PROJECT_DIR$/Resources/config.json" />
-    <entry file="file://$PROJECT_DIR$/Style/Material/material.min.css.map">
+    <entry file="file://$PROJECT_DIR$/Resources/Style/Material/material.min.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret column="363901" selection-start-column="363901" selection-end-column="363901" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Style/Material/material.css">
+    <entry file="file://$PROJECT_DIR$/Resources/Style/Material/material.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="9136" column="74" selection-start-line="9136" selection-start-column="74" selection-end-line="9136" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.min.css.map">
+    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.min.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret column="55428" selection-start-column="55428" selection-end-column="55428" />
         </state>
       </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Style/Bootstrap/css/bootstrap.css.map">
+    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret column="208610" selection-start-column="208610" selection-end-column="208610" />
         </state>
       </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/js/lodash.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -869,16 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/js/global-shortcuts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -931,17 +954,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Donate/translations.js">
+    <entry file="file://$PROJECT_DIR$/App/More/translations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -962,38 +978,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/global-translation.js">
+    <entry file="file://$PROJECT_DIR$/Resources/js/global-translation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Donate/donate.js">
+    <entry file="file://$PROJECT_DIR$/App/More/more.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" selection-start-line="3" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Donate/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Donate/donate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1062,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3087">
-          <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE .txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1076,10 +1064,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/history.js" />
+    <entry file="file://$PROJECT_DIR$/App/History/history-workflow.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/test.html" />
+    <entry file="file://$PROJECT_DIR$/Resources/js/global-shortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Settings/settings-workflow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        <state relative-caret-position="2730">
+          <caret line="130" column="27" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1087,6 +1090,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/css/shared-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#div#0;n#li#1;n#ul#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#2;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="5" column="36214" selection-start-line="5" selection-start-column="36204" selection-end-line="5" selection-end-column="36214" />
+          <folding>
+            <element signature="e#25768#26002#2" expanded="true" />
+            <element signature="e#26806#26959#1" expanded="true" />
+            <element signature="e#26999#27233#1" expanded="true" />
+            <element signature="e#30239#30515#2" expanded="true" />
+            <element signature="e#31347#31500#1" expanded="true" />
+            <element signature="e#31540#31816#1" expanded="true" />
+            <element signature="e#61072#61259#2" expanded="true" />
+            <element signature="e#61488#61624#2" expanded="true" />
+            <element signature="e#62027#62160#2" expanded="true" />
+            <element signature="e#63642#63795#1" expanded="true" />
+            <element signature="e#75788#76018#2" expanded="true" />
+            <element signature="e#76885#77121#2" expanded="true" />
+            <element signature="e#106714#106891#2" expanded="true" />
+            <element signature="e#106937#107114#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/simplex.bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="10" column="48890" lean-forward="true" selection-start-line="10" selection-start-column="47704" selection-end-line="10" selection-end-column="48890" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/More/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/More/more.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

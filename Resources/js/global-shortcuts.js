@@ -3,8 +3,14 @@ $(window).keypress((event) => {
     if ($('input').is(":focus")) {
         return 0;
     } else{
-        console.log(event.keyCode)
+        console.log(event.keyCode);
         switch (event.keyCode) {
+
+            /*Configuracion*/
+            case 104:
+            case 72:
+                window.location.replace("../../App/History/history.html");
+                break;
 
             /*Configuracion*/
             case 115:
@@ -21,7 +27,7 @@ $(window).keypress((event) => {
             /*Donaciones*/
             case 112:
             case 80:
-                window.location.replace("../../App/Donate/donate.html");
+                window.location.replace("../../App/More/more.html");
                 break;
 
             default:
