@@ -3,14 +3,8 @@
 
 
 $(document).ready(() => {
-
-
     $("#configTitol").text(chrome.i18n.getMessage("config_titol"));
     $("#configSubtitol").text(chrome.i18n.getMessage("config_subtitol"));
-
-    $("#configTitol").text(chrome.i18n.getMessage("atajos_titol"));
-    $("#configSubtitol").text(chrome.i18n.getMessage("atajos_subtitol"));
-
 
     $("#configSimple").text(chrome.i18n.getMessage("config_simple"));
     $("#configSimplemsg").text( chrome.i18n.getMessage("config_simplemsg"));
