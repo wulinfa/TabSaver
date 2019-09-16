@@ -8,7 +8,30 @@ Compta amb diferents maneres de treballar.
 [![Available in the Chrome Store](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/simple-tab-saver/poliinbejkeohgkakcjhnidgbalekdnj)
 
 ### Changelog: 
-v.1.9.1
+
+v.1.9.3:
+* 🆙 Adaptació de Copyright
+* 🆙 Actualització a JQuery 3.4.1
+* 🆕 Canvios en Settings.hmtl:
+    * Respetar incognito. (no està llest)
+* 🆕 Canvis en history.html
+
+v.1.9.2:
+* 🆙 Actualitzat a Bootstrap 4.1.3.
+* 🆕 Nova pagina de Historial. No està llest.
+* 🆕 Canvis en more.html: 
+  * Agefit un boto rate me
+* 🆙 Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html
+* 🆙 Canvis en els css:
+  * Adaptació a Bootstrap 4.1.3
+  * Shared-styles.css
+* 🆙 Canvis en el tema Simplex.
+* 🆙 Canvis en Shortcuts.html.
+* 🆙 Canvis en la estructura del projecte.
+
+* 🔤 Canvis en la descripció de l'store.
+
+v.1.9.1:
 * 🔤 Canvis per la Google Chrome Store
 * 🆙 Retirats 2 permisos innecesaris de l'extensio.
 
