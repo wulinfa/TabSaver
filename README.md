@@ -14,6 +14,7 @@ v.1.9.3:
 * 🆙 Actualització a JQuery 3.4.1
 * 🆕 Canvios en Settings.hmtl:
     * Respetar incognito. (no està llest)
+    * Almacenamiento local. (no està llest)
 * 🆕 Canvis en history.html
 
 v.1.9.2:
