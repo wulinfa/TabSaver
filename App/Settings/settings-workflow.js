@@ -1,4 +1,4 @@
-/*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
 /*Clase que controla el workflow del interruptors de la configuració*/
 
 $(document).ready(() => {
@@ -133,7 +133,6 @@ $(document).ready(() => {
             message: this.snackBarTranslationResonse,
             timeout: 1750
         };
-        debugger;
         snackbarContainer.MaterialSnackbar.showSnackbar(data);
     }
 

@@ -1,4 +1,4 @@
-/*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
 /*REFERENT A LA FINESTRA OBERTA*/
 /*Agafa les finestres actuals de la finesta oberta*/
 function getTabs() {

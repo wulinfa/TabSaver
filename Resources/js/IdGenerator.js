@@ -1,6 +1,5 @@
-/**
- * Created by pedro on 30/05/2017.
- */
+/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
+
 
 function generateId(){
     return newId = s4() + s4() + s4() + s4() + s4() + s4() + s4() + s4();

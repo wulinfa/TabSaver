@@ -1,7 +1,10 @@
+<!--Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.-->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Tab Saver</title>    <meta name="viewport" content="width=device-width initial-scale=0.9" charset="UTF-8">
+    <title>Simple Tab Saver</title>
+    <meta name="viewport" content="width=device-width initial-scale=0.9" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="../../Resources/Icons/iconBlue.png" sizes="16x16">
 
@@ -12,7 +15,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css"/>
 
     <!--JQUERY-->
-    <script src="../../Resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../../Resources/js/jquery-3.4.1.min.js"></script>
     <script src="../../Resources/js/tether.min.js"></script>
 
     <!--BOOTSTRAP-->
@@ -55,15 +58,41 @@
         <ul class="nav nav-pills flex-column">
             <li class="nav-item active"><a id="menuHistorial" href="../History/history.html">Historial</a></li>
             <li class="nav-item"><a id="menuConfig" href="../Settings/settings.html">Configuración</a></li>
-            <li class="nav-item"><a  id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a></li>
+            <li class="nav-item"><a id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a></li>
             <li class="nav-item"><a id="menuDonate" href="../More/more.html">Más</a></li>
         </ul>
     </section>
 
     <section class="col-sm-9 col-md-10 col-lg-10" id="right-content">
-        <!--Modo de trabajo-->
+        <!--Session actual!-->
         <div class="jumbotron text-left">
-           UNDER CONSTRUCTION
+            <div class="card card-body custom-card">
+                <b class="card-title">Sessión Actual:</b>
+
+                <div id="sessionNotFound"></div>
+                <div class="list-group list-group-horizontal" style="margin-top: 10px;" id="lastSessionSaved"><!--Contigut generat dinamicament--></div>
+
+            </div>
+
+            <div style="margin-top: 25px; margin-bottom: 0px">
+                <h2 id="configTitol">Historial:</h2>
+                <h4><small id="configSubtitol" class="text-info">Explorar o recupera una session guardada anteriormente.</small></h4>
+            </div>
+
+
+            <div class="card card-body">
+                <b class="card-title">Sessión 1:</b>
+
+                <div style="padding-top: 20px" class="panel-empty text-center">
+
+                    <i class="material-icons not-found-icon">wifi_tethering</i>
+                    <p style="font-size: 13px" class="text-danger">No se ha encontrado ninguna sessión guardada.</p>
+                </div>
+                <ul class="list-group drag-container" id="savedTabs1">
+                    <!--Contigut auto-generat aqui-->
+                </ul>
+            </div>
+
         </div>
 
     </section>

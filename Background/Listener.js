@@ -1,4 +1,4 @@
-/*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
 /*Listener s'encarrega de escoltar els events i fer lo que l'hi correspongui*/
 
 let configDataFromUrl = "https://api.myjson.com/bins/13uvth";

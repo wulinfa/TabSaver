@@ -1,4 +1,4 @@
-/*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
 /*Manager s'encarrega de portar la logica de la extencio*/
 
 this.configData = {};
