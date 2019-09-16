@@ -19,7 +19,7 @@ v.1.9.3:
 v.1.9.2:
 * 🆙 Actualitzat a Bootstrap 4.1.3.
 * 🆙 Adaptació a Bootstrap 4.1.3 
-* 🆕 Nova pagina de Historial. No està llest.
+* 🆕 Nova pagina de Historial. (No està llest.)
 * 🆕 Canvis en more.html: Agefit un boto rate me
 * 🆙 Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html
 * 🆙 Canvis en Shortcuts.html.
