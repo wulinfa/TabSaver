@@ -18,17 +18,14 @@ v.1.9.3:
 
 v.1.9.2:
 * 🆙 Actualitzat a Bootstrap 4.1.3.
+* 🆙 Adaptació a Bootstrap 4.1.3 
 * 🆕 Nova pagina de Historial. No està llest.
-* 🆕 Canvis en more.html: 
-  * Agefit un boto rate me
+* 🆕 Canvis en more.html: Agefit un boto rate me
 * 🆙 Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html
-* 🆙 Canvis en els css:
-  * Adaptació a Bootstrap 4.1.3
-  * Shared-styles.css
-* 🆙 Canvis en el tema Simplex.
 * 🆙 Canvis en Shortcuts.html.
+* 🆕 Afegit Shared-styles.css
+* 🆙 Canvis en el tema Simplex.
 * 🆙 Canvis en la estructura del projecte.
-
 * 🔤 Canvis en la descripció de l'store.
 
 v.1.9.1:
