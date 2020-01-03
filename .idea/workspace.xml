@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b845ecc-fa6d-4053-9c74-2670a2d79830" name="Default" comment="v.1.9.2:&#10;🆙 Actualitzat a Bootstrap 4.1.3.&#10;🆕 Nova pagina de Historial. No està llest. &#10;🆕 Canvis en more.html:&#10;&#9;&#9;-Agefit un boto rate me&#10;🆙 Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html&#10;🆙 Canvis en els css: &#10;&#9;&#9;-Adaptació a Bootstrap 4.1.3&#10;&#9;&#9;-Shared-styles.css&#10;🆙 Canvis en el tema Simplex.&#10;🆙 Canvis en Shortcuts.html.&#10;🆙 Canvis en la estructura del projecte.&#10;&#10;🔤 Canvis en la descripció de l'store.">
-      <change afterPath="$PROJECT_DIR$/App/History/tab-card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/js/jquery-3.4.1.min.js" afterDir="false" />
+    <list default="true" id="2b845ecc-fa6d-4053-9c74-2670a2d79830" name="Default" comment="v.1.9.4:&#10;🆙 Adaptació de Copyright&#10;🆙 🆕 Restructuració i canvis de codi:&#10;- Nova pàgina en background&#10;- Deslocalització d'scripts en diferents scripts.&#10;- Canvis en Listener i Manager.&#10;- Canvis en el Provider: CRUD complet.&#10;- Actualizació del codi al nou Provider.&#10;- Nova funció per detectar incognito.&#10;- Correcció d'errors&#10;&#10;🆙 Canvis en Settings.hmtl:&#10;- Implementació de Local Storage (retirada)&#10;&#10;🆙 Actualizació de Lodash per motius de seguretat: Lodash 4.17.15 &#10;🆙 Canvis en els resources&#10;🆙 Logica interna dels historials acabada&#10;🆙 Logica (client) dels historials acabada&#10;🆙 Utilizació del templates">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/All_rights_reserved_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/History/card-templates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Listener/Listener.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Listener/initial-setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Manager/Manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Manager/button-logic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Manager/history-logic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Manager/icon-logic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/Manager/localStorage-logic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Background/background.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/js/lodash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/js/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/History/history-workflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/History/history-workflow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/History/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/History/history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/History/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/History/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/History/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/History/translation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/More/more.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/More/more.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/More/more.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/More/more.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/More/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/More/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/More/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/More/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/History/tab-card.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Settings/settings-workflow.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Settings/settings-workflow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Settings/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Settings/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Settings/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Settings/translation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Shortcuts/shortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/shortcuts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Shortcuts/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/Shortcuts/translation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Background/Listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Background/Manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Background/Provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE .txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE .txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/js/global-shortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/global-shortcuts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/js/global-translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/global-translation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Background/Listener.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Background/Manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Background/Provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/Background/Provider/Provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Icons/iconRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Icons/iconbarPlusReversed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Icons/iconbarRedRoll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Icons/iconbarRollReversed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/js/analytics.js" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/js/analytics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/js/lodash.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../TabSaver/.tmp/" />
@@ -44,87 +49,24 @@
     <favorites_list name="TabSaver" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/History/history.html">
+        <entry file="file://$PROJECT_DIR$/Background/Manager/Manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-end-line="1" />
+            <state relative-caret-position="819">
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#918#1638#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/History/style.css">
+        <entry file="file://$PROJECT_DIR$/Background/Manager/history-logic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/History/tab-card.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/History/translation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" lean-forward="true" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/More/more.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" lean-forward="true" selection-end-line="1" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/More/more.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/More/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/More/translations.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="502">
+              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="79" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -132,16 +74,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/History/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="1739">
+              <caret line="85" column="33" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#label#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#2;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/History/history-workflow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1239">
+              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/History/card-templates.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#h5#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,31 +122,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wifi</find>
-      <find>debu</find>
-      <find>panel</find>
-      <find>SAVED</find>
-      <find>settings</find>
-      <find>iconbar</find>
-      <find>iconBlueL</find>
-      <find>iconBlueL2</find>
-      <find>iconbarBluePlus</find>
-      <find>snac</find>
-      <find>snackbar</find>
-      <find>launchSnackBar</find>
-      <find>object-src</find>
-      <find>iconbarPlus.png</find>
-      <find>chrome</find>
-      <find>storage</find>
-      <find>atajossubentrada1_1</find>
       <find>atajos_subentrada1_1</find>
       <find>config_subsimple</find>
       <find>ataj</find>
@@ -184,12 +137,29 @@
       <find>modo</find>
       <find>margin</find>
       <find>chrome.acti</find>
-      <find>icon</find>
       <find>.navbar</find>
       <find>btn-prima</find>
       <find>lodash</find>
       <find>roger</find>
       <find>/*Copyright (C) 2017, Roger Pedrós Villorbina, All rights reserved.*/</find>
+      <find>configTitol</find>
+      <find>short</find>
+      <find>config_titol</find>
+      <find>atajos</find>
+      <find>._</find>
+      <find>mutedInfo</find>
+      <find>www.google.com</find>
+      <find>icon</find>
+      <find>getConfigFromDB</find>
+      <find>getBookmarkFolderId</find>
+      <find>iconBlue</find>
+      <find>getDataFromDB</find>
+      <find>getSessionFromDB</find>
+      <find>removeSessionFromDB</find>
+      <find>setIconBadge</find>
+      <find>lodash.js</find>
+      <find>saveDataToDB</find>
+      <find>notfou</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -211,6 +181,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Roger Pedros &lt;pedros.roger@gmail.com&gt;" />
         <option value="Roger Pedros &lt;pedrooos.46@gmail.com&gt;" />
       </list>
     </option>
@@ -225,32 +196,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Background/Injector.js" />
-        <option value="$PROJECT_DIR$/App/MManager.js" />
-        <option value="$PROJECT_DIR$/Background/MManager.js" />
-        <option value="$PROJECT_DIR$/Resources/config.json" />
-        <option value="$PROJECT_DIR$/global-translation.js" />
-        <option value="$PROJECT_DIR$/_locales/pt_BR/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/pt_PT/messages.json" />
-        <option value="$PROJECT_DIR$/Background/Provider.js" />
-        <option value="$PROJECT_DIR$/Background/Listener.js" />
-        <option value="$PROJECT_DIR$/_locales/en/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/ru/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/de/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/fr/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/it/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/nl/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/pl/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/pt/messages.json" />
-        <option value="$PROJECT_DIR$/Background/Manager.js" />
-        <option value="$PROJECT_DIR$/_locales/es/messages.json" />
-        <option value="$PROJECT_DIR$/_locales/ca/messages.json" />
-        <option value="$PROJECT_DIR$/App/global-translation.js" />
-        <option value="$PROJECT_DIR$/App/Shortcuts/translation.js" />
-        <option value="$PROJECT_DIR$/App/Donate/translations.js" />
         <option value="$PROJECT_DIR$/App/Donate/style.css" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/App/Settings/translation.js" />
         <option value="$PROJECT_DIR$/App/Donate/donate.html" />
         <option value="$PROJECT_DIR$/App/More/donate.html" />
         <option value="$PROJECT_DIR$/App/History/history.js" />
@@ -260,22 +207,46 @@
         <option value="$PROJECT_DIR$/App/More/shared-styles.css" />
         <option value="$PROJECT_DIR$/App/History/translation.js" />
         <option value="$PROJECT_DIR$/Resources/css/shared-styles.css" />
-        <option value="$PROJECT_DIR$/App/Settings/style.css" />
-        <option value="$PROJECT_DIR$/App/Shortcuts/style.css" />
-        <option value="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/Resources/js/jquery-3.2.1.min.js" />
-        <option value="$PROJECT_DIR$/App/Settings/settings-workflow.js" />
         <option value="$PROJECT_DIR$/LICENSE .txt" />
         <option value="$PROJECT_DIR$/Resources/js/global-translation.js" />
         <option value="$PROJECT_DIR$/App/More/more.html" />
-        <option value="$PROJECT_DIR$/App/History/history.html" />
-        <option value="$PROJECT_DIR$/App/History/history-workflow.js" />
         <option value="$PROJECT_DIR$/App/History/style.css" />
         <option value="$PROJECT_DIR$/App/History/tab-card.html" />
         <option value="$PROJECT_DIR$/App/More/style.css" />
         <option value="$PROJECT_DIR$/App/More/translations.js" />
+        <option value="$PROJECT_DIR$/App/Settings/style.css" />
+        <option value="$PROJECT_DIR$/App/Shortcuts/shortcuts.html" />
+        <option value="$PROJECT_DIR$/App/Shortcuts/style.css" />
+        <option value="$PROJECT_DIR$/Resources/js/IdGenerator.js" />
+        <option value="$PROJECT_DIR$/App/History/card-generator.js" />
+        <option value="$PROJECT_DIR$/fcvghbj.js" />
+        <option value="$PROJECT_DIR$/App/Settings/translation.js" />
+        <option value="$PROJECT_DIR$/App/History/history.html" />
+        <option value="$PROJECT_DIR$/Resources/js/analytics.js" />
+        <option value="$PROJECT_DIR$/Background/utils.js" />
+        <option value="$PROJECT_DIR$/Background/Manager.js" />
+        <option value="$PROJECT_DIR$/Background/Provider.js" />
+        <option value="$PROJECT_DIR$/App/Settings/settings-workflow.js" />
+        <option value="$PROJECT_DIR$/Background/Others/Initial-setup.js" />
+        <option value="$PROJECT_DIR$/Background/Manager-Utils/button-logic.js" />
+        <option value="$PROJECT_DIR$/Background/Listener-utils/Initial-setup.js" />
+        <option value="$PROJECT_DIR$/Background/Listener.js" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/Background/Manager/history-logic.html" />
+        <option value="$PROJECT_DIR$/Background/Manager/localStorage-logic.js" />
+        <option value="$PROJECT_DIR$/Background/background.html" />
+        <option value="$PROJECT_DIR$/Background/Listener/Listener.js" />
+        <option value="$PROJECT_DIR$/Background/Manager/icon-logic.js" />
+        <option value="$PROJECT_DIR$/Background/Manager/Manager.js" />
         <option value="$PROJECT_DIR$/App/Settings/settings.html" />
+        <option value="$PROJECT_DIR$/Background/Manager/button-logic.js" />
+        <option value="$PROJECT_DIR$/Background/Listener/initial-setup.js" />
+        <option value="$PROJECT_DIR$/App/History/cards-generator.js" />
+        <option value="$PROJECT_DIR$/Background/Provider/Provider.js" />
+        <option value="$PROJECT_DIR$/Background/Manager/history-logic.js" />
+        <option value="$PROJECT_DIR$/App/History/card-templates.js" />
+        <option value="$PROJECT_DIR$/App/History/history-workflow.js" />
       </list>
     </option>
   </component>
@@ -285,10 +256,9 @@
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="842" />
-    <option name="height" value="975" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -393,14 +363,19 @@
             <path>
               <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="More" type="462c0819:PsiDirectoryNode" />
+              <item name="Background" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Settings" type="462c0819:PsiDirectoryNode" />
+              <item name="Background" type="462c0819:PsiDirectoryNode" />
+              <item name="Listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleTabManager" type="462c0819:PsiDirectoryNode" />
+              <item name="Background" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleTabManager" type="b2602c69:ProjectViewProjectNode" />
@@ -432,6 +407,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/App/History" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -441,7 +417,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -453,10 +431,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Resources/js" />
-      <recent name="$PROJECT_DIR$/Resources/css" />
-      <recent name="$PROJECT_DIR$/Resources" />
-      <recent name="$PROJECT_DIR$/App" />
-      <recent name="$PROJECT_DIR$/App/History" />
+      <recent name="$PROJECT_DIR$/Background/Provider2" />
+      <recent name="$PROJECT_DIR$/Background/Provider" />
+      <recent name="$PROJECT_DIR$/Background/Manager" />
+      <recent name="$PROJECT_DIR$/Background/Listener" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -620,7 +598,21 @@
       <workItem from="1568276994944" duration="3631000" />
       <workItem from="1568480867157" duration="11952000" />
       <workItem from="1568581770049" duration="7272000" />
-      <workItem from="1568632605784" duration="248000" />
+      <workItem from="1568632605784" duration="10848000" />
+      <workItem from="1568725589893" duration="1992000" />
+      <workItem from="1568733480726" duration="9765000" />
+      <workItem from="1568898459070" duration="2113000" />
+      <workItem from="1569087188681" duration="2860000" />
+      <workItem from="1569251278612" duration="4279000" />
+      <workItem from="1574085676630" duration="322000" />
+      <workItem from="1575375921880" duration="319000" />
+      <workItem from="1577209728063" duration="6516000" />
+      <workItem from="1577274928063" duration="1699000" />
+      <workItem from="1577312498326" duration="2430000" />
+      <workItem from="1577359437847" duration="15974000" />
+      <workItem from="1577641214670" duration="9730000" />
+      <workItem from="1577751518754" duration="2296000" />
+      <workItem from="1577986320789" duration="7552000" />
     </task>
     <task id="LOCAL-00001" summary="-Background funcionant. &#10;-Settings 1/2&#10;-Home 1/4&#10;">
       <created>1495198805701</created>
@@ -839,24 +831,38 @@
       <option name="project" value="LOCAL" />
       <updated>1568486006910</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="v.1.9.3:&#10;🆙 Adaptació de Copyright&#10;🆙 Actualització a JQuery 3.4.1&#10;🆕 Canvios en Settings.hmtl:&#10;    -Respetar incognito. (no està llest)&#10;🆕 Canvis en history.html">
+      <created>1568633636176</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1568633636176</updated>
+    </task>
+    <task id="LOCAL-00033" summary="v.1.9.2: (Actualització en la Store)&#10;🆙 Actualització d'emergencia: Problema en les traduccions de settings.html en producció.">
+      <created>1568652612803</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1568652612803</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576474000" />
+    <option name="totallyTimeSpent" value="654921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.17540687" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.17321429" />
       <window_info id="Favorites" order="1" sideWeight="0.5020747" side_tool="true" weight="0.17540687" />
       <window_info id="Structure" order="2" sideWeight="0.5011261" side_tool="true" weight="0.17321429" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32994923" />
       <window_info anchor="bottom" id="TODO" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.3280757" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32780084" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.24106114" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.34797296" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3472081" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -911,10 +917,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Beta 1.5.3:&#10;Nova Interficie&#10;Restructuració de codi&#10;&#10;" />
-    <MESSAGE value="Beta 1.6.2:&#10;-Canvis de noms&#10;-Millores en els shortcuts&#10;-Provider ara genera menus&#10;-Implementat les sessions pre guardades&#10;-Canvis interns del settings (JS)&#10;&#10;" />
-    <MESSAGE value="Nova branca: Extensió&#10;" />
-    <MESSAGE value="Beta 1.7:&#10; &#10;-Neteja general&#10;" />
     <MESSAGE value="Beta 1.7.1:&#10; &#10;-Neteja casi finalitzada&#10;-Menu del boto dret desactivat&#10;" />
     <MESSAGE value="Beta 1.7.2:&#10; &#10;-Traduccions casi implementades&#10;" />
     <MESSAGE value="Beta 1.7.2:&#10; &#10;-Retirat suport total a Google Analytics (built-in), i Firebase.&#10;" />
@@ -936,316 +938,20 @@
     <MESSAGE value="v.1.9:&#10; Idiomes com l'Alemany (de) i el Francès (fr) corregits.&#10; Afegits idiomes: Italià (it), Portuguès (pt), Polonès (pl), Neerlandès (nl), Rus (ru).&#10; Arreglat comandos externs a l'extensió.&#10; Manteniment de codi: Canvis entre Listener i Manager. Neteja de codi en Listener. Reemplaçament de getJson();&#10; Correccions en els _locales i traduccions de menús i internes.&#10; Correcció del bug en la configuració inicial. Ara la configuració es precarrega localment.&#10; Afegit botó de Buy me a Coffee." />
     <MESSAGE value="v.1.9.1:&#10; Canvis per la Google Chrome Store&#10; Retirats 2 permisos innecesaris de l'extensio." />
     <MESSAGE value="v.1.9.2:&#10; Actualitzat a Bootstrap 4.1.3.&#10; Nova pagina de Historial. No està llest. &#10; Canvis en more.html:&#10;&#9;&#9;-Agefit un boto rate me&#10; Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html&#10; Canvis en els css: &#10;&#9;&#9;-Adaptació a Bootstrap 4.1.3&#10;&#9;&#9;-Shared-styles.css&#10; Canvis en el tema Simplex.&#10; Canvis en Shortcuts.html.&#10; Canvis en la estructura del projecte.&#10;&#10; Canvis en la descripció de l'store." />
-    <option name="LAST_COMMIT_MESSAGE" value="v.1.9.2:&#10; Actualitzat a Bootstrap 4.1.3.&#10; Nova pagina de Historial. No està llest. &#10; Canvis en more.html:&#10;&#9;&#9;-Agefit un boto rate me&#10; Canvis en els menus. Afegit: History. Canviat de Donate.html a More.html&#10; Canvis en els css: &#10;&#9;&#9;-Adaptació a Bootstrap 4.1.3&#10;&#9;&#9;-Shared-styles.css&#10; Canvis en el tema Simplex.&#10; Canvis en Shortcuts.html.&#10; Canvis en la estructura del projecte.&#10;&#10; Canvis en la descripció de l'store." />
+    <MESSAGE value="v.1.9.3:&#10; Adaptació de Copyright&#10; Actualització a JQuery 3.4.1&#10; Canvios en Settings.hmtl:&#10;    -Respetar incognito. (no està llest)&#10; Canvis en history.html" />
+    <MESSAGE value="v.1.9.2:&#10; Actualització d'emergencia: Problema en les traduccions de settings.html en por" />
+    <MESSAGE value="v.1.9.2: (Actualització en la Store)&#10; Actualització d'emergencia: Problema en les traduccions de settings.html en producció." />
+    <MESSAGE value="v.1.9.4:&#10; Adaptació de Copyright&#10;  Restructuració i canvis de codi:&#10;- Nova pàgina en background&#10;- Deslocalització d'scripts en diferents scripts.&#10;- Canvis en Listener i Manager.&#10;- Canvis en el Provider: CRUD complet.&#10;- Actualizació del codi al nou Provider.&#10;- Nova funció per detectar incognito.&#10;- Correcció d'errors&#10;&#10; Canvis en Settings.hmtl:&#10;- Implementació de Local Storage (retirada)&#10;&#10; Actualizació de Lodash per motius de seguretat: Lodash 4.17.15 &#10; Canvis en els resources&#10; Logica interna dels historials acabada&#10; Logica (client) dels historials acabada&#10; Utilizació del templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.1.9.4:&#10; Adaptació de Copyright&#10;  Restructuració i canvis de codi:&#10;- Nova pàgina en background&#10;- Deslocalització d'scripts en diferents scripts.&#10;- Canvis en Listener i Manager.&#10;- Canvis en el Provider: CRUD complet.&#10;- Actualizació del codi al nou Provider.&#10;- Nova funció per detectar incognito.&#10;- Correcció d'errors&#10;&#10; Canvis en Settings.hmtl:&#10;- Implementació de Local Storage (retirada)&#10;&#10; Actualizació de Lodash per motius de seguretat: Lodash 4.17.15 &#10; Canvis en els resources&#10; Logica interna dels historials acabada&#10; Logica (client) dels historials acabada&#10; Utilizació del templates" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/MManager.js" />
-    <entry file="file://$PROJECT_DIR$/MManager.js" />
-    <entry file="file://$PROJECT_DIR$/Resources/config.json" />
-    <entry file="file://$PROJECT_DIR$/Resources/Style/Material/material.min.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret column="363901" selection-start-column="363901" selection-end-column="363901" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Style/Material/material.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="9136" column="74" selection-start-line="9136" selection-start-column="74" selection-end-line="9136" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.min.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret column="55428" selection-start-column="55428" selection-end-column="55428" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret column="208610" selection-start-column="208610" selection-end-column="208610" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/js/lodash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14658" column="61" selection-start-line="14658" selection-start-column="61" selection-end-line="14658" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Background/MManager.js" />
-    <entry file="file://$PROJECT_DIR$/_locales/pt_BR/messages.json" />
-    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/ru/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/pl/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/nl/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/fr/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/de/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/en/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/ca/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="80" column="42" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Shortcuts/translation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Background/Manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#changesOnDBUpdate#0" />
-            <element signature="n#!!block;n#checkIconStatus#0" />
-            <element signature="n#!!block;n#checkModeStatus#0" />
-            <element signature="n#!!block;n#simpleWithSessionSaved#0" />
-            <element signature="n#!!block;n#onlySaveWithSessionSaved#0" />
-            <element signature="n#!!block;n#simpleWithOutSessionSaved#0" />
-            <element signature="n#!!block;n#onlySaveWithOutSessionSaved#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/es/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1781">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/it/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_locales/pt/messages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1068">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Background/Listener.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/translation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="147">
-            <caret line="7" selection-start-line="7" selection-end-line="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE .txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/History/history.js" />
-    <entry file="file://$PROJECT_DIR$/App/History/test.html" />
-    <entry file="file://$PROJECT_DIR$/Resources/js/global-shortcuts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Shortcuts/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#div#0;n#li#1;n#ul#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="5" column="36214" selection-start-line="5" selection-start-column="36204" selection-end-line="5" selection-end-column="36214" />
-          <folding>
-            <element signature="e#25768#26002#2" expanded="true" />
-            <element signature="e#26806#26959#1" expanded="true" />
-            <element signature="e#26999#27233#1" expanded="true" />
-            <element signature="e#30239#30515#2" expanded="true" />
-            <element signature="e#31347#31500#1" expanded="true" />
-            <element signature="e#31540#31816#1" expanded="true" />
-            <element signature="e#61072#61259#2" expanded="true" />
-            <element signature="e#61488#61624#2" expanded="true" />
-            <element signature="e#62027#62160#2" expanded="true" />
-            <element signature="e#63642#63795#1" expanded="true" />
-            <element signature="e#75788#76018#2" expanded="true" />
-            <element signature="e#76885#77121#2" expanded="true" />
-            <element signature="e#106714#106891#2" expanded="true" />
-            <element signature="e#106937#107114#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Style/Bootstrap/simplex.bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="10" column="48890" lean-forward="true" selection-start-line="10" selection-start-column="47704" selection-end-line="10" selection-end-column="48890" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Background/Provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#closeActualTabs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/css/shared-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/js/jquery-3.4.1.min.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Settings/settings-workflow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/js/global-translation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/History/history-workflow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#h5#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/History/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/History/tab-card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1267,13 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/History/translation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/More/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1281,30 +980,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/More/translations.js">
+    <entry file="file://$PROJECT_DIR$/App/Settings/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#div#0;n#li#1;n#ul#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/shortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/History/history.html">
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/global-shortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/global-translation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="6" selection-end-line="1" />
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/IdGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/tab-card.html" />
+    <entry file="file://$PROJECT_DIR$/App/History/card-generator.js" />
+    <entry file="file://$PROJECT_DIR$/App/History/translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/en/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/es/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_locales/ca/messages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1389">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fcvghbj.js" />
+    <entry file="file://$PROJECT_DIR$/App/More/translations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Shortcuts/translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/analytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/translation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarPlusReversed.png" />
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarRedRoll.png" />
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarRollReversed.png" />
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconRed.png" />
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/IconBlueL2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconBlue.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarBluePlus.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarPlus.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Icons/iconbarRoll.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager/history-logic.html" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/js/lodash.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager/localStorage-logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Settings/settings-workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="276" column="8" selection-start-line="276" selection-start-column="8" selection-end-line="276" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager/icon-logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Settings/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="428">
+          <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1314,5 +1208,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager/button-logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Listener/initial-setup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Listener/Listener.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager/history-logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="79" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1739">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Provider/Provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#getTabs#0" />
+            <element signature="n#!!block;n#closeActualTabs#0" />
+            <element signature="n#!!block;n#openSavedTabs#0" />
+            <element signature="n#!!block;n#launchNotification#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Background/Manager/Manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding>
+            <element signature="e#918#1638#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/card-templates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#h5#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/History/history-workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1239">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>All rights reserved.</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

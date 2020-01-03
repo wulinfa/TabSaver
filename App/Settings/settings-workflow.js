@@ -4,48 +4,46 @@
 $(document).ready(() => {
     /*DECLARACIONS inicial dels objectes de configuració i serveis*/
     this.configData = {};
-    this.snackBarTranslationResonse = "updated";
+    this.privacyConfigData = {};
 
+    this.snackBarTranslationResonse = "updated";
     /*Objecte html des de on es llança el snackbar*/
     let snackbarContainer = document.querySelector('#demo-toast-example');
 
-    /*Declaració de les crides per carregar de la BD als objectes configData i la traducció d'snackbar*/
-    let step1 = () => {
+    /*Declaració de les crides per carregar de la BD als objectes configData i privacyConfigData i la traducció d'snackbar*/
+    let dataPreparation = () => {
         let wait = $.Deferred();
-        getConfigFromDB()
+        getDataFromDB('configData')
             .then((configFromDB) => {
-                this.configData = {
-                    simple: configFromDB.configData.simple,
-                    simpleSave: configFromDB.configData.simpleSave,
-                    onlySave: configFromDB.configData.onlySave,
-                    onlySaveCloseTabs: configFromDB.configData.onlySaveCloseTabs
-                };
+                this.configData = configFromDB.configData;
                 wait.resolve();
             });
 
-        return wait.promise();
-    };
-    let step2 = () => {
+        getDataFromDB('privacyConfigData')
+            .then((configFromDB) => {
+                this.privacyConfigData = configFromDB.privacyConfigData;
+                wait.resolve();
+            });
+
         getSnackBarTranslation()
             .then( (response) =>{
                 this.snackBarTranslationResonse = response;
             });
+
+        return wait.promise();
     };
 
     /*EXECUSIONS de es declaracions i crides*/
-    /*Step1 seteja la informacio de la DB a la vista, si no hi ha informacío posa la que hi ha per defecte*/
-    step1()
+    /*dataPreparation() seteja la informacio de la DB a la vista, si no hi ha informacío posa la que hi ha per defecte*/
+    dataPreparation()
         .then(() => {
-            if (!_.isNil(this.configData.simple) && !_.isNil(this.configData.onlySave)) {
+            if (!_.isNil(this.configData.simple) && !_.isNil(this.configData.onlySave) && !_.isNil(this.privacyConfigData)) {
                 setOptionsSaved();
             }
-            if (_.isNil(this.configData.simple) && _.isNil(this.configData.onlySave)) {
+            if (_.isNil(this.configData.simple) && _.isNil(this.configData.onlySave) && _.isNil(this.privacyConfigData)) {
                 setOptionsDefault();
             }
         });
-
-    /*Step2 agafa i seteja la traducció del snackbar corresponen al idioma que l'hi toca*/
-    step2();
 
     /*Posen la informació de la BD a la vista*/
     function setOptionsSaved() {
@@ -54,6 +52,8 @@ $(document).ready(() => {
 
         let optionOnlySave = $("#optionOnlySave");
         let checkboxOnlySave = $("#checkboxOnlySave");
+
+        let locaStorage = $("#checkboxLocalStorage");
 
         //RADIOBUTTON SIMPLE
         if (this.configData.simple === true) {
@@ -102,18 +102,30 @@ $(document).ready(() => {
         if (this.configData.onlySaveCloseTabs === false) {
             checkboxOnlySave.prop('checked', false);
         }
+
+        //CHECKBOX LOCAL STORAGE ENABLED?
+        if(this.privacyConfigData.localStorage === true){
+            locaStorage.prop('checked', true);
+        }
+        if(this.privacyConfigData.localStorage === false){
+            locaStorage.prop('checked', false);
+        }
+
     }
     function setOptionsDefault() {
         this.configData.simple = true;
         this.configData.simpleSave = true;
         this.configData.onlySave = false;
         this.configData.onlySaveCloseTabs = false;
+        this.privacyConfigData.localStorage = false;
 
         let optionSimple = $("#optionSimple");
         let checkboxSimple = $("#checkboxSimple");
 
         let optionOnlySave = $("#optionOnlySave");
         let checkboxOnlySave = $("#checkboxOnlySave");
+
+        let locaStorage = $("#checkboxLocalStorage");
 
         optionSimple.prop('disabled', false);
         optionSimple.prop('checked', true);
@@ -125,6 +137,7 @@ $(document).ready(() => {
         checkboxOnlySave.prop('disabled', true);
         checkboxOnlySave.prop('checked', false);
 
+        locaStorage.prop('checked', false);
     }
 
     /*Snackbar launch function*/
@@ -156,7 +169,7 @@ $(document).ready(() => {
             }
         };
 
-        saveDatatoDB(objectToSave)
+        saveDataToDB(objectToSave)
             .then(launchSnackBar());
     });
 
@@ -185,7 +198,7 @@ $(document).ready(() => {
                 }
             };
         }
-        saveDatatoDB(objectToSave)
+        saveDataToDB(objectToSave)
             .then(launchSnackBar());
     });
 
@@ -207,7 +220,7 @@ $(document).ready(() => {
             }
         };
 
-        saveDatatoDB(objectToSave)
+        saveDataToDB(objectToSave)
             .then(launchSnackBar());
     });
 
@@ -237,8 +250,33 @@ $(document).ready(() => {
             };
         }
 
-        saveDatatoDB(objectToSave)
+        saveDataToDB(objectToSave)
             .then(launchSnackBar());
+    });
+
+    $("#checkboxLocalStorage").click((event) => {
+        ga('send', 'event', 'options', 'localStorage', 'Checkbox');
+
+        let locaStorage = $("#checkboxLocalStorage");
+        if (locaStorage[0].checked === true) {
+            /*Important fer ús del var i no el let aqui*/
+            var objectToSave = {
+                privacyConfigData: {
+                    localStorage: true,
+                }
+            };
+        }
+        if (locaStorage[0].checked === false) {
+            var objectToSave = {
+                privacyConfigData: {
+                    localStorage: false,
+                }
+            };
+        }
+
+        saveDataToDB(objectToSave)
+            .then(launchSnackBar());
+
     });
 
 });

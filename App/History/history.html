@@ -32,14 +32,17 @@
     <!--Shortcuts-->
     <script src="../../Resources/js/global-shortcuts.js"></script>
 
+    <!--Lodash-->
+    <script src="../../Resources/js/lodash.min.js"></script>
+
     <!--Custom Scripts-->
+    <script src="../../Background/Provider/Provider.js"></script>
+    <script src="card-templates.js"></script>
     <script src="history-workflow.js"></script>
-    <script src="../../Background/Provider.js"></script>
+
     <script src="../../Resources/js/global-translation.js"></script>
     <script src="translation.js"></script>
 
-    <!--Lodash-->
-    <script src="../../Resources/js/lodash.js"></script>
 
 </head>
 
@@ -71,27 +74,16 @@
 
                 <div id="sessionNotFound"></div>
                 <div class="list-group list-group-horizontal" style="margin-top: 10px;" id="lastSessionSaved"><!--Contigut generat dinamicament--></div>
-
             </div>
 
             <div style="margin-top: 25px; margin-bottom: 0px">
                 <h2 id="configTitol">Historial:</h2>
-                <h4><small id="configSubtitol" class="text-info">Explorar o recupera una session guardada anteriormente.</small></h4>
+                <h4><small id="configSubtitol" class="text-info">Explorar o recupera una session guardada anteriormente.</small>
+                </h4>
             </div>
 
 
-            <div class="card card-body">
-                <b class="card-title">Sessión 1:</b>
-
-                <div style="padding-top: 20px" class="panel-empty text-center">
-
-                    <i class="material-icons not-found-icon">wifi_tethering</i>
-                    <p style="font-size: 13px" class="text-danger">No se ha encontrado ninguna sessión guardada.</p>
-                </div>
-                <ul class="list-group drag-container" id="savedTabs1">
-                    <!--Contigut auto-generat aqui-->
-                </ul>
-            </div>
+            <div id="historyPanel"><!--Contigut generat dinamicament--></div>
 
         </div>
 

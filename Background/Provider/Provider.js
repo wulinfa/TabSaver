@@ -1,4 +1,5 @@
 /*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
+
 /*REFERENT A LA FINESTRA OBERTA*/
 /*Agafa les finestres actuals de la finesta oberta*/
 function getTabs() {
@@ -33,10 +34,9 @@ function openSavedTabs(sessionTabs) {
     });
 }
 
-
 /* REFERENT A LA BD*/
 /*Guarda l'obecjte que l'hi pasis a la BD interna*/
-function saveDatatoDB(objectToSave) {
+function saveDataToDB(objectToSave) {
     return new Promise((resolve, reject) => {
         chrome.storage.sync.set(objectToSave, (result) => {
             resolve();
@@ -44,47 +44,28 @@ function saveDatatoDB(objectToSave) {
     });
 }
 
-/*Recupera de la BD la configuració del usuari*/
-function getConfigFromDB() {
+function getDataFromDB(objectToGet) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.get('configData', (result) => {
+        chrome.storage.sync.get(objectToGet, (result) => {
             resolve(result);
         });
     });
 }
 
-/*Recupera de la BD la carpeta dels marcadors on s'haguardat la informació*/
-function getBookmarkFolderId() {
+/*Esborra de la BD el parametre d'entrada guardat*/
+function removeFromDB(objectToRemove) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.get('bookmarkFolderCreated', (result) => {
-            resolve(result);
-        });
-    });
-}
-
-/*Recupera de la BD la sessio guardada*/
-function getSessionFromDB() {
-    return new Promise((resolve, reject) => {
-        chrome.storage.sync.get('sessionTabs', (result) => {
-            resolve(result);
-        });
-    });
-}
-
-/*Recupera de la BD la sessio preguarda*/
-function getPreSavedSession() {
-    return new Promise((resolve, reject) => {
-        chrome.storage.sync.get('preSavedSession', (result) => {
-            resolve(result);
-        });
-    });
-}
-
-/*Esborra de la BD la sessio guardada*/
-function removeSessionFromDB() {
-    return new Promise((resolve, reject) => {
-        chrome.storage.sync.remove('sessionTabs', () => {
+        chrome.storage.sync.remove(objectToRemove, () => {
             resolve();
+        });
+    });
+}
+
+
+function getTamany(object) {
+    return new Promise((resolve, reject) => {
+        chrome.storage.sync.getBytesInUse(object, (result) => {
+            resolve(result);
         });
     });
 }
@@ -92,7 +73,7 @@ function removeSessionFromDB() {
 
 /*REFERENT ALS MARCADORS*/
 /*Creació de la carpeta dins els marcadors, creació dels marcadors dins la carpeta i RESPOSTA de la ID de la carpeta*/
-function saveDatatoBookmarks(sessionData) {
+function saveDataToBookmarks(sessionData) {
     return new Promise((resolve, reject) => {
         let bookmarkBar = '';
         chrome.bookmarks.create({'parentId': bookmarkBar.id, 'title': 'Saved Tabs'}, (newFolder) => {
@@ -120,11 +101,10 @@ function removeBookmarks(bookmarkFolderId) {
 
 /*REFERENT A NOTIFICACIONS*/
 /*Llençador de notificació, creada per OnlySave*/
-//TODO Fer-la dinamica: launchNotification(title, message)
 function launchNotification() {
     let options = {
         type: 'basic',
-        iconUrl: 'Resources/Icons/iconBlue.png',
+        iconUrl: '../Resources/Icons/iconBlue.png',
         title: 'Guardado.',
         message: 'Pestañas guardadas en los marcadores.'
     };
@@ -141,10 +121,14 @@ function launchNotification() {
 /*Actualitza l'icono segons l'estat que se l'hi envii*/
 function updateIcon(status) {
     if (status === true) {
-        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarRoll.png"});
+        chrome.browserAction.setIcon({
+            path : "../Resources/Icons/iconbarRoll.png"
+        });
     }
     if (status === false) {
-        chrome.browserAction.setIcon({path: "Resources/Icons/iconbarPlus.png"});
+        chrome.browserAction.setIcon({
+            path : "../Resources/Icons/iconbarPlus.png"
+        });
     }
 
     else {
@@ -162,52 +146,17 @@ function setIconBadge(number) {
     });
 }
 
-//Get JSON data form internet.
-let getJSON = (url) => {
+
+/*Check ingonito*/
+function isIncognitoAllowed() {
     return new Promise((resolve, reject) => {
-        var data = null;
-        var xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-
-        xhr.addEventListener("readystatechange", function () {
-            if (this.readyState === 4) {
-                resolve(this.responseText)
-            }
+        chrome.extension.isAllowedIncognitoAccess((isAllowedAccess) => {
+            resolve(isAllowedAccess);
         });
-
-        xhr.open("GET", url);
-        xhr.setRequestHeader("cache-control", "no-cache");
-
-        xhr.send(data);
     });
-};
 
-/*REFEENT ALS MENUS*/
-/*Creacio de menus*/
-function setContextMenu() {
-
-        // chrome.contextMenus.create({
-        //     'title': 'Cambiar a "Solo guardado"',
-        //     'contexts': ['all'],
-        //     /*'onclick': ,*/
-        // });
-
-        // chrome.contextMenus.create({
-        //     'title': 'Abrir sessión pre-guardada',
-        //     'contexts': ['all'],
-        //     'onclick': getAndOpenPreSavedSession
-        // });
-
-        // chrome.contextMenus.create({
-        //     'title': 'Suspender pestañas',
-        //     'contexts': ['all'],
-        //     /*'onclick': ,*/
-        // });
-
-        // chrome.contextMenus.create({
-        //     'title': 'Unir ventanas en una',
-        //     'contexts': ['all'],
-        //     /*'onclick': ,*/
-        // });
 }
+
+
+
 

@@ -2,47 +2,76 @@
 /*Clase que controla el workflow del drag and drop i els historials*/
 
 $(document).ready(() => {
-
     this.lastSessionSaved = {};
-    let lastSessionSavedTag = $("#lastSessionSaved");
-    let sessionNotFoundTag = $("#sessionNotFound");
 
-    let step1 = () => {
+    /*STEP 1: Peticio de la sessio actual*/
+    let lastSessionSaved = () => {
         let wait = $.Deferred();
-        getSessionFromDB()
+        getDataFromDB("sessionTabs")
             .then((lastSessionSaved) => {
                 this.lastSessionSaved = lastSessionSaved.sessionTabs;
-                console.log(lastSessionSaved);
                 wait.resolve();
             });
-
         return wait.promise();
     };
 
-    step1()
+    /*Generador de la targeta en base la informació de la ultima sessio*/
+    lastSessionSaved()
         .then(() => {
-            if (!_.isNil(this.lastSessionSaved)) {
-                _.forEach(this.lastSessionSaved, function (tabData) {
-                    console.log(tabData);
+            lastSessionSavedGen();
+        })
+        .then(() => {
+            getAndGenerate(1);
+        });
 
-                    lastSessionSavedTag.append(
-                        '<div class="card" style="width: 13rem; height: 9rem; margin-left: 0.5rem; margin-right: 0.5rem;">' +
-                        '<div class="card-body">' +
-                        '<h5 class="card-title text-center"> <img style="max-width: 20px; max-height: 20px" src="' + tabData.favIconUrl + '"></h5>' +
-                        '<p class="card-text" style="font-size:13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; max-height: 50px">' + tabData.title + '</p>' +
-                        //'<a href=' + tabData.url + ' target="_blank" class="card-link">Link</a>' +
-                        '</div>' +
-                        '</div>');
+
+    function lastSessionSavedGen() {
+        let lastSessionSavedTag = $("#lastSessionSaved");
+        let sessionNotFoundTag = $("#sessionNotFound");
+
+        if (!_.isNil(this.lastSessionSaved)) {
+            _.forEach(this.lastSessionSaved, function (tabData) {
+                cardGeneration(tabData, lastSessionSavedTag)
+            });
+        }
+
+        if (_.isNil(this.lastSessionSaved)) {
+            sessionNotFound(sessionNotFoundTag);
+        }
+
+    }
+
+    let historyEntries = 10;
+    function getAndGenerate(historyPosition) {
+        let historyPanel = $("#historyPanel");
+        if (historyPosition >= historyEntries) {
+            return true
+        }
+
+        let historyN = String("HISTORY" + historyPosition);
+        getDataFromDB(historyN).then((resposta) => {
+            if (resposta.hasOwnProperty(historyN)) {
+                historyPanelGeneration(historyPanel ,historyPosition);
+                let historyTagN = $('#historySession'+historyPosition);
+
+                _.forEach(resposta[Object.keys(resposta)[0]].sessionTabs, (historyData) => {
+                    if (!_.isNil(historyData)) {
+                        cardGeneration(historyData, historyTagN );
+                    }
+
+                    if (_.isNil(historyData)) {
+                        sessionNotFound(historyTagN);
+                    }
                 });
+
+                getAndGenerate(historyPosition + 1)
             }
 
-            if (_.isNil(this.lastSessionSaved)) {
-                sessionNotFoundTag.append(
-                    '<div style="padding-top: 20px" class="panel-empty text-center">' +
-                    '<i class="material-icons not-found-icon">wifi_tethering</i>' +
-                    '<p style="font-size: 13px" class="text-danger">No se ha encontrado ninguna sessión guardada.</p>' +
-                    '</div>');
+            if (historyPosition === 1 && !(resposta.hasOwnProperty(historyN))) {
+                sessionNotFound(historyPanel);
             }
+
 
         });
+    }
 });

@@ -12,6 +12,7 @@
 
 ga('create', 'UA-99683106-1', 'auto');
 ga('set', 'checkProtocolTask', null);
+ga('require', 'displayfeatures');
 
 if (document.location.pathname) {
     let page = document.location.pathname;

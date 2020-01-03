@@ -1,12 +1,14 @@
 {
+    "update_url": "https://clients2.google.com/service/update2/crx",
+
     "manifest_version": 2,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.9.3",
+    "version": "1.9.4",
     "description": "__MSG_appDesc__",
     "author": "Roger Pedrós Villorbina.",
     "default_locale": "en",
-    "icons": { "48": "Resources/Icons/iconBlue.png",
+    "icons": {  "48": "Resources/Icons/iconBlue.png",
                 "128": "Resources/Icons/iconBlue.png"
     },
     "browser_action": {
@@ -15,7 +17,7 @@
     },
     "options_page": "App/Settings/settings.html",
     "background": {
-        "scripts": ["Background/Provider.js", "Background/Manager.js", "Background/Listener.js"]
+        "page": "Background/background.html"
     },
     "incognito": "spanning",
     "permissions": [
