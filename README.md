@@ -19,10 +19,8 @@ v.1.9.4:
    * Actualizació del codi al nou Provider.
    * Nova funció per detectar incognito.
    * Correcció d'errors
-
 * 🆙 Canvis en Settings.hmtl:
    * Implementació de Local Storage (retirada)
-
 * 🆙 Actualizació de Lodash per motius de seguretat: Lodash 4.17.15
 * 🆙 Canvis en els resources
 * 🆙 Logica interna dels historials acabada
