@@ -9,6 +9,26 @@ Compta amb diferents maneres de treballar.
 
 ### Changelog: 
 
+v.1.9.4:
+* 🆙 Adaptació de Copyright
+* 🆙 🆕 Restructuració i canvis de codi:
+   Nova pàgina en background
+   Deslocalització d'scripts en diferents scripts.
+   Canvis en Listener i Manager.
+   Canvis en el Provider: CRUD complet.
+   Actualizació del codi al nou Provider.
+   Nova funció per detectar incognito.
+   Correcció d'errors
+
+* 🆙 Canvis en Settings.hmtl:
+   Implementació de Local Storage (retirada)
+
+* 🆙 Actualizació de Lodash per motius de seguretat: Lodash 4.17.15
+* 🆙 Canvis en els resources
+* 🆙 Logica interna dels historials acabada
+* 🆙 Logica (client) dels historials acabada
+* 🆙 Utilizació del templates
+
 v.1.9.3:
 * 🆙 Adaptació de Copyright
 * 🆙 Actualització a JQuery 3.4.1
