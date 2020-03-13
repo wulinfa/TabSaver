@@ -9,6 +9,22 @@ Compta amb diferents maneres de treballar.
 
 ### Changelog: 
 
+v.1.9.5:
+
+* 🆙 Control del error QUOTA_BYTES_PER_ITEM
+* 🆙 Canvis en la funció de notificacions
+* 🆙 Implementació de carregues asincrones en la part client
+* 🆙 Implementació la funcio de Drag and Drop en History.html
+* 🆙 Implementació de la opció de privacitat de respectar l'ingonito.
+* 🆙 Afegit Popper.js
+* 🆙 Dependencies de Bootstrap arreglades
+* 🆕 Nova llibreria: dragula
+* 🆙 Material icons en local.
+* 🆙 Canviar titol de History.html segons la configuració
+* 🆙 Historial arranca en totes les configuracions.
+* 🆙 Actualizacio de Copyright
+
+
 v.1.9.4:
 * 🆙 Adaptació de Copyright
 * 🆙 🆕 Restructuració i canvis de codi:
