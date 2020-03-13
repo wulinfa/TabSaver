@@ -1,6 +1,7 @@
-/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
 
 /*REFERENT A LA FINESTRA OBERTA*/
+
 /*Agafa les finestres actuals de la finesta oberta*/
 function getTabs() {
     return new Promise((resolve, reject) => {
@@ -35,11 +36,16 @@ function openSavedTabs(sessionTabs) {
 }
 
 /* REFERENT A LA BD*/
+
 /*Guarda l'obecjte que l'hi pasis a la BD interna*/
 function saveDataToDB(objectToSave) {
     return new Promise((resolve, reject) => {
         chrome.storage.sync.set(objectToSave, (result) => {
-            resolve();
+            if (chrome.runtime.lastError) {
+                reject(chrome.runtime.lastError.message)
+            } else {
+                resolve(result);
+            }
         });
     });
 }
@@ -72,6 +78,7 @@ function getTamany(object) {
 
 
 /*REFERENT ALS MARCADORS*/
+
 /*Creació de la carpeta dins els marcadors, creació dels marcadors dins la carpeta i RESPOSTA de la ID de la carpeta*/
 function saveDataToBookmarks(sessionData) {
     return new Promise((resolve, reject) => {
@@ -100,13 +107,14 @@ function removeBookmarks(bookmarkFolderId) {
 
 
 /*REFERENT A NOTIFICACIONS*/
+
 /*Llençador de notificació, creada per OnlySave*/
-function launchNotification() {
+function launchNotification(title, message) {
     let options = {
         type: 'basic',
         iconUrl: '../Resources/Icons/iconBlue.png',
-        title: 'Guardado.',
-        message: 'Pestañas guardadas en los marcadores.'
+        title: title,
+        message: message
     };
 
     return new Promise((resolve, reject) => {
@@ -118,20 +126,19 @@ function launchNotification() {
 
 
 /*REFERENT A L'ICONO*/
+
 /*Actualitza l'icono segons l'estat que se l'hi envii*/
 function updateIcon(status) {
     if (status === true) {
         chrome.browserAction.setIcon({
-            path : "../Resources/Icons/iconbarRoll.png"
+            path: "../Resources/Icons/iconbarRoll.png"
         });
     }
     if (status === false) {
         chrome.browserAction.setIcon({
-            path : "../Resources/Icons/iconbarPlus.png"
+            path: "../Resources/Icons/iconbarPlus.png"
         });
-    }
-
-    else {
+    } else {
         console.log("Feinades");
     }
 }
@@ -156,6 +163,14 @@ function isIncognitoAllowed() {
     });
 
 }
+
+/*Get extension ID*/
+function getExtensionID() {
+    return new Promise((resolve, reject) => {
+        resolve(chrome.i18n.getMessage("@@extension_id"));
+    });
+}
+
 
 
 

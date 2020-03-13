@@ -1,62 +1,67 @@
-/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
 /*Clase que controla el workflow del drag and drop i els historials*/
 
 $(document).ready(() => {
-    this.lastSessionSaved = {};
+    this.privacyConfigData = {};
+    let historyEntries = 10;
 
-    /*STEP 1: Peticio de la sessio actual*/
-    let lastSessionSaved = () => {
+    /*STEP 1: Peticio de configuració de privacitat*/
+    let getPrivacyConfigData = () => {
         let wait = $.Deferred();
-        getDataFromDB("sessionTabs")
-            .then((lastSessionSaved) => {
-                this.lastSessionSaved = lastSessionSaved.sessionTabs;
+        getDataFromDB('privacyConfigData')
+            .then((configFromDB) => {
+                this.privacyConfigData = configFromDB.privacyConfigData;
                 wait.resolve();
             });
         return wait.promise();
     };
 
     /*Generador de la targeta en base la informació de la ultima sessio*/
-    lastSessionSaved()
+    getPrivacyConfigData()
         .then(() => {
-            lastSessionSavedGen();
+            getAndGenLastSessionSaved();
         })
         .then(() => {
-            getAndGenerate(1);
+            getAndGenHistory(1);
         });
 
 
-    function lastSessionSavedGen() {
+    function getAndGenLastSessionSaved() {
         let lastSessionSavedTag = $("#lastSessionSaved");
         let sessionNotFoundTag = $("#sessionNotFound");
 
-        if (!_.isNil(this.lastSessionSaved)) {
-            _.forEach(this.lastSessionSaved, function (tabData) {
-                cardGeneration(tabData, lastSessionSavedTag)
-            });
-        }
+        getDataFromDB("sessionTabs")
+            .then((lastSessionSaved) => {
+                if (!_.isNil(lastSessionSaved.sessionTabs)) {
+                    _.forEach(lastSessionSaved.sessionTabs, (tabData) => {
+                        cardGeneration(tabData, lastSessionSavedTag)
+                    });
+                }
 
-        if (_.isNil(this.lastSessionSaved)) {
-            sessionNotFound(sessionNotFoundTag);
-        }
+                if (_.isNil(lastSessionSaved.sessionTabs)) {
+                    sessionNotFound(sessionNotFoundTag);
+                }
+            });
 
     }
 
-    let historyEntries = 10;
-    function getAndGenerate(historyPosition) {
+    function getAndGenHistory(historyPosition) {            //TODO REVISAR LOGICA!!
         let historyPanel = $("#historyPanel");
+
         if (historyPosition >= historyEntries) {
+            $(document).trigger('historyGenerated');
             return true
         }
-
         let historyN = String("HISTORY" + historyPosition);
         getDataFromDB(historyN).then((resposta) => {
+
             if (resposta.hasOwnProperty(historyN)) {
-                historyPanelGeneration(historyPanel ,historyPosition);
-                let historyTagN = $('#historySession'+historyPosition);
+                historyPanelGeneration(historyPanel, historyPosition);
+                let historyTagN = $('#historySession' + historyPosition);
 
                 _.forEach(resposta[Object.keys(resposta)[0]].sessionTabs, (historyData) => {
                     if (!_.isNil(historyData)) {
-                        cardGeneration(historyData, historyTagN );
+                        cardGeneration(historyData, historyTagN);
                     }
 
                     if (_.isNil(historyData)) {
@@ -64,14 +69,20 @@ $(document).ready(() => {
                     }
                 });
 
-                getAndGenerate(historyPosition + 1)
+                getAndGenHistory(historyPosition + 1)
             }
 
-            if (historyPosition === 1 && !(resposta.hasOwnProperty(historyN))) {
+            if (!(resposta.hasOwnProperty(historyN))) {
+                $(document).trigger('historyGenerated');
+
+            }
+
+            if (historyPosition === 1 && !(resposta.hasOwnProperty(historyN))) { //TODO FER DEBUG AQUI. AIXO FUNCIONA?????
                 sessionNotFound(historyPanel);
             }
 
 
         });
+
     }
 });

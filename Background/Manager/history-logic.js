@@ -1,9 +1,24 @@
-/*
- * Copyright (c) 2016 - 2019. Roger Pedrós Villorbina, All rights reserved.
- *
- */
+/* Copyright (c) 2016 - 2020. Roger Pedrós Villorbina, All rights reserved.*/
 
 /*Manager de historial: Actualitzar i controlar que l'array de historial manté el tamany desitjat perque no es faci molt gran*/
+
+function historyManager(dataFromChromeWindow) {
+    checkIfDataHasToBeSaved(dataFromChromeWindow)
+        .catch( ()=>{
+            throw new Error('This is not an error. This is just a trick to abort javascript execution.');
+        })
+        .then((dataFromChromeWindow) => {
+            dataPreparation(dataFromChromeWindow)
+                .then((historyData) => {
+                    //PREPACIO DE LA SESSIO A GUARDAR
+                    let session = {date: Date.now(), sessionTabs: historyData};
+                    return session
+                })
+                .then((session) => {
+                    checkAndSet(1, session)
+                });
+        })
+}
 
 function dataPreparation(dataFromChromeWindow) {
     return new Promise((resolve, reject) => {
@@ -24,6 +39,18 @@ function dataPreparation(dataFromChromeWindow) {
     });
 }
 
+function checkIfDataHasToBeSaved(dataFromChromeWindow) {
+    return new Promise((resolve, reject) => {
+        if (this.privacyConfigData.respectIncognito === true && dataFromChromeWindow[0].incognito === true) {
+            reject();
+        }
+
+        if (this.privacyConfigData.respectIncognito === false || dataFromChromeWindow[0].incognito === false) {
+            resolve(dataFromChromeWindow)
+        }
+    });
+}
+
 let historyEntries = 10;
 
 function checkAndSet(historyPosition, historyToSave) {
@@ -40,27 +67,5 @@ function checkAndSet(historyPosition, historyToSave) {
             checkAndSet(historyPosition + 1, resposta[Object.keys(resposta)[0]])
         }
     });
-
-
 }
 
-function historyManager(dataFromChromeWindow) {
-    dataPreparation(dataFromChromeWindow)
-        .then((historyData) => {
-            //PREPACIO DE LA SESSIO A GUARDAR
-            let session = {date: Date.now(), sessionTabs: historyData};
-            return session
-        })
-        .then((session) => {
-            //Dictaminar si puc escriure en la db
-            let a = JSON.stringify(session);
-            let b = encodeURI(a).split(/%..|./).length - 1;
-            console.log(b);
-
-            return session
-        })
-        .then((session) => {
-            checkAndSet(1, session)
-        });
-
-}

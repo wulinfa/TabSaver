@@ -1,6 +1,4 @@
-/*
- * Copyright (c) 2016 - 2019. Roger Pedrós Villorbina, All rights reserved.
- */
+/* Copyright (c) 2016 - 2020. Roger Pedrós Villorbina, All rights reserved.*/
 
 let defaultConfigData = {
     "configData": {
@@ -13,11 +11,10 @@ let defaultConfigData = {
 
 let defaultPrivacyConfigData = {
     "privacyConfigData": {
-        "localStorage": false
+        "localStorage": false,
+        "respectIncognito": false
     }
 };
-
-
 
 function initialSetup(){
     newInstall()

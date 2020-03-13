@@ -1,10 +1,11 @@
-/*Copyright (C) 2016-2019, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
 /*Clase que controla el workflow del interruptors de la configuració*/
 
 $(document).ready(() => {
     /*DECLARACIONS inicial dels objectes de configuració i serveis*/
     this.configData = {};
     this.privacyConfigData = {};
+    this.incognitoStatus;
 
     this.snackBarTranslationResonse = "updated";
     /*Objecte html des de on es llança el snackbar*/
@@ -28,6 +29,13 @@ $(document).ready(() => {
         getSnackBarTranslation()
             .then( (response) =>{
                 this.snackBarTranslationResonse = response;
+                wait.resolve();
+            });
+
+        isIncognitoAllowed()
+            .then((resposta)=>{
+                this.incognitoStatus = resposta;
+                wait.resolve();
             });
 
         return wait.promise();
@@ -54,6 +62,8 @@ $(document).ready(() => {
         let checkboxOnlySave = $("#checkboxOnlySave");
 
         let locaStorage = $("#checkboxLocalStorage");
+        let respectIncognito = $("#optionRespectIncognito");
+        let incognitoWarning = $("#show-dialog");
 
         //RADIOBUTTON SIMPLE
         if (this.configData.simple === true) {
@@ -111,6 +121,17 @@ $(document).ready(() => {
             locaStorage.prop('checked', false);
         }
 
+        //CHECKBOX RESPECT INCOGNITO ENABLED?
+        if(this.privacyConfigData.respectIncognito === true){
+            respectIncognito.prop('checked', true);
+        }
+        if(this.privacyConfigData.respectIncognito === false){
+            respectIncognito.prop('checked', false);
+        }
+        if(this.incognitoStatus === false){
+            respectIncognito.prop('disabled', true);
+        }else{respectIncognito.prop('disabled', false); incognitoWarning.hide();}
+
     }
     function setOptionsDefault() {
         this.configData.simple = true;
@@ -118,6 +139,7 @@ $(document).ready(() => {
         this.configData.onlySave = false;
         this.configData.onlySaveCloseTabs = false;
         this.privacyConfigData.localStorage = false;
+        this.privacyConfigData.respectIncognito = false;
 
         let optionSimple = $("#optionSimple");
         let checkboxSimple = $("#checkboxSimple");
@@ -125,7 +147,8 @@ $(document).ready(() => {
         let optionOnlySave = $("#optionOnlySave");
         let checkboxOnlySave = $("#checkboxOnlySave");
 
-        let locaStorage = $("#checkboxLocalStorage");
+        let localStorage = $("#checkboxLocalStorage");
+        let respectIncognito = $("#optionRespectIncognito");
 
         optionSimple.prop('disabled', false);
         optionSimple.prop('checked', true);
@@ -137,7 +160,8 @@ $(document).ready(() => {
         checkboxOnlySave.prop('disabled', true);
         checkboxOnlySave.prop('checked', false);
 
-        locaStorage.prop('checked', false);
+        localStorage.prop('checked', false);
+        respectIncognito.prop('checked', false);
     }
 
     /*Snackbar launch function*/
@@ -270,6 +294,33 @@ $(document).ready(() => {
             var objectToSave = {
                 privacyConfigData: {
                     localStorage: false,
+                }
+            };
+        }
+
+        saveDataToDB(objectToSave)
+            .then(launchSnackBar());
+
+    });
+
+    $("#optionRespectIncognito").click((event) => {
+        ga('send', 'event', 'options', 'respectIncognito', 'Checkbox');
+
+        let respectIncognito = $("#optionRespectIncognito");
+        if (respectIncognito[0].checked === true) {
+            /*Important fer ús del var i no el let aqui*/
+            var objectToSave = {
+                privacyConfigData: {
+                    localStorage: false,
+                    respectIncognito: true
+                }
+            };
+        }
+        if (respectIncognito[0].checked === false) {
+            var objectToSave = {
+                privacyConfigData: {
+                    localStorage: false,
+                    respectIncognito: false
                 }
             };
         }

@@ -22,7 +22,7 @@ chrome.runtime.onInstalled.addListener((details) => {
         initialSetup();
     }
     if (details.reason == "update") {
-
+        console.log('updated');
     }
 });
 
