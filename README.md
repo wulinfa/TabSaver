@@ -9,6 +9,36 @@ Compta amb diferents maneres de treballar.
 
 ### Changelog: 
 
+
+v.1.9.6:
+
+* 🆙 Menos dependencia de Simplex.
+* 🆙 Eliminació de part de Material Desing Lite.
+* 🆙 Actualització a Bootstrap 4.4.1
+
+* 🆙 Correccio de fallos de diseny.
+* 🆙 Eliminació de Tether.js
+
+* 🆕 Scoll horitzontal implementat en history.html
+* 🆙 Generació preliminar dels historials i les pestanyes.
+* 🆙 Les urls es formategen correctament en les targetes de history.html
+
+* 🆙 Reducció de pes del objecte a guardar.
+* 🆙 Millorar onError() i fer-la per a altres tipus de error.
+* 🆕 Afegir acces desde el boto dret (ContextMenu)
+
+* 🆙 Arreglat path de la icona del browser button
+
+* 🆕 Preparació inicial de manifest v3
+* 🆙 Canvis i correcció de bugs:
+- Canvi de l'entrada Paypal per "mes"
+- Implementades traduccions: More, Notificació de guardad, error, i Quota_bytes....
+- Actualizació de copyright
+- Acces directe desde shortcuts per editar el comando.
+- Eliminació de la funcio datapreparation() conflictiva.
+- Incorporació de l'icona (!) en taronja indicant error.
+- Solucionat el problema en setings.html quan no es marcava la opció guardada de la base de dades.
+
 v.1.9.5:
 
 * 🆙 Control del error QUOTA_BYTES_PER_ITEM
