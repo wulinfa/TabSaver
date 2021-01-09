@@ -26,13 +26,13 @@ v.1.9.6:
 * 🆙 Arreglat path de la icona del browser button
 * 🆕 Preparació inicial de manifest v3
 * 🆙 Canvis i correcció de bugs:
-    * - Canvi de l'entrada Paypal per "mes"
-    * - Implementades traduccions: More, Notificació de guardad, error, i Quota_bytes....
-    * - Actualizació de copyright
-    * - Acces directe desde shortcuts per editar el comando.
-    * - Eliminació de la funcio datapreparation() conflictiva.
-    * - Incorporació de l'icona (!) en taronja indicant error.
-    * - Solucionat el problema en setings.html quan no es marcava la opció guardada de la base de dades.
+    *  Canvi de l'entrada Paypal per "mes"
+    *  Implementades traduccions: More, Notificació de guardad, error, i Quota_bytes....
+    *  Actualizació de copyright
+    *  Acces directe desde shortcuts per editar el comando.
+    *  Eliminació de la funcio datapreparation() conflictiva.
+    *  Incorporació de l'icona (!) en taronja indicant error.
+    *  Solucionat el problema en setings.html quan no es marcava la opció guardada de la base de dades.
 
 v.1.9.5:
 
