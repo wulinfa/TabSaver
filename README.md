@@ -18,6 +18,7 @@ v.1.9.6:
 * 🆙 Correccio de fallos de diseny.
 * 🆙 Eliminació de Tether.js
 * 🆕 Scoll horitzontal implementat en history.html
+* 🆕 Local Storage implemetat + sistema de migració de sync a local.
 * 🆙 Generació preliminar dels historials i les pestanyes.
 * 🆙 Les urls es formategen correctament en les targetes de history.html
 * 🆙 Reducció de pes del objecte a guardar.
