@@ -1,4 +1,4 @@
-<!--Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.-->
+<!--Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.-->
 
 <!DOCTYPE html>
 <html>
@@ -12,11 +12,9 @@
     <link rel="stylesheet" href="../../Resources/Style/Material/material.min.css">
     <script src="../../Resources/Style/Material/material.min.js"></script>
     <link rel="stylesheet" href="../../Resources/Style/Fonts/Material_Icons.css">
-    <link rel="stylesheet" href="../../Resources/Style/Material/material.blue_grey-red.min.css">
 
     <!--JQUERY-->
     <script src="../../Resources/js/jquery-3.4.1.min.js"></script>
-    <script src="../../Resources/js/tether.min.js"></script>
 
     <!--Lodash-->
     <script src="../../Resources/js/lodash.min.js"></script>
@@ -37,12 +35,13 @@
 
     <!--Custom Scripts-->
     <script src="../../Background/Provider/Provider.js"></script>
+    <script src="history.js"></script>
     <script src="card-templates.js"></script>
-    <script src="history-workflow.js"></script>
+    <script src="history-generator-workflow.js"></script>
 
     <script src="../../Resources/js/global-translation.js"></script>
     <script src="translation.js"></script>
-    <script src="session-manager-workflow.js"></script>
+    <script src="drag-and-drop-manager-workflow.js"></script>
 
     <!--Shortcuts-->
     <script src="../../Resources/js/global-shortcuts.js"></script>
@@ -50,56 +49,85 @@
     <!--Google Analytics-->
     <script src="../../Resources/js/analytics.js" async></script>
 
+    <!--Scroll controller-->
+    <script src="../../Resources/js/horwheel.min.js"></script>
+
 
 </head>
-<script>
-    window['ga-disable-UA-99683106-1'] = true;
-</script>
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <a class="navbar-brand" href="../Settings/settings.html">Simple Tab Saver</a>
-    </div>
-</div>
+<nav class="navbar navbar-expand navbar-default bg-light navbar-fixed-top justify-content-center border-bottom navbar-custom border-light">
+    <a class="navbar-brand" href="../Settings/settings.html">Simple Tab Saver</a>
+</nav>
 
 
-<main class="container">
-
-    <section class="col-sm-3 col-md-2 col-lg-2 text-left " id="left-content">
-        <ul class="nav nav-pills flex-column">
-            <li class="nav-item active"><a id="menuHistorial" href="../History/history.html">Historial</a></li>
-            <li class="nav-item"><a id="menuConfig" href="../Settings/settings.html">Configuración</a></li>
-            <li class="nav-item"><a id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a></li>
-            <li class="nav-item"><a id="menuDonate" href="../More/more.html">Más</a></li>
-        </ul>
-    </section>
-
-    <section class="col-sm-9 col-md-10 col-lg-10" id="right-content">
-        <!--Session actual!-->
-        <div class="jumbotron text-left">
-
-            <!-- ULTIMA SESIO GUARDADA-->
-            <div class="card card-body custom-card">
-                <b class="card-title">Última sessión guardada:</b>
-
-                <div class="box" id="sessionNotFound"></div>
-                <div class="box list-group list-group-horizontal" style="margin-top: 10px;" id="lastSessionSaved"><!--Contigut generat dinamicament--></div>
-            </div>
-
-            <!--HISTORIALS-->
-            <div style="margin-top: 25px; margin-bottom: 0px">
-                <h2 id="configTitol">Historial:</h2>
-                <h4><small id="configSubtitol" class="text-info">Explorar o recupera una session guardada anteriormente.</small>
-                </h4>
-            </div>
-            <div id="historyPanel"><!--Contigut generat dinamicament--></div>
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 col-lg-2 text-left" id="left-content">
+            <ul class="nav nav-pills flex-column nav-stacked">
+                <li class="nav-item">
+                    <a class="nav-link active" id="menuHistorial" href="../History/history.html">Historial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menuConfig" href="../Settings/settings.html">Configuración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menuDonate" href="../More/more.html">Más</a>
+                </li>
+            </ul>
 
         </div>
 
-    </section>
+        <div class="col-sm-9 col-md-10 col-lg-10" id="right-content">
+            <!--Session actual!-->
+            <div class="jumbotron text-left">
 
-</main>
+                <!-- ULTIMA SESIO GUARDADA-->
+
+                <div class="card" style="margin-top:10px; margin-bottom: 15px;">
+                    <div class="card-header" style="background-color: white">
+                        <b>Sessión guardada:</b>
+                        <b class="btn btn-sm float-right deleteSession" alt="Detete" title="Delete this session" id="sessionTabs-deleteSession" >
+                            <i class="material-icons" style="font-size: 200%;">delete_outline</i>
+                        </b>
+                        <b class="btn btn-sm float-right openSession" alt="Open" title="Open all the tabs"  id="sessionTabs-openSession">
+                            <i class="material-icons" style="font-size: 200%;">launch</i>
+                        </b>
+                    </div>
+
+                    <div class="container-fluid py-3" id="hortizontal-scroll-last-session-saved" style="overflow-x: auto; overflow-y: visible;">
+                        <div class="box d-flex flex-row flex-nowrap" style="">
+
+                            <div class="box d-flex flex-row flex-nowrap center-block " id="sessionNotFound"></div>
+                            <div class="box d-flex flex-row flex-nowrap" style="margin-top: 10px;" id="lastSessionSaved">
+                                <!--Contigut generat dinamicament-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--HISTORIALS-->
+                <div style="margin-top: 25px">
+                    <h2 id="configTitol">Historial:</h2>
+                    <h4>
+                        <small id="configSubtitol" class="text-info">Explorar o recupera una session guardada
+                            anteriormente.
+                        </small>
+                    </h4>
+                </div>
+
+                <div id="historyPanel"><!--Contigut generat dinamicament--></div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
 
 </body>
 

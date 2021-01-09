@@ -1,4 +1,4 @@
-<!--Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.-->
+<!--Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.-->
 
 <!DOCTYPE html>
 <html>
@@ -12,21 +12,18 @@
     <link rel="stylesheet" href="../../Resources/Style/Material/material.min.css">
     <script src="../../Resources/Style/Material/material.min.js"></script>
     <link rel="stylesheet" href="../../Resources/Style/Fonts/Material_Icons.css">
-    <link rel="stylesheet" href="../../Resources/Style/Material/material.blue_grey-red.min.css">
 
     <!--JQUERY-->
     <script src="../../Resources/js/jquery-3.4.1.min.js"></script>
-    <script src="../../Resources/js/tether.min.js"></script>
 
     <!--Lodash-->
     <script src="../../Resources/js/lodash.min.js"></script>
 
     <!--BOOTSTRAP-->
     <link href="../../Resources/Style/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../Resources/Style/Bootstrap/simplex.bootstrap.min.css">
     <script src="../../Resources/js/popper.min.js"></script>
     <script src="../../Resources/Style/Bootstrap/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="../../Resources/Style/Bootstrap/simplex.bootstrap.min.css">
 
     <!--Custom Style-->
     <link rel="stylesheet" href="style.css">
@@ -44,136 +41,123 @@
 
     <!--Google Analytics-->
     <script async src="../../Resources/js/analytics.js"></script>
-    <script src="../../Resources/Style/Bootstrap/js/bootstrap.min.js"></script>
 </head>
-<script>
-    window['ga-disable-UA-99683106-1'] = true;
-</script>
-<body>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <a class="navbar-brand" href="../Settings/settings.html">Simple Tab Saver</a>
+<body>
+<nav class="navbar navbar-expand navbar-default bg-light navbar-fixed-top justify-content-center border-bottom navbar-custom border-light">
+    <a class="navbar-brand" href="../Settings/settings.html">Simple Tab Saver</a>
+</nav>
+
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 col-lg-2 text-left" id="left-content">
+            <ul class="nav nav-pills flex-column nav-stacked">
+                <li class="nav-item">
+                    <a class="nav-link" id="menuHistorial" href="../History/history.html">Historial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="menuConfig" href="../Settings/settings.html">Configuración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="menuDonate" href="../More/more.html">Más</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-md-10 col-lg-10" id="right-content">
+            <!--Modo de trabajo-->
+            <div class="jumbotron text-left">
+                <h2 id="configTitol" style="margin-top: -15px">Modo de trabajo</h2>
+                <h4>
+                    <small id="configSubtitol" class="text-info">Elija la forma de trabajar que le resulte más comoda.
+                    </small>
+                </h4>
+                <ul class="nav flex-column nav-stacked">
+                    <li>
+                        <label class="" for="optionSimple">
+                            <input type="radio" id="optionSimple" class="" name="options" value="1">
+                            <span class="" style="font-size: 15px"><b id="configSimple">Simple</b>
+                                <small> - <l id="configSimplemsg">Guarda y recupera las pestañas al hacer click.</l></small>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label style="margin-left: 23px" class="" for="checkboxSimple">
+                            <input type="checkbox" id="checkboxSimple" class="">
+                            <span class=""><small id="checkboxSimpleText"><l id="configSubsimple">Guardar las pestañas en la barra de marcadores </l></small></span>
+                        </label>
+
+                    </li>
+                    <br>
+                    <li>
+                        <label class="" for="optionOnlySave">
+                            <input type="radio" id="optionOnlySave" class="" name="options" value="2">
+                            <span class="" style="font-size: 15px"><b id="configOnlysave">Solo guardar</b>
+                                        <small class="text-muted"> - <l id="configOnlysavemsg">Las pestañas se guardan en los marcadores al hacer click.</l></small>
+                                    </span>
+                        </label>
+                    </li>
+                    <li>
+
+                        <label style="margin-left: 23px" class="" for="checkboxOnlySave">
+                            <input type="checkbox" id="checkboxOnlySave" class="">
+                            <span class=""><small> <l
+                                    id="configSubOnlysave">Cerrar pestañas al guardar. </l></small></span>
+                        </label>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--PRIVACY-->
+            <div class="jumbotron text-left">
+                <h2 id="configTitol-Privacy" style="margin-top: -15px">Privacidad</h2>
+                <h4>
+                    <small id="configSubtitol-Privacy" class="text-info"></small>
+                </h4>
+                <ul class="nav nav-stacked">
+                    <li>
+
+                        <button id="show-dialog" type="button" class="btn" data-toggle="modal"
+                                data-target="#allowIncognitoModeModal"><i style="color:#FFDD00; "
+                                                                          class="material-icons medium">warning</i>
+                        </button>
+
+                        <label class="" for="optionRespectIncognito">
+                            <input type="checkbox" id="optionRespectIncognito" class="" name="options"
+                                   value="1">
+                            <span class="" style="font-size: 15px"><b
+                                    id="ingonitoMatters">Respetar el incognito</b>
+                                        <small> - <l id="ingonitoMattersText">Las sessiones que guardes en ingonito no se guardaran en el historial.</l></small>
+                                    </span>
+                        </label>
+
+                        <label class="" for="checkboxLocalStorage">
+                            <input type="checkbox" id="checkboxLocalStorage" class="" name="options"
+                                   value="1">
+                            <span class="" style="font-size: 15px"><b id="configLocalStorage">Almacenamiento local</b>
+                                        <small> - <l id="configLocalStorageText">Sus pestañas y sessiones se guardarán de forma local. Solo se sincronizará entre ordenadores su configuración. </l></small>
+                                    </span>
+                        </label>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+
+        </div>
     </div>
 </div>
 
-<main class="container">
-
-    <section class="col-sm-3 col-md-2 col-lg-2 text-left " id="left-content">
-        <ul class="nav nav-pills flex-column">
-            <li class="nav-item"><a id="menuHistorial" href="../History/history.html">Historial</a></li>
-            <li class="nav-item active"><a id="menuConfig" href="../Settings/settings.html">Configuración</a></li>
-            <li class="nav-item"><a id="menuAtajos" href="../Shortcuts/shortcuts.html">Atajos</a></li>
-            <li class="nav-item"><a id="menuDonate" href="../More/more.html">Más</a></li>
-        </ul>
-    </section>
-
-    <section class="col-sm-9 col-md-10 col-lg-10" id="right-content">
-        <!--Modo de trabajo-->
-        <div class="jumbotron text-left">
-            <h2 id="configTitol" style="margin-top: -15px"> Modo de trabajo:</h2>
-            <h4>
-                <small id="configSubtitol" class="text-info">Elija la forma de trabajar que le resulte más comoda.
-                </small>
-            </h4>
-            <ul class="nav nav-stacked">
-                <li>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <label class="" for="optionSimple">
-                                    <input type="radio" id="optionSimple" class="" name="options" value="1">
-                                    <span class="" style="font-size: 15px"><b id="configSimple">Simple</b>
-                                        <small> - <l
-                                                id="configSimplemsg">Guarda y recupera las pestañas al hacer click.</l></small>
-                                    </span>
-                                </label>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <label style="margin-left: 23px" class="" for="checkboxSimple">
-                                    <input type="checkbox" id="checkboxSimple" class="">
-                                    <span class=""><small id="checkboxSimpleText"><l id="configSubsimple">Guardar las pestañas en la barra de marcadores </l></small></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <br>
-                <li>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <label class="" for="optionOnlySave">
-                                    <input type="radio" id="optionOnlySave" class="" name="options" value="2">
-                                    <span class="" style="font-size: 15px"><b id="configOnlysave">Solo guardar</b>
-                                        <small class="text-muted"> - <l id="configOnlysavemsg">Las pestañas se guardan en los marcadores al hacer click.</l></small>
-                                    </span>
-                                </label>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <label style="margin-left: 23px" class="" for="checkboxOnlySave">
-                                    <input type="checkbox" id="checkboxOnlySave" class="">
-                                    <span class=""><small> <l
-                                            id="configSubOnlysave">Cerrar pestañas al guardar. </l></small></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <!--PRIVACY-->
-        <div class="jumbotron text-left">
-            <h2 id="configTitol-Privacy" style="margin-top: -15px">Privacidad</h2>
-            <h4>
-                <small id="configSubtitol-Privacy" class="text-info"></small>
-            </h4>
-            <ul class="nav nav-stacked">
-                <li>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <button id="show-dialog" type="button" class="btn" data-toggle="modal" data-target="#allowIncognitoModeModal"><i style="color:#FFDD00; " class="material-icons medium">warning</i></button>
-
-                                <label class="" for="optionRespectIncognito">
-                                    <input type="checkbox" id="optionRespectIncognito" class="" name="options"
-                                           value="1">
-                                    <span class="" style="font-size: 15px"><b
-                                            id="ingonitoMatters">Respetar el incognito</b>
-                                        <small> - <l id="ingonitoMattersText">Las sessiones que guardes en ingonito no se guardaran en el historial.</l></small>
-                                    </span>
-                                </label>
-
-                                <label class="invisible" for="checkboxLocalStorage">
-                                    <input type="checkbox" id="checkboxLocalStorage" class="" name="options" value="1">
-                                    <span class="" style="font-size: 15px"><b id="configLocalStorage">Almacenamiento local</b>
-                                        <small> - <l id="configLocalStorageText">Sus pestañas y sessiones se guardarán de forma local. Solo se sincronizará entre ordenadores su configuración. </l></small>
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <br>
-            </ul>
-        </div>
-
-    </section>
-
-</main>
-
 
 <!-- Modal -->
-<div class="modal fade" id="allowIncognitoModeModal" tabindex="-1" role="dialog" aria-labelledby="allowIncognitoModeModal" aria-hidden="true">
+<div class="modal fade" id="allowIncognitoModeModal" tabindex="-1" role="dialog"
+     aria-labelledby="allowIncognitoModeModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -186,7 +170,8 @@
                 <p>
                     Simple Tab Saver ahora mismo no esta habilitado para modo incognito.
 
-                    <br>Para usar Simple Tab Saver en modo incognito y, para evitar guarde sus sessiones de incognito, se
+                    <br>Para usar Simple Tab Saver en modo incognito y, para evitar guarde sus sessiones de incognito,
+                    se
                     necesita aprovar el permiso.
 
                 <div class="row justify-content-md-center">
@@ -195,14 +180,15 @@
                     </div>
                 </div>
 
-                <br>Un vez activado, uelva a la configuración para deshabitar que las sessiones en incognito se guarden en el historial.
+                <br>Un vez activado, uelva a la configuración para deshabitar que las sessiones en incognito se guarden
+                en el historial.
                 <br>Puede posponer este paso si no le interesa usar la extensión en modo incognito.
                 <br><br>Recordatorio: Your private data will always be used locally.
                 </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Later</button>
-                <button id="doit" type="button" class="btn btn-dark"> Let's do it</button>
+                <button id="doit" type="button" class="btn btn-primary"> Let's do it</button>
             </div>
         </div>
     </div>

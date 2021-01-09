@@ -1,34 +1,59 @@
-#right-content{
+
+#right-content {
     font-size: 15px;
     /*margin-top: 40px;*/
 }
-main {
-    padding: 1em;
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    text-align: center;
-    margin-top: 50px;
-    display: block;
+
+
+body {
+    /* Correcció que evita que MDL.js faci un faci un desplaçcament cap a sota*/
+    min-height: unset !important;
+}
+
+.mt-6 {
+    /*mt-6 no existeix. Partint de que mt-5 son 3rem. aquest pasa a ser 6*/
+    margin-top: 6rem !important;
+}
+
+
+/*Eliminació dels punts de les llistes*/ /*NO S'UTILITZA! ES FA SERVIR NAV*/
+ul {
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
 }
 
 /*NAVBAR CSS*/
-/*Fa que la navbar no sigui seleccionable*/
-#navbar-brand{
+/*Fa que la navbar no sigui seleccionable i marca la seva configuració.*/
+.navbar-brand {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    padding: 11px 15px;
+    font-size: 17px;
+    line-height: 18px;
+    height: 40px;
 }
+
+/*propietats personalizades de la navbar*/
+.navbar-custom {
+    border-width: 0 0 1px;
+    border-color: #eeeeee !important;
+    padding-bottom: unset;
+    padding-top: unset;
+}
+
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
+    color: #0092fb;
+    background-color: transparent
+}
+
 /*Icons sense padding inferior, ja que fa fer la navbar mes gran*/
-.navbar-nav > li > a{
+.navbar-nav > li > a {
     padding-bottom: 0;
 }
 
-/*Centrar el header i gestionar elements de dreta i esquerra*/
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
-}

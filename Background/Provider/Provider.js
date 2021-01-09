@@ -1,4 +1,4 @@
-/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 
 /*REFERENT A LA FINESTRA OBERTA*/
 
@@ -40,7 +40,7 @@ function openSavedTabs(sessionTabs) {
 /*Guarda l'obecjte que l'hi pasis a la BD interna*/
 function saveDataToDB(objectToSave) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.set(objectToSave, (result) => {
+        chrome.storage.local.set(objectToSave, (result) => {
             if (chrome.runtime.lastError) {
                 reject(chrome.runtime.lastError.message)
             } else {
@@ -52,7 +52,7 @@ function saveDataToDB(objectToSave) {
 
 function getDataFromDB(objectToGet) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.get(objectToGet, (result) => {
+        chrome.storage.local.get(objectToGet, (result) => {
             resolve(result);
         });
     });
@@ -61,7 +61,7 @@ function getDataFromDB(objectToGet) {
 /*Esborra de la BD el parametre d'entrada guardat*/
 function removeFromDB(objectToRemove) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.remove(objectToRemove, () => {
+        chrome.storage.local.remove(objectToRemove, () => {
             resolve();
         });
     });
@@ -70,7 +70,7 @@ function removeFromDB(objectToRemove) {
 
 function getTamany(object) {
     return new Promise((resolve, reject) => {
-        chrome.storage.sync.getBytesInUse(object, (result) => {
+        chrome.storage.local.getBytesInUse(object, (result) => {
             resolve(result);
         });
     });
@@ -129,18 +129,31 @@ function launchNotification(title, message) {
 
 /*Actualitza l'icono segons l'estat que se l'hi envii*/
 function updateIcon(status) {
+    if(status === "error"){
+        chrome.browserAction.setIcon({
+            path: "../../Resources/Icons/iconbarOJO.png"
+        });
+        setTimeout(() => {
+            chrome.browserAction.setIcon({
+                path: "../../Resources/Icons/iconbarPlus.png"
+            });
+        }, 2000);
+
+    }
     if (status === true) {
         chrome.browserAction.setIcon({
-            path: "../Resources/Icons/iconbarRoll.png"
+            path: "../../Resources/Icons/iconbarRoll.png"
         });
     }
     if (status === false) {
         chrome.browserAction.setIcon({
-            path: "../Resources/Icons/iconbarPlus.png"
+            path: "../../Resources/Icons/iconbarPlus.png"
         });
     } else {
         console.log("Feinades");
     }
+
+
 }
 
 /*Setejar el badge del icon */
@@ -164,7 +177,7 @@ function isIncognitoAllowed() {
 
 }
 
-/*Get extension ID*/
+/*Get extension ID*/ //TODO DELETE? USEFULL?
 function getExtensionID() {
     return new Promise((resolve, reject) => {
         resolve(chrome.i18n.getMessage("@@extension_id"));

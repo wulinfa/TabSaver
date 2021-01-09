@@ -74,8 +74,36 @@
   "config_snackbar_message": {
     "message": "Configurazione aggiornata."
   },
-  "config_error": {
+  "more_puntuacio": {
+    "message": "Valutami!",
+    "description": "Titol que apareix en MORE en puntuació"
+  },
+  "more_donacio": {
+    "message": "Donare.",
+    "description": "Titol que apareix en MORE en donacio /paypal"
+  },
+  "error_saved_config_data": {
     "message": "Problema con la configurazione salvata.\n",
     "description": "Mensaje de error cuando hay problemas con la configuración"
+  },
+  "error_QUOTA_BYTES_PER_ITEM_notification_title": {
+    "message": "Mi dispiace...\uD83D\uDE1E",
+    "description": "Titol del error cuando su supera el limite en la base de datos de Chrome per item. EN LA NOTIFICACIÓ."
+  },
+  "error_QUOTA_BYTES_PER_ITEM_notification_body": {
+    "message": "Il database Chrome non può salvare una sessione con così tante schede. Prova a chiuderne alcuni e riprovaci.",
+    "description": "Mensaje de error cuando su supera el limite en la base de datos de Chrome per item.  EN LA NOTIFICACIÓ."
+  },
+  "error_en_execucio_notification": {
+    "message": "Qualcosa è andato storto.",
+    "description": "Mensaje de error generico cuando algo falla mientras se guarda la session o en ejecucion"
+  },
+  "button_logic_onlysave_notificationn_TITLE": {
+    "message": "Salvato!",
+    "description": "Titol que apareix en MORE en puntuació"
+  },
+  "button_logic_onlysave_notificationn_MESSAGE": {
+    "message": "Schede salvate nella barra dei segnalibri.",
+    "description": "Titol que apareix en MORE en donacio /paypal"
   }
 }

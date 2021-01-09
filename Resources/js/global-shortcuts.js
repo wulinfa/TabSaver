@@ -1,4 +1,5 @@
-/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
+
 $(window).keypress((event) => {
     if ($('input').is(":focus")) {
         return 0;

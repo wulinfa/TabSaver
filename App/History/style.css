@@ -1,4 +1,4 @@
-/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 
 .custom-card{
     height: 17rem;
@@ -12,3 +12,41 @@
     display: block;
 }
 
+
+.custom-body {
+    min-height: 100px;
+    min-width: 170px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.text-container {
+    padding-top: 1rem;
+
+    max-width: 170px;
+    max-height: 70px;
+    font-size: 13px !important;
+    /* Here's where the line-clamp magic begins. First, we need to hide the content that overflows our desired number of text lines to show */
+    overflow: hidden;
+    /* Then, we use the old implementation of Flexbox on the paragraph and set its direction to be row */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* Finally, we set the desired number of lines we want to show */
+    -webkit-line-clamp: 2;
+
+}
+
+.url-text-container {
+    margin-left: 5px;
+    max-width: 90px;
+    max-height: 20px;
+
+    font-size: 13px !important;
+    /* Here's where the line-clamp magic begins. First, we need to hide the content that overflows our desired number of text lines to show */
+    overflow: hidden;
+    /* Then, we use the old implementation of Flexbox on the paragraph and set its direction to be row */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* Finally, we set the desired number of lines we want to show */
+    -webkit-line-clamp: 1;
+}

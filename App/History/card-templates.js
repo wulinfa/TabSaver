@@ -1,26 +1,49 @@
-/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 $(document).ready(() => {
 
     this.historyPanelGeneration = (historyPanel, sessionNumber) => {
         historyPanel.append(
-            '<div class="card card-body" style="margin-top:10px;margin-bottom: 15px;">' +
-            '<b class="card-title">Sessión ' + sessionNumber + ':</b>' +
+            '<div class="card" style="margin-top:10px; margin-bottom: 15px;">'+
+                '<div class="card-header" style="background-color: white"> ' +
+                    '<b> Sessión ' + sessionNumber + '</b>'+
+                    '<b class="btn btn-sm float-right deleteSession" alt="Detete" title="Delete this session" id="HISTORY' + sessionNumber+ '-deleteSession" >'+
+                        '<i class="material-icons" style="font-size: 200%;">delete_outline</i>'+
+                    '</b>'+
+                    '<b class="btn btn-sm float-right openSession" alt="Open" title="Open all the tabs" id="HISTORY' + sessionNumber+ '-openSession">'+
+                        '<i class="material-icons" style="font-size: 200%;">launch</i>'+
+                    '</b>'+
+                '</div>'+
 
-            '<div class="box" id="sessionNotFound' + sessionNumber + '"></div>' +
-            '<div class="box list-group list-group-horizontal" style="" id="historySession' + sessionNumber + '"></div>' +
+                '<div class="container-fluid py-3" id="historySession' + sessionNumber + '-container" style="overflow-x: auto; overflow-y:hidden;"> '+
+
+                    '<div class="box d-flex flex-row flex-nowrap" style="">' +
+                        '<div class="box list-group list-group-horizontal" id="sessionNotFound' + sessionNumber + '"></div>' +
+                        '<div class="box d-flex flex-row flex-nowrap" style="" id="historySession' + sessionNumber + '"></div>' +
+                    '</div>'+
+
+                '</div>'+
+
             '</div>'
         );
     };
 
+
     this.cardGeneration = (tabData, tag) => {
         tag.append(
-                '<div class="card card-body movable" style="width: 13rem; height: 9rem; margin-left: 0.5rem; margin-right: 0.5rem;">' +
-                        '<h5 class="card-title text-center"> <img style="max-width: 20px; max-height: 20px" src="' + tabData.favIconUrl + '"></h5>' +
-                        '<p class="card-text" style="font-size:13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; max-height: 50px">' + tabData.title + '</p>' +
-                        //'<a href=' + tabData.url + ' target="_blank" class="card-link">Link</a>' +
-                '</div>' +
-            '</div>');
+                '<div class="card card-body custom-body movable">' +
+                       '<div class="card-title" style="margin-bottom: 5px;">'+
+                           '<img class="d-inline text-left" style="max-width: 25px; max-height: 25px" src="' + tabData.favIconUrl + '" >'+
+                           '<a class="d-inline-block align-middle url-text-container">' + domain_from_url(tabData.url) + '</a> '+
 
+                            '<a class="d-inline card-link float-right text-right" href="' + tabData.url + '" target="_blank" >' +
+                                '<i class="material-icons" style="font-size: 130%;">launch</i>'+
+                           '</a>'+
+                       '</div>'+
+
+                       '<p class="card-text text-left text-container ">' + tabData.title + '</p>'+
+                '</div>' +
+            '</div>'
+        );
     };
 
 

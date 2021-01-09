@@ -4,9 +4,9 @@
     "manifest_version": 2,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.9.5",
+    "version": "1.9.8",
     "description": "__MSG_appDesc__",
-    "author": "Roger Pedrós Villorbina.",
+    "author": "Roger Pedrós.",
     "default_locale": "en",
     "icons": {  "48": "Resources/Icons/iconBlue.png",
                 "128": "Resources/Icons/iconBlue.png"
@@ -24,7 +24,10 @@
         "tabs",
         "storage",
         "notifications",
-        "bookmarks"
+        "bookmarks",
+        "unlimitedStorage",
+        "contextMenus"
+
     ],
     "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/; object-src 'self' ",
     "commands": {

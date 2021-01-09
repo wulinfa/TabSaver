@@ -1,17 +1,17 @@
-/* Copyright (c) 2016 - 2020. Roger Pedrós Villorbina, All rights reserved.*/
+/* Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 
 let defaultConfigData = {
     "configData": {
         "onlySave": false,
         "onlySaveCloseTabs": false,
         "simple": true,
-        "simpleSave": true,
+        "simpleSave": false,
     }
 };
 
 let defaultPrivacyConfigData = {
     "privacyConfigData": {
-        "localStorage": false,
+        "localStorage": true,
         "respectIncognito": false
     }
 };

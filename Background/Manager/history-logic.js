@@ -1,4 +1,4 @@
-/* Copyright (c) 2016 - 2020. Roger Pedrós Villorbina, All rights reserved.*/
+/* Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 
 /*Manager de historial: Actualitzar i controlar que l'array de historial manté el tamany desitjat perque no es faci molt gran*/
 
@@ -8,7 +8,7 @@ function historyManager(dataFromChromeWindow) {
             throw new Error('This is not an error. This is just a trick to abort javascript execution.');
         })
         .then((dataFromChromeWindow) => {
-            dataPreparation(dataFromChromeWindow)
+            dataPreparation(dataFromChromeWindow) //TODO PENDENT DE ELIMINAR !!!!
                 .then((historyData) => {
                     //PREPACIO DE LA SESSIO A GUARDAR
                     let session = {date: Date.now(), sessionTabs: historyData};
@@ -18,25 +18,6 @@ function historyManager(dataFromChromeWindow) {
                     checkAndSet(1, session)
                 });
         })
-}
-
-function dataPreparation(dataFromChromeWindow) {
-    return new Promise((resolve, reject) => {
-
-        for (index = 0; index < dataFromChromeWindow.length; index++) {
-            delete dataFromChromeWindow[index].active;
-            delete dataFromChromeWindow[index].audible;
-            delete dataFromChromeWindow[index].autoDiscardable;
-            delete dataFromChromeWindow[index].discarded;
-            delete dataFromChromeWindow[index].height;
-            delete dataFromChromeWindow[index].highlighted;
-            delete dataFromChromeWindow[index].mutedInfo;
-            delete dataFromChromeWindow[index].status;
-            delete dataFromChromeWindow[index].width;
-            //console.log(dataFromChromeWindow[index]);
-        }
-        resolve(dataFromChromeWindow)
-    });
 }
 
 function checkIfDataHasToBeSaved(dataFromChromeWindow) {

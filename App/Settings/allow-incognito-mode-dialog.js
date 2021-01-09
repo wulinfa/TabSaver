@@ -1,4 +1,4 @@
-/*Copyright (c) 2016 - 2020. Roger Pedrós Villorbina, All rights reserved. */
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved. */
 
 $(document).ready(() => {
     $("#show-dialog").click((event) => {

@@ -1,4 +1,4 @@
-/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 /*Manager s'encarrega de portar la logica de la extencio*/
 
 this.configData = {};
@@ -15,7 +15,7 @@ this.privacyConfigData = {};
 //Els events son caputurats al Listener i poden ser per comandos o per un click al boto.
 function browserActionTrigged() {
     if (this.configData.simple === undefined || this.configData.onlySave === undefined) {
-        alert(chrome.i18n.getMessage("config_error"));
+        alert(chrome.i18n.getMessage("error_saved_config_data"));
         chrome.runtime.openOptionsPagle();
     }
 
@@ -66,3 +66,14 @@ function updateInternalConfigData() {
         });
 }
 
+
+/*Genera el menu contextual del boto dret*/
+openHistory = () => {
+    chrome.tabs.create({url: 'chrome-extension://' + chrome.runtime.id + '/App/History/history.html'});
+};
+
+chrome.contextMenus.create({
+    title: "Open History",
+    contexts:["page"],  // ContextType
+    onclick: openHistory // A callback function
+});

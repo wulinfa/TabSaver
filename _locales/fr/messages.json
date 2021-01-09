@@ -16,7 +16,7 @@
     "description": "Paraula del menu lateral"
   },
   "menu_donaciones": {
-    "message": "Paypal",
+    "message": "Plus",
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
@@ -43,7 +43,7 @@
     "message": "Raccourcis"
   },
   "atajos_subentrada2_3": {
-    "message": "Paypal"
+    "message": "Plus"
   },
   "config_titol": {
     "message": "Mode de travail",
@@ -74,8 +74,37 @@
   "config_snackbar_message": {
     "message": "Configuration mise à jour."
   },
-  "config_error": {
+  "more_puntuacio": {
+    "message": "Évaluez-moi!",
+    "description": "Titol que apareix en MORE en puntuació"
+  },
+  "more_donacio": {
+    "message": "Faire un don.",
+    "description": "Titol que apareix en MORE en donacio /paypal"
+  },
+
+  "error_saved_config_data": {
     "message": "Problème avec la configuration sauvegardée.\n",
     "description": "Mensaje de error cuando hay problemas con la configuración"
+  },
+  "error_QUOTA_BYTES_PER_ITEM_notification_title": {
+    "message": "Je suis désolé...\uD83D\uDE1E",
+    "description": "Titol del error cuando su supera el limite en la base de datos de Chrome per item. EN LA NOTIFICACIÓ."
+  },
+  "error_QUOTA_BYTES_PER_ITEM_notification_body": {
+    "message": "La base de données Chrome ne peut pas enregistrer une session avec autant d'onglets. Essayez de fermer certains d'entre eux et réessayez.",
+    "description": "Mensaje de error cuando su supera el limite en la base de datos de Chrome per item.  EN LA NOTIFICACIÓ."
+  },
+  "error_en_execucio_notification": {
+    "message": "Un problème est survenu.",
+    "description": "Mensaje de error generico cuando algo falla mientras se guarda la session o en ejecucion"
+  },
+  "button_logic_onlysave_notificationn_TITLE": {
+    "message": "Sauvegardé!",
+    "description": "Titol que apareix en MORE en puntuació"
+  },
+  "button_logic_onlysave_notificationn_MESSAGE": {
+    "message": "Onglets enregistrés dans la barre de signets.",
+    "description": "Titol que apareix en MORE en donacio /paypal"
   }
 }

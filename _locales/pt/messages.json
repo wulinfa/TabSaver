@@ -16,7 +16,7 @@
     "description": "Paraula del menu lateral"
   },
   "menu_donaciones": {
-    "message": "Paypal",
+    "message": "Mais",
     "description": "Paraula del menu lateral"
   },
   "atajos_titol": {
@@ -43,7 +43,7 @@
     "message": "Atalhos"
   },
   "atajos_subentrada2_3": {
-    "message": "Paypal"
+    "message": "Mais"
   },
   "config_titol": {
     "message": "Modo de trabalho",
@@ -74,8 +74,37 @@
   "config_snackbar_message": {
     "message": "Configuração atualizada.\n"
   },
-  "config_error": {
+  "more_puntuacio": {
+    "message": "Me avalie!",
+    "description": "Titol que apareix en MORE en puntuació"
+  },
+  "more_donacio": {
+    "message": "Doação.",
+    "description": "Titol que apareix en MORE en donacio /paypal"
+  },
+
+  "error_saved_config_data": {
     "message": "Problema com a configuração salva.\n",
     "description": "Mensaje de error cuando hay problemas con la configuración"
+  },
+  "error_QUOTA_BYTES_PER_ITEM_notification_title": {
+    "message": "Eu sinto Muito...\uD83D\uDE1E",
+    "description": "Titol del error cuando su supera el limite en la base de datos de Chrome per item. EN LA NOTIFICACIÓ."
+  },
+  "error_QUOTA_BYTES_PER_ITEM_notification_body": {
+    "message": "O banco de dados do Chrome não pode salvar uma sessão com tantas guias. Tente fechar alguns deles e tente novamente.",
+    "description": "Mensaje de error cuando su supera el limite en la base de datos de Chrome per item.  EN LA NOTIFICACIÓ."
+  },
+  "error_en_execucio_notification": {
+    "message": "Algo deu errado.",
+    "description": "Mensaje de error generico cuando algo falla mientras se guarda la session o en ejecucion"
+  },
+  "button_logic_onlysave_notificationn_TITLE": {
+    "message": "Salvou!",
+    "description": "Titol que apareix en MORE en puntuació"
+  },
+  "button_logic_onlysave_notificationn_MESSAGE": {
+    "message": "Tabs salvo na barra de favoritos.",
+    "description": "Titol que apareix en MORE en donacio /paypal"
   }
 }

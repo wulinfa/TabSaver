@@ -1,4 +1,4 @@
-/*Copyright (C) 2016-2020, Roger Pedrós Villorbina, All rights reserved.*/
+/*Copyright (c) 2016 - 2021. Roger Pedrós Villorbina, All rights reserved.*/
 /*Clase que controla el workflow del interruptors de la configuració*/
 
 $(document).ready(() => {
@@ -12,30 +12,30 @@ $(document).ready(() => {
     let snackbarContainer = document.querySelector('#demo-toast-example');
 
     /*Declaració de les crides per carregar de la BD als objectes configData i privacyConfigData i la traducció d'snackbar*/
-    let dataPreparation = () => {
+
+
+    let initDataPreparation = () => {
         let wait = $.Deferred();
         getDataFromDB('configData')
             .then((configFromDB) => {
                 this.configData = configFromDB.configData;
-                wait.resolve();
-            });
 
-        getDataFromDB('privacyConfigData')
-            .then((configFromDB) => {
-                this.privacyConfigData = configFromDB.privacyConfigData;
-                wait.resolve();
+                getDataFromDB('privacyConfigData')
+                    .then((configFromDB) => {
+                        this.privacyConfigData = configFromDB.privacyConfigData;
+
+                        isIncognitoAllowed()
+                            .then((resposta)=>{
+                                this.incognitoStatus = resposta;
+
+                                wait.resolve();
+                            });
+                    });
             });
 
         getSnackBarTranslation()
             .then( (response) =>{
                 this.snackBarTranslationResonse = response;
-                wait.resolve();
-            });
-
-        isIncognitoAllowed()
-            .then((resposta)=>{
-                this.incognitoStatus = resposta;
-                wait.resolve();
             });
 
         return wait.promise();
@@ -43,7 +43,7 @@ $(document).ready(() => {
 
     /*EXECUSIONS de es declaracions i crides*/
     /*dataPreparation() seteja la informacio de la DB a la vista, si no hi ha informacío posa la que hi ha per defecte*/
-    dataPreparation()
+    initDataPreparation()
         .then(() => {
             if (!_.isNil(this.configData.simple) && !_.isNil(this.configData.onlySave) && !_.isNil(this.privacyConfigData)) {
                 setOptionsSaved();
@@ -133,7 +133,7 @@ $(document).ready(() => {
         }else{respectIncognito.prop('disabled', false); incognitoWarning.hide();}
 
     }
-    function setOptionsDefault() {
+    function setOptionsDefault() { //COPIA DE LA CONFIGURACIÓ INICIAL EN CAS DE QUE ON ES POGUES CARREGAR.
         this.configData.simple = true;
         this.configData.simpleSave = true;
         this.configData.onlySave = false;
