@@ -5,9 +5,35 @@ Projecte iniciat com a treball final de curs, derivat a ús real.
 Consisteix en una petita extensió que en clicar-la guarda automàticament la sessió actual i en pressionar-la altre cop la recupera.
 Compta amb diferents maneres de treballar.
 
-[![Available in the Chrome Store](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/simple-tab-saver/poliinbejkeohgkakcjhnidgbalekdnj)
+[![Available in the Chrome Store](https://developer-chrome-com.imgix.net/image/BrQidfK9jaQyIHwdw91aVpkPiib2/LclHxMxqoswLNRcUW3m5.png )](https://chrome.google.com/webstore/detail/simple-tab-saver/poliinbejkeohgkakcjhnidgbalekdnj)
 
 ### Changelog: 
+
+
+v.1.9.6:
+
+* 🆙 Menos dependencia de Simplex.
+* 🆙 Eliminació de part de Material Desing Lite.
+* 🆙 Actualització a Bootstrap 4.4.1
+* 🆙 Correccio de fallos de diseny.
+* 🆙 Eliminació de Tether.js
+* 🆕 Scoll horitzontal implementat en history.html
+* 🆕 Local Storage implemetat + sistema de migració de sync a local.
+* 🆙 Generació preliminar dels historials i les pestanyes.
+* 🆙 Les urls es formategen correctament en les targetes de history.html
+* 🆙 Reducció de pes del objecte a guardar.
+* 🆙 Millorar onError() i fer-la per a altres tipus de error.
+* 🆕 Afegir acces desde el boto dret (ContextMenu)
+* 🆙 Arreglat path de la icona del browser button
+* 🆕 Preparació inicial de manifest v3
+* 🆙 Canvis i correcció de bugs:
+    *  Canvi de l'entrada Paypal per "mes"
+    *  Implementades traduccions: More, Notificació de guardad, error, i Quota_bytes....
+    *  Actualizació de copyright
+    *  Acces directe desde shortcuts per editar el comando.
+    *  Eliminació de la funcio datapreparation() conflictiva.
+    *  Incorporació de l'icona (!) en taronja indicant error.
+    *  Solucionat el problema en setings.html quan no es marcava la opció guardada de la base de dades.
 
 v.1.9.5:
 
