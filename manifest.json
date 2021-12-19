@@ -1,23 +1,23 @@
 {
     "update_url": "https://clients2.google.com/service/update2/crx",
 
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "__MSG_appName__",
     "short_name": "Tab Saver",
-    "version": "1.9.8",
+    "version": "1.9.9",
     "description": "__MSG_appDesc__",
     "author": "Roger Pedrós.",
     "default_locale": "en",
     "icons": {  "48": "Resources/Icons/iconBlue.png",
                 "128": "Resources/Icons/iconBlue.png"
     },
-    "browser_action": {
+    "action": {
         "default_icon": "Resources/Icons/iconBlue.png",
         "default_title": "__MSG_appName__"
     },
     "options_page": "App/Settings/settings.html",
     "background": {
-        "page": "Background/background.html"
+        "service_worker": "Background/background.js"
     },
     "incognito": "spanning",
     "permissions": [
@@ -27,9 +27,11 @@
         "bookmarks",
         "unlimitedStorage",
         "contextMenus"
-
     ],
-    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://apis.google.com/ https://www.google-analytics.com/; object-src 'self' ",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://www.googleapis.com' 'https://www.google-analytics.com/'; object-src 'self'"
+    },
     "commands": {
         "_execute_browser_action": {
             "suggested_key": {

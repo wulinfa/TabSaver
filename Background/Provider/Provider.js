@@ -38,6 +38,7 @@ function openSavedTabs(sessionTabs) {
 /* REFERENT A LA BD*/
 
 /*Guarda l'obecjte que l'hi pasis a la BD interna*/
+/* TODO: "lastError deprecated?*/
 function saveDataToDB(objectToSave) {
     return new Promise((resolve, reject) => {
         chrome.storage.local.set(objectToSave, (result) => {
@@ -130,23 +131,23 @@ function launchNotification(title, message) {
 /*Actualitza l'icono segons l'estat que se l'hi envii*/
 function updateIcon(status) {
     if(status === "error"){
-        chrome.browserAction.setIcon({
+        chrome.action.setIcon({
             path: "../../Resources/Icons/iconbarOJO.png"
         });
         setTimeout(() => {
-            chrome.browserAction.setIcon({
+            chrome.action.setIcon({
                 path: "../../Resources/Icons/iconbarPlus.png"
             });
         }, 2000);
 
     }
     if (status === true) {
-        chrome.browserAction.setIcon({
+        chrome.action.setIcon({
             path: "../../Resources/Icons/iconbarRoll.png"
         });
     }
     if (status === false) {
-        chrome.browserAction.setIcon({
+        chrome.action.setIcon({
             path: "../../Resources/Icons/iconbarPlus.png"
         });
     } else {
@@ -160,8 +161,8 @@ function updateIcon(status) {
 function setIconBadge(number) {
     return new Promise((resolve, reject) => {
         let numberToString = number.toString();
-        chrome.browserAction.setBadgeBackgroundColor({color: "#616161"});
-        chrome.browserAction.setBadgeText({text: numberToString});
+        chrome.action.setBadgeBackgroundColor({color: "#616161"});
+        chrome.action.setBadgeText({text: numberToString});
         resolve();
     });
 }

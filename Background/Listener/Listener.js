@@ -3,7 +3,7 @@
 
 
 /*Listener que escolta quan es clica el boto de l'extenció*/
-chrome.browserAction.onClicked.addListener(() => {
+chrome.action.onClicked.addListener(() => {
     browserActionTrigged();
 });
 
